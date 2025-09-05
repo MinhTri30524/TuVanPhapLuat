@@ -1,12 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const CpHeader = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    //console.log('isMenuOpen:', isMenuOpen);
+    const [user, setUser] = useState(null);
     const navigate = useNavigate();
+
+    useEffect(() => {
+        const token = localStorage.getItem("token");
+        const username = localStorage.getItem("username");
+        console.log("username--> ", username)
+
+        if (token && username) {
+            setUser({
+                username,
+                avatar: "https://www.svgrepo.com/show/452030/avatar-default.svg",
+            });
+        }
+    }, []);
+
+    const handleLogout = () => {
+        localStorage.removeItem("token");
+        localStorage.removeItem("username");
+        setUser(null);
+        navigate("/login");
+    };
+
     return (
         <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md px-8 h-20 flex items-center justify-between overflow-visible">
+            {/* Logo nền mờ */}
             <img
                 src="/assets/imgs/logo.jpg"
                 alt="Logo nền"
@@ -14,35 +36,27 @@ const CpHeader = () => {
                 style={{ zIndex: 0 }}
             />
 
+            {/* Logo chính */}
             <div className="z-10">
                 <img src="/assets/imgs/LogoChu2.png" alt="Logo" className="h-24 object-contain" />
             </div>
 
+            {/* Menu chính */}
             <div className="hidden md:flex gap-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-                <button onClick={() => navigate('/')} className="hover:text-[#1D3557] bg-transparent border-none">
-                    Trang Chủ
-                </button>
-                <button onClick={() => navigate('/vanban')} className="hover:text-[#1D3557] bg-transparent border-none">
-                    Văn Bản
-                </button>
-                <button onClick={() => navigate('/tuvan')} className="hover:text-[#1D3557] bg-transparent border-none">
-                    Tư Vấn
-                </button>
-
-                <button onClick={() => navigate('/tintuc')} className="hover:text-[#1D3557] bg-transparent border-none">
-                    Tin Tức Pháp Luật
-                </button>
-                <button onClick={() => navigate('/chat')} className="hover:text-[#1D3557] bg-transparent border-none">
-                    Chat Bot Tư Vấn
-                </button>
+                <button onClick={() => navigate('/')} className="hover:text-[#1D3557]">Trang Chủ</button>
+                <button onClick={() => navigate('/vanban')} className="hover:text-[#1D3557]">Văn Bản</button>
+                <button onClick={() => navigate('/tuvan')} className="hover:text-[#1D3557]">Tư Vấn</button>
+                <button onClick={() => navigate('/tintuc')} className="hover:text-[#1D3557]">Tin Tức Pháp Luật</button>
+                <button onClick={() => navigate('/chat')} className="hover:text-[#1D3557]">Chat Bot Tư Vấn</button>
                 <button
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    className="hover:text-[#1D3557] bg-transparent border-none"
+                    className="hover:text-[#1D3557]"
                 >
                     <img src="/assets/imgs/menu.png" alt="menu" className="w-6 h-6" />
                 </button>
             </div>
 
+            {/* Mega menu */}
             {isMenuOpen && (
                 <div className="absolute top-full left-0 w-screen bg-white shadow-lg z-50">
                     <div className="max-w-7xl mx-auto px-4 py-6 grid grid-cols-4 gap-6">
@@ -90,16 +104,38 @@ const CpHeader = () => {
                 </div>
             )}
 
+            {/* Khu vực bên phải */}
+            <div className="flex items-center gap-3 z-10">
+                {!user ? (
+                    <button className="hover:underline" onClick={() => navigate('/login')}>
+                        Đăng nhập
+                    </button>
+                ) : (
+                    <div className="flex items-center gap-3">
+                        <img
+                            src={user.avatar}
+                            alt="avatar"
+                            className="w-9 h-9 rounded-full border object-cover"
+                        />
+                        <span className="font-medium text-[#1D3557]">{user.username}</span>
+                        <button
+                            onClick={handleLogout}
+                            className="text-sm text-red-600 border px-3 py-1 rounded-full hover:bg-red-50"
+                        >
+                            Đăng xuất
+                        </button>
+                    </div>
+                )}
 
-
-            <div className="flex gap-3 z-10">
-                <button className="hover:underline" onClick={() => navigate('/login')}>Đăng nhập</button>
-                <button onClick={() => navigate('/tracuu')} className="bg-[#1D3557] text-white px-4 py-2 rounded-full hover:opacity-90">
+                <button
+                    onClick={() => navigate('/tracuu')}
+                    className="bg-[#1D3557] text-white px-4 py-2 rounded-full hover:opacity-90"
+                >
                     Tra cứu ngay
                 </button>
             </div>
         </header>
-    )
-}
+    );
+};
 
 export default CpHeader;

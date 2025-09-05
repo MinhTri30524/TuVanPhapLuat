@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import instance, { endpoints } from "../configs/Apis";
 
 function PRegister() {
     const [formData, setFormData] = useState({
         username: '',
         email: '',
-        phone: '',
+        phone_number: '',
         password: '',
-        confirmPassword: '',
+        password2: '',
     });
+
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState('');
+    const [success, setSuccess] = useState('');
+    const navigate = useNavigate();
 
     const handleChange = (e) => {
         setFormData({
@@ -16,10 +23,38 @@ function PRegister() {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // TODO: Validate and send data to API
-        console.log('Đăng ký với dữ liệu:', formData);
+        setError('');
+        setSuccess('');
+
+        if (formData.password !== formData.password2) {
+            setError("Mật khẩu không trùng khớp!");
+            return;
+        }
+
+        setLoading(true);
+        try {
+            const res = await instance.post(endpoints.register, formData);
+
+            if (res !== undefined) {
+                setSuccess("🎉 Đăng ký thành công! Bạn có thể đăng nhập.");
+                setFormData({
+                    username: '',
+                    email: '',
+                    phone_number: '',
+                    password: '',
+                    password2: '',
+                });
+            }
+
+            // 👉 tuỳ bạn: redirect luôn sang trang login
+            navigate("/login");
+        } catch (err) {
+            setError(err.response?.data?.detail || "Đăng ký thất bại");
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -38,10 +73,16 @@ function PRegister() {
                 <div className="mb-6 text-center">
                     <h1 className="text-2xl font-semibold text-[#1D3557]">Tạo tài khoản miễn phí</h1>
                     <p className="text-sm text-gray-600 mt-2">
-                        Đã có tài khoản Tư Vấn Pháp Luật?{' '}
-                        <a href="/login" className="text-red-600 underline hover:text-red-800">Đăng nhập tại đây!</a>
+                        Đã có tài khoản?{' '}
+                        <a href="/login" className="text-red-600 underline hover:text-red-800">
+                            Đăng nhập tại đây!
+                        </a>
                     </p>
                 </div>
+
+                {error && <p className="text-red-600 text-center mb-3">{error}</p>}
+                {success && <p className="text-green-600 text-center mb-3">{success}</p>}
+
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
                         <label className="text-sm font-medium">Tên tài khoản *</label>
@@ -55,7 +96,7 @@ function PRegister() {
                         />
                     </div>
                     <div>
-                        <label className="text-sm font-medium">Email của bạn *</label>
+                        <label className="text-sm font-medium">Email *</label>
                         <input
                             type="email"
                             name="email"
@@ -69,8 +110,8 @@ function PRegister() {
                         <label className="text-sm font-medium">Số điện thoại *</label>
                         <input
                             type="tel"
-                            name="phone"
-                            value={formData.phone}
+                            name="phone_number"
+                            value={formData.phone_number}
                             onChange={handleChange}
                             required
                             className="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-[#1D3557]"
@@ -91,26 +132,30 @@ function PRegister() {
                         <label className="text-sm font-medium">Nhập lại mật khẩu *</label>
                         <input
                             type="password"
-                            name="confirmPassword"
-                            value={formData.confirmPassword}
+                            name="password2"
+                            value={formData.password2}
                             onChange={handleChange}
                             required
                             className="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-[#1D3557]"
                         />
                     </div>
+
                     <p className="text-xs text-gray-500 text-center">
                         Bằng cách đăng ký, bạn đồng ý với{' '}
-                        <a href="/" className="text-red-600 underline hover:text-red-800">Quy ước sử dụng</a> của Tư Vấn Pháp Luật.
+                        <a href="/" className="text-red-600 underline hover:text-red-800">Quy ước sử dụng</a>.
                     </p>
+
                     <button
                         type="submit"
-                        className="w-full mt-4 bg-[#1D3557] text-white py-2 rounded-lg hover:bg-[#16324a] transition"
+                        disabled={loading}
+                        className="w-full mt-4 bg-[#1D3557] text-white py-2 rounded-lg hover:bg-[#16324a] transition disabled:opacity-50"
                     >
-                        Đăng ký
+                        {loading ? "Đang xử lý..." : "Đăng ký"}
                     </button>
                 </form>
             </div>
         </div>
     );
 }
+
 export default PRegister;

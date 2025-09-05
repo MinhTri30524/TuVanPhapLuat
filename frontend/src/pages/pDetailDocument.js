@@ -1,131 +1,125 @@
-import React, { useMemo } from "react";
-import { useNavigate } from "react-router-dom";
-import CpHeader from '../components/cpHeader';
-import CpFooter from '../components/cpFooter';
-import CpScrollToTop from '../components/cpScrollToTop';
+// pages/PDetailDocument.jsx
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams, Link } from "react-router-dom";
+import slugify from "slugify";
+import instance, { endpoints } from "../configs/Apis";
+import CpFooter from "../components/cpFooter";
 
 const formatDate = (iso) =>
-    new Date(iso).toLocaleString("vi-VN", {
-        year: "numeric",
-        month: "long",
-        day: "2-digit",
-        hour: "2-digit",
-        minute: "2-digit",
-    });
+  new Date(iso).toLocaleString("vi-VN", {
+    year: "numeric", month: "long", day: "2-digit",
+    hour: "2-digit", minute: "2-digit",
+  });
 
-/**
- * Props gợi ý:
- *  - title: string
- *  - author: string
- *  - publishedAt: ISO string
- *  - coverImage: url hoặc null
- *  - pdfUrl: url (bắt buộc)
- */
-export default function PDetailDocument({
-    title,
-    author,
-    publishedAt,
-    coverImage,
-    pdfUrl,
-}) {
-    const navigate = useNavigate();
+export default function PDetailDocument() {
+  const navigate = useNavigate();
+  const { id } = useParams();
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [relatedDocs, setRelatedDocs] = useState([]);
 
-    // Fallback demo (nếu chưa truyền props)
-    const data = useMemo(
-        () => ({
-            title:
-                title ||
-                "Nghị định 100/2019/NĐ-CP về xử phạt vi phạm hành chính trong lĩnh vực giao thông",
-            author: author || "Chính phủ",
-            publishedAt: publishedAt || "2019-12-30T00:00:00.000Z",
-            coverImage:
-                coverImage ||
-                "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200",
-            pdfUrl:
-                pdfUrl ||
-                "/assets/others/test.pdf",
-        }),
-        [title, author, publishedAt, coverImage, pdfUrl]
-    );
+  useEffect(() => {
+    let mounted = true;
+    (async () => {
+      try {
+        const res = await instance.get(endpoints.documentDetail(id));
+        if (mounted) {
+          setData(res.data);
 
-    return (
-        <React.Fragment>
-            <div className="min-h-screen bg-gray-50">
-                {/* Header */}
-                <div className="bg-white border-b">
-                    <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-                        <button
-                            className="bg-[#1D3557] text-white px-4 py-2 rounded-full hover:opacity-90"
-                            onClick={() => navigate("/vanban")}
-                        >
-                            Quay về danh sách
-                        </button>
-                        <img
-                            src="/assets/imgs/LogoChu2.png"
-                            alt="Tư Vấn Pháp Luật"
-                            className="h-8"
-                        />
-                    </div>
-                </div>
+          // gọi thêm văn bản liên quan cùng category
+          if (res.data.category) {
+            const relatedRes = await instance.get(
+              endpoints.documentsByCategory(res.data.category, 5)
+            );
+            // lọc bỏ chính nó
+            const filtered = relatedRes.data.filter((doc) => doc.id !== parseInt(id));
+            setRelatedDocs(filtered);
+          }
+        }
+      } catch (e) {
+        console.error(e);
+      } finally {
+        if (mounted) setLoading(false);
+      }
+    })();
+    return () => { mounted = false; }
+  }, [id]);
 
-                {/* Nội dung */}
-                <main className="max-w-5xl mx-auto px-4 py-8">
-                    {/* Tiêu đề */}
-                    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight text-[#1D3557]">
-                        {data.title}
-                    </h1>
+  if (loading) return <div className="p-6">Đang tải...</div>;
+  if (!data) return <div className="p-6">Không lấy được dữ liệu.</div>;
 
-                    {/* Meta */}
-                    <div className="mt-3 text-sm text-gray-500 flex flex-wrap gap-x-4 gap-y-1">
-                        <span>{data.author}</span>
-                        <span>•</span>
-                        <time dateTime={data.publishedAt}>
-                            {formatDate(data.publishedAt)}
-                        </time>
-                    </div>
+  return (<React.Fragment>
+    <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <div className="bg-white border-b">
+        <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+          <button
+            className="bg-[#1D3557] text-white px-4 py-2 rounded-full hover:opacity-90"
+            onClick={() => navigate("/vanban")}
+          >
+            Quay về danh sách
+          </button>
+          <img src="/assets/imgs/LogoChu2.png" alt="Tư Vấn Pháp Luật" className="h-16" />
+        </div>
+      </div>
 
-                    {/* Ảnh minh họa (nếu có) */}
-                    {data.coverImage && (
-                        <figure className="mt-6 overflow-hidden rounded-2xl border bg-white">
-                            <img
-                                src={data.coverImage}
-                                alt="Ảnh minh họa văn bản"
-                                className="w-full h-auto object-cover"
-                            />
-                            <figcaption className="text-xs text-gray-500 p-3">
-                                Ảnh minh họa
-                            </figcaption>
-                        </figure>
-                    )}
+      {/* Body */}
+      <main className="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-4 gap-8">
 
-                    {/* PDF Viewer */}
-                    <div className="mt-8">
-                        <h2 className="text-xl font-semibold mb-3 text-[#1D3557]">
-                            Văn bản gốc (PDF)
-                        </h2>
-                        <div className="w-full border rounded-lg overflow-hidden">
-                            <iframe
-                                src={`${data.pdfUrl}#toolbar=1&navpanes=0&scrollbar=1`}
-                                title="PDF Viewer"
-                                className="w-full"
-                                style={{ height: "80vh" }}
-                            />
-                        </div>
+        {/* Cột trái: nội dung chính */}
+        <div className="md:col-span-3">
+          <h1 className="text-3xl md:text-4xl font-extrabold leading-tight text-[#1D3557]">
+            {data.title}
+          </h1>
 
-                        {/* Link tải xuống */}
-                        <div className="mt-4">
-                            <a
-                                href={data.pdfUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm text-[#1D3557] hover:bg-gray-100"
-                            >
-                                📥 Tải văn bản PDF
-                            </a>
-                        </div>
-                    </div>
-                </main>
+          <div className="mt-3 mb-3 text-sm text-gray-500 flex flex-wrap gap-x-4 gap-y-1">
+            <span>Mã: {data.code}</span>
+            <span>•</span>
+            <span>{data.issued_by}</span>
+            <span>•</span>
+            <time dateTime={data.issued_date}>{formatDate(data.issued_date)}</time>
+          </div>
+
+          {data && data.pdf_url ? (
+            <div className="w-full border rounded-lg overflow-hidden">
+              <iframe
+                src={`${data.pdf_url}#toolbar=1&navpanes=0&scrollbar=1`}
+                title="PDF Viewer"
+                className="w-full"
+                style={{ height: "80rem" }}
+              />
             </div>
-        </React.Fragment>
-    );
+          ) : (
+            <div className="text-red-600">
+              Chưa tìm thấy file PDF cho văn bản này.
+            </div>
+          )}
+        </div>
+
+        {/* Cột phải: văn bản liên quan */}
+        <aside className="md:col-span-1">
+          <h2 className="text-lg font-semibold text-[#1D3557] mb-3">
+            Văn bản liên quan
+          </h2>
+          <div className="space-y-3">
+            {relatedDocs.length > 0 ? (
+              relatedDocs.map((doc) => (
+                <Link
+                  key={doc.id}
+                  to={`/vanban/${slugify(doc.title, { lower: true, strict: true })}-${doc.id}`}
+                  className="block p-3 bg-white rounded-lg shadow hover:shadow-md transition"
+                >
+                  <p className="font-medium text-sm line-clamp-2">{doc.title}</p>
+                  <p className="text-xs text-gray-500">{formatDate(doc.issued_date)}</p>
+                </Link>
+              ))
+            ) : (
+              <p className="text-gray-500 text-sm">Không có văn bản liên quan.</p>
+            )}
+          </div>
+        </aside>
+      </main>
+    </div>
+    <CpFooter />
+  </React.Fragment>);
 }

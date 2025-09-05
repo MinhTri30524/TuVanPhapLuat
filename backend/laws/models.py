@@ -1,9 +1,12 @@
 from django.db import models
 from django.conf import settings
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 
 class LawCategory(models.Model): #phân loại
     name = models.CharField(max_length=255, unique=True)
     description = models.TextField(blank=True)
+    slug = models.SlugField(max_length=255, unique=True, blank=True)
 
     class Meta:
         ordering = ['name']
@@ -12,17 +15,19 @@ class LawCategory(models.Model): #phân loại
         return self.name
 
 
-class LawDocument(models.Model): #văn bản luật
-    title = models.CharField(max_length=500)
-    code = models.CharField(max_length=100, blank=True)  # VD: 45/2019/QH14
-    category = models.ForeignKey(LawCategory, on_delete=models.CASCADE, related_name='documents')
-    
-    issued_by = models.CharField(max_length=255, blank=True)  # Cơ quan ban hành
-    issued_date = models.DateField()         # Ngày ban hành
-    effective_date = models.DateField()      # Ngày hiệu lực
-    expired_date = models.DateField(null=True, blank=True)
 
-    summary = models.TextField(blank=True)   # Mô tả tóm tắt
+class LawDocument(models.Model):
+    title = models.CharField(max_length=500)
+    code = models.CharField(max_length=100, blank=True)
+    category = models.ForeignKey(LawCategory, on_delete=models.CASCADE, related_name='documents')
+
+    issued_by = models.CharField(max_length=255, blank=True)
+    issued_date = models.DateField()
+    applied_date = models.DateField(null=True, blank=True)
+    status = models.CharField(max_length=100, blank=True)
+    updated_date = models.DateField(null=True, blank=True)
+
+    summary = models.TextField(blank=True)
     source_url = models.URLField(blank=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
@@ -32,6 +37,19 @@ class LawDocument(models.Model): #văn bản luật
 
     def __str__(self):
         return f"{self.title} ({self.code})"
+
+
+class LawDocumentDetail(models.Model):
+    document = models.OneToOneField(LawDocument, on_delete=models.CASCADE, related_name='detail')
+    pdf_url = models.URLField(max_length=1000, blank=True, null=True)
+
+    signer = models.CharField(max_length=255, blank=True, null=True)
+    effective_status = models.CharField(max_length=100, blank=True, null=True)
+
+    last_crawled_at = models.DateTimeField(null=True, blank=True)
+
+    def __str__(self):
+        return f"Detail of #{self.document_id}"
 
 
 class LawArticle(models.Model): #Điều khoản
@@ -58,24 +76,45 @@ class Tag(models.Model): #phân loại từ khoá
         return self.name
 
 
-class LegalNews(models.Model): #tin tức pháp luật
+class LegalNews(models.Model):
     title = models.CharField(max_length=500)
-    content = models.TextField()
-    source = models.CharField(max_length=255, blank=True)  # Ví dụ: Báo Lao Động
-    publish_date = models.DateField()
+    content = models.TextField(blank=True)
+    source = models.CharField(max_length=255, blank=True)
+    publish_date = models.DateField(null=True, blank=True)
     source_url = models.URLField(blank=True)
 
-    thumbnail = models.ImageField(upload_to='news_thumbnails/', blank=True, null=True)
+    thumbnail = models.URLField(blank=True, null=True)
 
-    tags = models.ManyToManyField(Tag, blank=True, related_name='news')  # Gộp bảng trung gian
-
+    tags = models.ManyToManyField('Tag', blank=True, related_name='news') 
     created_at = models.DateTimeField(auto_now_add=True)
+    category = models.ForeignKey(LawCategory, on_delete=models.SET_NULL, null=True, related_name="news")
 
     class Meta:
         ordering = ['-publish_date']
 
     def __str__(self):
         return self.title
+    
+class LegalNewsDetail(models.Model):
+    news = models.OneToOneField(
+        'LegalNews',
+        on_delete=models.CASCADE,
+        related_name='detail'
+    )
+
+    title = models.CharField(max_length=500)
+    author = models.CharField(max_length=255, blank=True, null=True)
+    published_at = models.DateTimeField(null=True, blank=True)
+    cover_image = models.URLField(blank=True, null=True)
+    content_md = models.TextField(blank=True, null=True)  # nội dung Markdown
+    pdf_url = models.URLField(blank=True, null=True)
+
+    class Meta:
+        ordering = ['-published_at']
+
+    def __str__(self):
+        return f"Chi tiết: {self.title}"
+
     
 class UserQuery(models.Model):  # lịch sử câu hỏi người dùng
     user = models.ForeignKey(
@@ -112,3 +151,9 @@ class QueryRecommendation(models.Model): #Gợi ý câu hỏi hoặc văn bản
 
     def __str__(self):
         return f"Recommendation for intent {self.intent.intent_label}"
+
+
+@receiver(post_save, sender=LawDocument)
+def create_document_detail(sender, instance, created, **kwargs):
+    if created:
+        LawDocumentDetail.objects.create(document=instance)

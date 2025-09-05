@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import (
     LawCategory, LawDocument, LawArticle,
-    LegalNews, Tag, UserQuery, QueryIntent, QueryRecommendation
+    LegalNews, Tag, UserQuery, QueryIntent, QueryRecommendation, LegalNewsDetail
 )
 
 class LawCategorySerializer(serializers.ModelSerializer):
@@ -16,16 +16,32 @@ class LawArticleSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class LawDocumentSerializer(serializers.ModelSerializer):
-    articles = LawArticleSerializer(many=True, read_only=True)
+class LawDocumentListSerializer(serializers.ModelSerializer):
     category = LawCategorySerializer(read_only=True)
     category_id = serializers.PrimaryKeyRelatedField(
-        queryset=LawCategory.objects.all(), source='category', write_only=True
+        queryset=LawCategory.objects.all(), source="category", write_only=True
     )
 
     class Meta:
         model = LawDocument
-        fields = '__all__'
+        fields = ["id", "title", "code", "issued_by", "issued_date", "status", "source_url", "category", "category_id"]
+
+
+class LawDocumentDetailSerializer(serializers.ModelSerializer):
+    articles = LawArticleSerializer(many=True, read_only=True)
+    pdf_url = serializers.SerializerMethodField()
+
+    class Meta:
+        model = LawDocument
+        fields = [
+            "id", "title", "code", "issued_by", "issued_date", "applied_date",
+            "status", "updated_date", "pdf_url", "summary", "source_url", "articles"
+        ]
+
+    def get_pdf_url(self, obj):
+        if hasattr(obj, "detail") and obj.detail and obj.detail.pdf_url:
+            return obj.detail.pdf_url
+        return None
 
 
 class TagSerializer(serializers.ModelSerializer):
@@ -33,8 +49,23 @@ class TagSerializer(serializers.ModelSerializer):
         model = Tag
         fields = ['id', 'name']
 
+class LegalNewsDetailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = LegalNewsDetail
+        fields = [
+            "id",
+            "title",
+            "author",
+            "published_at",
+            "cover_image",
+            "content_md",
+            "pdf_url",
+        ]
+
 class LegalNewsSerializer(serializers.ModelSerializer):
     tags = TagSerializer(many=True, read_only=True)
+    category = LawCategorySerializer()
+    detail = LegalNewsDetailSerializer(read_only=True)
 
     class Meta:
         model = LegalNews
@@ -46,10 +77,12 @@ class UserQuerySerializer(serializers.ModelSerializer):
         model = UserQuery
         fields = '__all__'
 
+
 class QueryIntentSerializer(serializers.ModelSerializer):
     class Meta:
         model = QueryIntent
         fields = '__all__'
+
 
 class QueryRecommendationSerializer(serializers.ModelSerializer):
     class Meta:

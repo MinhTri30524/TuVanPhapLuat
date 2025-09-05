@@ -20,9 +20,9 @@ function App() {
         <Route path="/chat" element={<PChat />} />
         <Route path="/login" element={<PLogin />} />
         <Route path="/register" element={<PRegister />} />
-        <Route path="/tintuc/chitiet" element={<PDetail />} />
+        <Route path="/tintuc/:slug/:id" element={<PDetail />} />
         <Route path="/vanban" element={<PDocument />} />
-        <Route path="/vanban/chitiet" element={<PDetailDocument />} />
+        <Route path="/vanban/:slug/:id" element={<PDetailDocument />} />
       </Routes>
   );
 }

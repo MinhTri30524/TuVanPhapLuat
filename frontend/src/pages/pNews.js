@@ -1,111 +1,154 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CpHeader from "../components/cpHeader";
 import CpFooter from "../components/cpFooter";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import instance, { endpoints } from "../configs/Apis";
 
-const newsData = [
-    {
-        id: 1,
-        title: "Sắp bỏ hoàn toàn xăng A92, A95 có đúng không?",
-        description:
-            "Thông tin sắp bỏ hoàn toàn xăng A92, A95 thay bằng xăng sinh học E10 đang gây hoang mang dư luận trên mạng xã hội, vậy thực hư thế nào?",
-        image: "assets/imgs/xang.jpg",
-        date: "25/07/2025",
-    },
-    {
-        id: 2,
-        title: "Chậm đóng BHXH bao lâu thì bị tính lãi và xử phạt?",
-        date: "25/07/2025",
-    },
-    {
-        id: 3,
-        title: "Hợp đồng học nghề, tập nghề tại doanh nghiệp có phải đóng BHXH?",
-        date: "25/07/2025",
-    },
-    {
-        id: 4,
-        title:
-            "Mẫu thông báo chấm dứt cam kết thực hiện mục tiêu xã hội, môi trường",
-        date: "25/07/2025",
-    },
-    {
-        id: 5,
-        title:
-            "7 điểm mới về tiền lương, phụ cấp đối với nhà giáo từ 01/01/2026 [Dự kiến]",
-        date: "25/07/2025",
-    },
-    {
-        id: 6,
-        title:
-            "Tiền xăng xe, điện thoại, ăn trưa... cho người lao động có được miễn thuế?",
-        date: "24/07/2025",
-    },
-];
-
-const categories = [
-    "Hành chính", "Thuế - Phí", "Đất đai - Nhà ở", "Bảo hiểm",
-    "Cán bộ - Công chức", "Lao động", "Dân sự", "Biểu mẫu",
-    "Giao thông", "Lĩnh vực khác", "Media Luật", "Sách Luật"
-];
+const toSlug = (str) => {
+  return str
+    .toLowerCase()
+    .normalize("NFD") // bỏ dấu
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-");
+};
 
 function PNews() {
-    const navigate = useNavigate();
-    const [selectedCategory, setSelectedCategory] = useState("");
+  const navigate = useNavigate();
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const [newsData, setNewsData] = useState([]);
+  const [categories, setCategories] = useState([]); 
+  const [loading, setLoading] = useState(true);
 
-    return (<React.Fragment>
-        <CpHeader />
-        <div className="max-w-6xl mx-auto p-4 py-24 font-sans text-[#1D3557]">
-            <div className="flex flex-wrap gap-4 mb-4 text-sm font-medium mt-4">
-                {categories.map((cat, index) => (
-                    <button
-                        key={index}
-                        onClick={() => setSelectedCategory(cat)}
-                        className={`hover:text-blue-600 ${selectedCategory === cat ? "text-blue-700 font-bold" : ""
-                            }`}
-                    >
-                        {cat}
-                    </button>
-                ))}
-            </div>
+  // Lấy danh sách category từ API
+  useEffect(() => {
+    const loadCategories = async () => {
+      try {
+        let res = await instance.get(endpoints.categories);
+        setCategories(res.data.results || []);
+      } catch (err) {
+        console.error(" Lỗi khi fetch categories:", err);
+      }
+    };
+    loadCategories();
+  }, []);
 
-            <h1 className="text-2xl font-bold mb-2">{selectedCategory || "TIN PHÁP LUẬT"}</h1>
+  // Lấy danh sách news từ API
+  useEffect(() => {
+    const loadNews = async () => {
+      try {
+        let res = await instance.get(endpoints.news);
+        setNewsData(res.data || []);
+      } catch (err) {
+        console.error(" Lỗi khi fetch news:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    loadNews();
+  }, []);
 
-            <input
-                type="text"
-                placeholder="Nhập nội dung cần tìm..."
-                className="w-full border px-3 py-2 rounded-md text-sm mb-6"
-            />
+  if (loading) return <div className="p-10 text-center">⏳ Đang tải tin tức...</div>;
 
-            <div className="grid md:grid-cols-3 gap-6">
-                <div className="md:col-span-2">
-                    <img
-                        src={newsData[0].image}
-                        alt="main"
-                        className="w-full h-64 object-cover rounded"
-                    />
-                    <h2 className="mt-3 text-xl font-semibold hover:text-blue-600 cursor-pointer">
-                        {newsData[0].title}
-                    </h2>
-                    <p className="mt-2 text-sm text-gray-600">{newsData[0].description}</p>
-                </div>
+  const groupedNews = {};
+  newsData.forEach((item) => {
+    const cat = item.category?.name || "Khác";
+    if (!groupedNews[cat]) groupedNews[cat] = [];
+    groupedNews[cat].push(item);
+  });
 
-                <div className="space-y-4">
-                    {newsData.slice(1).map((item) => (
-                        <div key={item.id} className="border-b pb-2">
-                            <h3 className="text-sm font-medium hover:text-blue-600 cursor-pointer" onClick={() => navigate('/tintuc/chitiet')}>
-                                {item.title}
-                            </h3>
-                            <p className="text-xs text-gray-500">{item.date}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
+  const categoriesToShow = selectedCategory
+    ? { [selectedCategory]: groupedNews[selectedCategory] || [] }
+    : groupedNews;
 
+  return (
+    <React.Fragment>
+      <CpHeader />
+      <div className="max-w-6xl mx-auto p-4 py-24 font-sans text-[#1D3557]">
+
+        {/* Thanh chọn chuyên mục */}
+        <div className="flex flex-wrap gap-4 mb-6 text-sm font-medium">
+          <button
+            onClick={() => setSelectedCategory("")}
+            className={`hover:text-blue-600 ${
+              selectedCategory === "" ? "text-blue-700 font-bold" : ""
+            }`}
+          >
+            Tất cả
+          </button>
+          {categories.map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => setSelectedCategory(cat.name)}
+              className={`hover:text-blue-600 ${
+                selectedCategory === cat.name ? "text-blue-700 font-bold" : ""
+              }`}
+            >
+              {cat.name}
+            </button>
+          ))}
         </div>
-        <CpFooter />
-    </React.Fragment>
 
-    );
+        {/* Hiển thị tin theo nhóm */}
+        {Object.entries(categoriesToShow).map(([category, items]) =>
+          items.length > 0 ? (
+            <div key={category} className="mb-10">
+              {/* Tiêu đề chuyên mục */}
+              <h2 className="text-xl font-bold mb-4 uppercase text-[#E63946]">
+                {category}
+              </h2>
+
+              <div className="grid md:grid-cols-3 gap-6">
+                {/* Tin chính */}
+                <div className="md:col-span-2 flex flex-col">
+                  <img
+                    src={
+                      items[0].thumbnail ||
+                      "https://res.cloudinary.com/degewiqpj/image/upload/v1755418622/luatvietnam.vn_van-ban-moi.html_eputqb.png"
+                    }
+                    alt={items[0].title}
+                    className="w-full h-64 object-cover rounded"
+                  />
+                  <h3
+                    className="mt-3 text-lg font-semibold hover:text-blue-600 cursor-pointer"
+                    onClick={() =>
+                      navigate(`/tintuc/${toSlug(items[0].title)}/${items[0].id}`)
+                    }
+                  >
+                    {items[0].title}
+                  </h3>
+                  <p className="mt-2 text-sm text-gray-600 line-clamp-3">
+                    {items[0].content || "Nội dung chi tiết sẽ được cập nhật."}
+                  </p>
+                  <p className="text-xs text-gray-500 mt-1">
+                    📅 {items[0].publish_date}
+                  </p>
+                </div>
+
+                {/* Tin phụ */}
+                <div className="space-y-3">
+                  {items.slice(1, 5).map((item) => (
+                    <div
+                      key={item.id}
+                      className="border-b pb-2 hover:text-blue-600 cursor-pointer"
+                      onClick={() =>
+                        navigate(`/tintuc/${toSlug(item.title)}/${item.id}`)
+                      }
+                    >
+                      <h4 className="text-sm font-medium">{item.title}</h4>
+                      <p className="text-xs text-gray-500">{item.publish_date}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ) : null
+        )}
+      </div>
+      <CpFooter />
+    </React.Fragment>
+  );
 }
 
 export default PNews;

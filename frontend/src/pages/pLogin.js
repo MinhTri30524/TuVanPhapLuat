@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import instance, { endpoints } from "../configs/Apis"; // đã có sẵn axios instance
+import instance, { endpoints } from "../configs/Apis";
+import { toast } from "react-toastify";
 
 const PLogin = () => {
     const navigate = useNavigate();
@@ -19,12 +20,18 @@ const PLogin = () => {
                 username: username,
                 password: password,
             });
+            console.log(res.data);
 
             localStorage.setItem("token", res.data.token);
-            localStorage.setItem("username", res.data.username); 
+            localStorage.setItem("username", res.data.user.username);
+            localStorage.setItem("user", JSON.stringify(res.data.user));
 
-            // Điều hướng về trang chủ
-            navigate("/");
+            toast.success("Đăng nhập thành công! Trở về trang chủ sau 3 giây");
+
+            setTimeout(() => {
+                navigate("/");
+            }, 3000);
+            
         } catch (err) {
             console.error("Lỗi login:", err);
             setError("Tên đăng nhập hoặc mật khẩu không đúng!");

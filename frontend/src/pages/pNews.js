@@ -18,7 +18,7 @@ function PNews() {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState("");
   const [newsData, setNewsData] = useState([]);
-  const [categories, setCategories] = useState([]); 
+  const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
 
   // Lấy danh sách category từ API
@@ -34,12 +34,11 @@ function PNews() {
     loadCategories();
   }, []);
 
-  // Lấy danh sách news từ API
   useEffect(() => {
     const loadNews = async () => {
       try {
         let res = await instance.get(endpoints.news);
-        setNewsData(res.data || []);
+        setNewsData(res.data.results || res.data || []);
       } catch (err) {
         console.error(" Lỗi khi fetch news:", err);
       } finally {
@@ -49,14 +48,22 @@ function PNews() {
     loadNews();
   }, []);
 
-  if (loading) return <div className="p-10 text-center">⏳ Đang tải tin tức...</div>;
-
+  if (loading) return <div className="p-10 text-center"> Đang tải tin tức...</div>;
+  console.log('newsData:', newsData);
   const groupedNews = {};
+  const others = [];
+
   newsData.forEach((item) => {
-    const cat = item.category?.name || "Khác";
-    if (!groupedNews[cat]) groupedNews[cat] = [];
-    groupedNews[cat].push(item);
+    const cat = item.category?.name;
+    if (!cat) {
+      others.push(item);
+    } else {
+      if (!groupedNews[cat]) groupedNews[cat] = [];
+      groupedNews[cat].push(item);
+    }
   });
+
+  if (others.length) groupedNews["Khác"] = others;
 
   const categoriesToShow = selectedCategory
     ? { [selectedCategory]: groupedNews[selectedCategory] || [] }
@@ -71,9 +78,8 @@ function PNews() {
         <div className="flex flex-wrap gap-4 mb-6 text-sm font-medium">
           <button
             onClick={() => setSelectedCategory("")}
-            className={`hover:text-blue-600 ${
-              selectedCategory === "" ? "text-blue-700 font-bold" : ""
-            }`}
+            className={`hover:text-blue-600 ${selectedCategory === "" ? "text-blue-700 font-bold" : ""
+              }`}
           >
             Tất cả
           </button>
@@ -81,9 +87,8 @@ function PNews() {
             <button
               key={cat.id}
               onClick={() => setSelectedCategory(cat.name)}
-              className={`hover:text-blue-600 ${
-                selectedCategory === cat.name ? "text-blue-700 font-bold" : ""
-              }`}
+              className={`hover:text-blue-600 ${selectedCategory === cat.name ? "text-blue-700 font-bold" : ""
+                }`}
             >
               {cat.name}
             </button>

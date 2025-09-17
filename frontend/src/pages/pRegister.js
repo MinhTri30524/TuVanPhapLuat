@@ -1,19 +1,22 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import instance, { endpoints } from "../configs/Apis";
+import { toast } from "react-toastify";
 
 function PRegister() {
     const [formData, setFormData] = useState({
-        username: '',
-        email: '',
-        phone_number: '',
-        password: '',
-        password2: '',
+        username: "",
+        email: "",
+        phone_number: "",
+        first_name: "",
+        last_name: "",
+        password: "",
+        password2: "",
     });
 
     const [loading, setLoading] = useState(false);
-    const [error, setError] = useState('');
-    const [success, setSuccess] = useState('');
+    const [error, setError] = useState("");
+    const [success, setSuccess] = useState("");
     const navigate = useNavigate();
 
     const handleChange = (e) => {
@@ -23,39 +26,76 @@ function PRegister() {
         });
     };
 
+    const validate = () => {
+        // kiểm tra trống
+        for (let k of ["username", "email", "phone_number", "first_name", "last_name", "password", "password2"]) {
+            if (!formData[k].trim()) return "Vui lòng nhập đầy đủ thông tin.";
+        }
+
+        // email regex đơn giản
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formData.email)) return "Email không hợp lệ.";
+
+        // phone: chỉ số, 9-11 số
+        const phoneRegex = /^[0-9]{9,11}$/;
+        if (!phoneRegex.test(formData.phone_number)) return "Số điện thoại không hợp lệ.";
+
+        // mật khẩu
+        if (formData.password.length < 6) return "Mật khẩu phải ≥ 6 ký tự.";
+        if (formData.password !== formData.password2) return "Mật khẩu không trùng khớp.";
+
+        return "";
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setError('');
-        setSuccess('');
+        setError("");
+        setSuccess("");
 
-        if (formData.password !== formData.password2) {
-            setError("Mật khẩu không trùng khớp!");
+        // kiểm tra phía client trước
+        const err = validate();
+        if (err) {
+            setError(err);
             return;
         }
 
         setLoading(true);
         try {
             const res = await instance.post(endpoints.register, formData);
-
-            if (res !== undefined) {
-                setSuccess("🎉 Đăng ký thành công! Bạn có thể đăng nhập.");
+            if (res) {
+                setSuccess("Đăng ký thành công! Bạn có thể đăng nhập.");
                 setFormData({
-                    username: '',
-                    email: '',
-                    phone_number: '',
-                    password: '',
-                    password2: '',
+                    username: "",
+                    email: "",
+                    phone_number: "",
+                    first_name: "",
+                    last_name: "",
+                    password: "",
+                    password2: "",
                 });
+                toast.success("Đăng ký thành công! Bạn có thể đăng nhập.");
+                setTimeout(() => {
+                    navigate("/login");
+                }, 2000);
             }
-
-            // 👉 tuỳ bạn: redirect luôn sang trang login
-            navigate("/login");
         } catch (err) {
-            setError(err.response?.data?.detail || "Đăng ký thất bại");
+            // gom tất cả message từ backend
+            const apiErrors = err.response?.data;
+            if (apiErrors && typeof apiErrors === "object") {
+                const message = Object.entries(apiErrors)
+                    .map(([field, msgs]) =>
+                        `${field}: ${Array.isArray(msgs) ? msgs.join(", ") : msgs}`
+                    )
+                    .join(" | ");
+                setError(message);
+            } else {
+                setError("Đăng ký thất bại, vui lòng thử lại.");
+            }
         } finally {
             setLoading(false);
         }
     };
+
 
     return (
         <div className="min-h-screen bg-[#f4f4f4] relative px-4 pt-24 flex flex-col items-center justify-center">
@@ -73,7 +113,7 @@ function PRegister() {
                 <div className="mb-6 text-center">
                     <h1 className="text-2xl font-semibold text-[#1D3557]">Tạo tài khoản miễn phí</h1>
                     <p className="text-sm text-gray-600 mt-2">
-                        Đã có tài khoản?{' '}
+                        Đã có tài khoản?{" "}
                         <a href="/login" className="text-red-600 underline hover:text-red-800">
                             Đăng nhập tại đây!
                         </a>
@@ -91,10 +131,35 @@ function PRegister() {
                             name="username"
                             value={formData.username}
                             onChange={handleChange}
-                            required
                             className="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-[#1D3557]"
                         />
                     </div>
+
+                    <div className="flex gap-4">
+                        <div className="w-1/2">
+                            <label className="text-sm font-medium">Họ *</label>
+                            <input
+                                type="text"
+                                name="last_name"
+                                value={formData.last_name}
+                                onChange={handleChange}
+                                className="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-[#1D3557]"
+                            />
+                        </div>
+
+                        <div className="w-1/2">
+                            <label className="text-sm font-medium">Tên *</label>
+                            <input
+                                type="text"
+                                name="first_name"
+                                value={formData.first_name}
+                                onChange={handleChange}
+                                className="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-[#1D3557]"
+                            />
+                        </div>
+                    </div>
+
+
                     <div>
                         <label className="text-sm font-medium">Email *</label>
                         <input
@@ -102,10 +167,10 @@ function PRegister() {
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
-                            required
                             className="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-[#1D3557]"
                         />
                     </div>
+
                     <div>
                         <label className="text-sm font-medium">Số điện thoại *</label>
                         <input
@@ -113,10 +178,10 @@ function PRegister() {
                             name="phone_number"
                             value={formData.phone_number}
                             onChange={handleChange}
-                            required
                             className="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-[#1D3557]"
                         />
                     </div>
+
                     <div>
                         <label className="text-sm font-medium">Mật khẩu *</label>
                         <input
@@ -124,10 +189,10 @@ function PRegister() {
                             name="password"
                             value={formData.password}
                             onChange={handleChange}
-                            required
                             className="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-[#1D3557]"
                         />
                     </div>
+
                     <div>
                         <label className="text-sm font-medium">Nhập lại mật khẩu *</label>
                         <input
@@ -135,14 +200,15 @@ function PRegister() {
                             name="password2"
                             value={formData.password2}
                             onChange={handleChange}
-                            required
                             className="w-full mt-1 p-2 border rounded-lg focus:ring-2 focus:ring-[#1D3557]"
                         />
                     </div>
 
                     <p className="text-xs text-gray-500 text-center">
-                        Bằng cách đăng ký, bạn đồng ý với{' '}
-                        <a href="/" className="text-red-600 underline hover:text-red-800">Quy ước sử dụng</a>.
+                        Bằng cách đăng ký, bạn đồng ý với{" "}
+                        <a href="/" className="text-red-600 underline hover:text-red-800">
+                            Quy ước sử dụng
+                        </a>.
                     </p>
 
                     <button

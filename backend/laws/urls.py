@@ -3,7 +3,7 @@ from django.urls import path, include
 from .views import (
     LawCategoryViewSet, LawDocumentViewSet, LawArticleViewSet,
     LegalNewsViewSet, TagViewSet,
-    UserQueryViewSet, QueryIntentViewSet, QueryRecommendationViewSet, 
+    UserQueryViewSet, QueryIntentViewSet, QueryRecommendationViewSet, LegalConsultationViewSet,
     list_documents, document_detail
 )
 
@@ -16,6 +16,7 @@ router.register(r'tags', TagViewSet)
 router.register(r'user-queries', UserQueryViewSet)
 router.register(r'query-intents', QueryIntentViewSet)
 router.register(r'query-recommendations', QueryRecommendationViewSet)
+router.register(r'consultations', LegalConsultationViewSet, basename='consultation')
 
 urlpatterns = [
     path('', include(router.urls)),

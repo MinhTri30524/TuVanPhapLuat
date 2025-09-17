@@ -208,4 +208,4 @@ for el in vb_elements:
 driver.quit()
 cursor.close()
 db.close()
-print("🎉 Crawl xong và đã lưu hết vào MySQL")
+print("Crawl xong và đã lưu hết vào MySQL")

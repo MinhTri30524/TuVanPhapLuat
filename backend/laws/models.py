@@ -24,7 +24,7 @@ class LawDocument(models.Model):
     issued_by = models.CharField(max_length=255, blank=True)
     issued_date = models.DateField()
     applied_date = models.DateField(null=True, blank=True)
-    status = models.CharField(max_length=100, blank=True)
+    status = models.CharField(max_length=255, blank=True)
     updated_date = models.DateField(null=True, blank=True)
 
     summary = models.TextField(blank=True)
@@ -64,6 +64,22 @@ class LawArticle(models.Model): #Điều khoản
 
     def __str__(self):
         return f"{self.article_number} - {self.title or 'No Title'}"
+    
+class LegalConsultation(models.Model):  # Câu hỏi tư vấn
+    question_id = models.CharField(max_length=20, unique=True)  
+    question_title = models.CharField(max_length=500)  
+    category = models.ForeignKey(LawCategory, on_delete=models.CASCADE)  # Khóa ngoại
+    question_url = models.URLField(max_length=1000)  
+    asked_date = models.DateField(null=True, blank=True)  
+    answer = models.TextField(blank=True, null=True)  
+
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-asked_date']
+
+    def __str__(self):
+        return f"{self.question_id} - {self.question_title}"
 
 
 class Tag(models.Model): #phân loại từ khoá
@@ -106,7 +122,7 @@ class LegalNewsDetail(models.Model):
     author = models.CharField(max_length=255, blank=True, null=True)
     published_at = models.DateTimeField(null=True, blank=True)
     cover_image = models.URLField(blank=True, null=True)
-    content_md = models.TextField(blank=True, null=True)  # nội dung Markdown
+    content_md = models.TextField(blank=True, null=True)
     pdf_url = models.URLField(blank=True, null=True)
 
     class Meta:
@@ -116,9 +132,9 @@ class LegalNewsDetail(models.Model):
         return f"Chi tiết: {self.title}"
 
     
-class UserQuery(models.Model):  # lịch sử câu hỏi người dùng
+class UserQuery(models.Model):  #lịch sử câu hỏi
     user = models.ForeignKey(
-        settings.AUTH_USER_MODEL,  # dùng user model đã custom
+        settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE,
         related_name="queries"
     )

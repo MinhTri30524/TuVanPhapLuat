@@ -73,16 +73,19 @@ function PHome() {
     useEffect(() => {
         const loadNews = async () => {
             try {
-                const res = await instance.get(endpoints.news, {
-                    params: { ordering: "-publish_date", page: 1, page_size: 3 }
-                });
-                setNews(res.data.results || res.data);
+                const res = await instance.get(endpoints.news);
+                const allNews = res.data.results || res.data;
+                const top3 = allNews
+                    .sort((a, b) => new Date(b.publish_date) - new Date(a.publish_date))
+                    .slice(0, 3);
+                setNews(top3);
             } catch (err) {
                 console.error("Lỗi load news:", err);
             }
         };
         loadNews();
     }, []);
+
 
     return (
         <React.Fragment>
@@ -120,11 +123,15 @@ function PHome() {
                             </span>
                             {documents.length > 0 ? (
                                 <>
-                                    <h2 className="text-3xl font-bold text-[#1D3557] mb-4 leading-tight">
+                                    <h2
+                                        className="text-3xl font-bold text-[#1D3557] mb-4 leading-tight line-clamp-2"
+                                        title={documents[0].title}
+                                    >
                                         {documents[0].title}
                                     </h2>
+
                                     <p className="text-[#457B9D] text-base mb-4">
-                                        {documents[0].summary?.slice(0, 120)}...
+                                        {documents[0].summary?.slice(0, 120)}
                                     </p>
                                     <a href={`/vanban/${documents[0].id}`} className="text-[#1D3557] hover:underline text-sm font-medium">
                                         Xem chi tiết →
@@ -138,7 +145,13 @@ function PHome() {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             {documents.slice(1).map((doc) => (
                                 <div key={doc.id} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition border border-[#E0E8F3]">
-                                    <h3 className="font-semibold text-base mb-1 text-[#1D3557]">{doc.title}</h3>
+                                    <h3
+                                        className="font-semibold text-base mb-1 text-[#1D3557] line-clamp-2"
+                                        title={doc.title}
+                                    >
+                                        {doc.title}
+                                    </h3>
+
                                     <p className="text-sm text-[#457B9D]">{doc.summary?.slice(0, 80)}...</p>
                                     <a href={`/vanban/${doc.id}`} className="text-[#1D3557] hover:underline text-xs mt-2 inline-block">
                                         Xem chi tiết →
@@ -170,7 +183,6 @@ function PHome() {
                     </div>
                 </section>
 
-                {/* FAQ giữ nguyên static */}
                 <section className="bg-white py-20 px-6 text-gray-900">
                     <div className="max-w-3xl mx-auto text-center">
                         <p className="uppercase text-sm tracking-widest font-semibold mb-3" style={{ color: '#1D3557' }}>

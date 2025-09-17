@@ -4,7 +4,9 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+import unicodedata
 from datetime import datetime
+from urllib.parse import urlparse
 from markdownify import markdownify as md
 import mysql.connector
 
@@ -23,6 +25,18 @@ time.sleep(5)
 
 # ================== 2. Crawl danh sách ==================
 news_list = []
+
+def to_slug(text: str):
+    """chuyển 'Lĩnh vực khác' -> 'linh-vuc-khac' """
+    text = unicodedata.normalize('NFD', text)
+    text = text.encode('ascii', 'ignore').decode('utf-8')
+    return (
+        text.lower()
+            .strip()
+            .replace("đ","d")
+            .replace("Đ","d")
+            .replace(" ", "-")
+    )
 
 def crawl_list():
     # 1. Tin lớn
@@ -107,26 +121,41 @@ options2.add_argument("--start-maximized")
 driver2 = webdriver.Chrome(options=options2)
 
 def crawl_detail(link):
+    """
+    Crawl nội dung chi tiết và xác định category trực tiếp từ URL.
+    Ví dụ:
+        https://luatvietnam.vn/can-bo-cong-chuc/abc.html
+        => cat_slug = "can-bo-cong-chuc"
+    """
     detail_content = ""
+    cat_slug = "tin-phap-luat"  # fallback mặc định
     try:
+        # lấy category từ path của URL
+        parsed = urlparse(link)
+        segments = parsed.path.strip("/").split("/")
+        if len(segments) >= 2:
+            cat_slug = segments[0]
+
         driver2.get(link)
         time.sleep(3)
         WebDriverWait(driver2, 20).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, "#article-content"))
         )
+
         detail_el = driver2.find_element(By.CSS_SELECTOR, "#article-content")
         html_content = detail_el.get_attribute("innerHTML").strip()
         detail_content = md(html_content, heading_style="ATX", bullets='-')
     except Exception as e:
         print("Lỗi crawl chi tiết:", link, e)
-    return detail_content
+
+    return detail_content, cat_slug
 
 # ================== 4. Kết nối MySQL ==================
 conn = mysql.connector.connect(
     host="localhost",
-    user="root",          # đổi theo DB của bạn
-    password="3005triminh",          # đổi theo DB của bạn
-    database="laws"       # DB của bạn
+    user="root",
+    password="3005triminh",
+    database="laws"
 )
 cursor = conn.cursor()
 
@@ -139,28 +168,31 @@ for item in news_list:
         except:
             publish_date = None
 
-    detail = crawl_detail(item['link'])
+    detail, cat_slug = crawl_detail(item['link'])
+
+    cursor.execute("SELECT id FROM laws_lawcategory WHERE slug=%s", (cat_slug,))
+    row = cursor.fetchone()
+    cat_id = row[0] if row else None
 
     try:
-        # Insert vào laws_legalnews
         cursor.execute("""
-            INSERT INTO laws_legalnews 
-            (title, content, source, publish_date, source_url, thumbnail, created_at, category_id) 
-            VALUES (%s, %s, %s, %s, %s, %s, NOW(), NULL)
+            INSERT INTO laws_legalnews
+            (title, content, source, publish_date, source_url, thumbnail, created_at, category_id)
+            VALUES (%s, %s, %s, %s, %s, %s, NOW(), %s)
         """, (
             item['title'],
             item['summary'],
             "LuatVietnam",
             publish_date,
             item['link'],
-            item['image']
+            item['image'],
+            cat_id
         ))
         news_id = cursor.lastrowid
 
-        # Insert vào laws_legalnewsdetail
         cursor.execute("""
-            INSERT INTO laws_legalnewsdetail 
-            (news_id, title, author, published_at, cover_image, content_md, pdf_url) 
+            INSERT INTO laws_legalnewsdetail
+            (news_id, title, author, published_at, cover_image, content_md, pdf_url)
             VALUES (%s, %s, %s, %s, %s, %s, %s)
         """, (
             news_id,
@@ -173,8 +205,7 @@ for item in news_list:
         ))
 
         conn.commit()
-        print(f"Đã lưu: {item['title']}")
-
+        print(f"Đã lưu: {item['title']} (category: {cat_slug})")
     except Exception as e:
         conn.rollback()
         print("Lỗi lưu DB:", e)

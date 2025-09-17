@@ -99,7 +99,7 @@ def crawl_list():
 
 crawl_list()
 driver.quit()
-print(f"✅ Đã crawl danh sách {len(news_list)} bài")
+print(f"Đã crawl danh sách {len(news_list)} bài")
 
 # ================== 3. Crawl chi tiết ==================
 options2 = Options()
@@ -149,4 +149,4 @@ driver2.quit()
 with open("legal_news.json", "w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=4)
 
-print("🎉 Crawl xong, đã lưu vào legal_news.json.")
+print("Crawl xong, đã lưu vào legal_news.json.")

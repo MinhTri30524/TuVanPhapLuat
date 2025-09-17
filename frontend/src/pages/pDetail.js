@@ -30,7 +30,7 @@ export default function PDetail() {
     loadNews();
   }, [id]);
 
-  if (!data) return <p className="p-6 text-gray-500">⏳ Đang tải tin tức...</p>;
+  if (!data) return <p className="p-6 text-gray-500"> Đang tải tin tức...</p>;
 
   return (
     <div className="min-h-screen bg-gray-50">

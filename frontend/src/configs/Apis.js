@@ -6,6 +6,14 @@ const instance = axios.create({
     baseURL: BASE_URL,
 });
 
+instance.interceptors.request.use((config) => {
+  const token = localStorage.getItem("token");
+  if (token) {
+    config.headers.Authorization = `Token ${token}`;
+  }
+  return config;
+});
+
 export const endpoints = {
     'documents': 'law/law-documents/',
     documentDetail: (id) => `law/law-documents/${id}/`, 
@@ -15,6 +23,9 @@ export const endpoints = {
     'register': "api/auth/register/",
     'tag': "/law/tags/",
     'articles': "law/law-articles/",
+    'chatbot': "/api/chat/chatbot/", 
+    'conversations': "api/chat/conversations/",
+    'consultations': "/law/consultations"
 };
 
 export default instance;

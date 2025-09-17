@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import (
     LawCategory, LawDocument, LawArticle,
-    LegalNews, Tag, UserQuery, QueryIntent, QueryRecommendation, LegalNewsDetail
+    LegalNews, Tag, UserQuery, QueryIntent, QueryRecommendation, LegalNewsDetail, LegalConsultation
 )
 
 class LawCategorySerializer(serializers.ModelSerializer):
@@ -15,6 +15,27 @@ class LawArticleSerializer(serializers.ModelSerializer):
         model = LawArticle
         fields = '__all__'
 
+class LegalConsultationSerializer(serializers.ModelSerializer):
+    category = LawCategorySerializer(read_only=True)  
+    category_id = serializers.PrimaryKeyRelatedField(
+        queryset=LawCategory.objects.all(),
+        source="category",
+        write_only=True
+    )
+
+    class Meta:
+        model = LegalConsultation
+        fields = [
+            "id",
+            "question_id",
+            "question_title",
+            "category",
+            "category_id",
+            "question_url",
+            "asked_date",
+            "answer",
+            "created_at",
+        ]
 
 class LawDocumentListSerializer(serializers.ModelSerializer):
     category = LawCategorySerializer(read_only=True)

@@ -63,7 +63,7 @@ driver.find_element(By.ID, "LoginCustomerPass").send_keys("luatdhm")
 time.sleep(2)
 driver.find_element(By.CSS_SELECTOR, "button.btn-user1").click()
 time.sleep(5)
-print("✅ Đăng nhập thành công!")
+print("Đăng nhập thành công!")
 
 # ================== Crawl danh sách văn bản ==================
 driver.get("https://luatvietnam.vn/van-ban-moi.html")
@@ -73,7 +73,7 @@ time.sleep(5)
 vb_elements = WebDriverWait(driver, 20).until(
     EC.presence_of_all_elements_located((By.CSS_SELECTOR, "article.doc-article"))
 )
-print(f"✅ Tìm thấy {len(vb_elements)} văn bản")
+print(f"Tìm thấy {len(vb_elements)} văn bản")
 
 documents = []
 
@@ -158,7 +158,7 @@ for el in vb_elements:
             "signer": signer,
         }
         documents.append(doc)
-        print(f"✅ Đã crawl: {title}")
+        print(f"Đã crawl: {title}")
 
     except Exception as e:
         print(" Lỗi:", e)
@@ -168,6 +168,6 @@ for el in vb_elements:
 with open("law_documents.json", "w", encoding="utf-8") as f:
     json.dump(documents, f, ensure_ascii=False, indent=2)
 
-print("🎉 Đã lưu dữ liệu vào law_documents.json")
+print("Đã lưu dữ liệu vào law_documents.json")
 
 driver.quit()

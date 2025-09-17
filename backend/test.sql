@@ -1,136 +1,210 @@
-SET FOREIGN_KEY_CHECKS = 0;
-TRUNCATE TABLE laws_queryrecommendation;
-TRUNCATE TABLE laws_queryintent;
-TRUNCATE TABLE laws_userquery;
-TRUNCATE TABLE laws_legalnews_tags;
-TRUNCATE TABLE laws_legalnews;
-TRUNCATE TABLE laws_tag;
-TRUNCATE TABLE laws_lawarticle;
-TRUNCATE TABLE laws_lawdocument;
-TRUNCATE TABLE laws_lawcategory;
-SET FOREIGN_KEY_CHECKS = 1;
-
--- ===========================
--- LawCategory (10 bản ghi)
--- ===========================
-INSERT INTO laws_lawcategory (id, name, description) VALUES
-(1, 'Luật Dân sự', 'Các văn bản liên quan đến luật dân sự.'),
-(2, 'Luật Hình sự', 'Các văn bản liên quan đến luật hình sự.'),
-(3, 'Luật Lao động', 'Các quy định về lao động và việc làm.'),
-(4, 'Luật Đất đai', 'Quy định về quyền sử dụng đất.'),
-(5, 'Luật Hôn nhân & Gia đình', 'Quy định về hôn nhân và gia đình.'),
-(6, 'Luật Giao thông', 'Quy định về an toàn giao thông.'),
-(7, 'Luật Thương mại', 'Quy định về thương mại và kinh doanh.'),
-(8, 'Luật Thuế', 'Các quy định về thuế.'),
-(9, 'Luật Môi trường', 'Quy định về bảo vệ môi trường.'),
-(10, 'Luật Công nghệ thông tin', 'Quy định về CNTT và an ninh mạng.');
-
--- ===========================
--- LawDocument (10 bản ghi)
--- ===========================
-INSERT INTO laws_lawdocument (id, title, code, category_id, issued_by, issued_date, effective_date, expired_date, summary, source_url, created_at) VALUES
-(1, 'Bộ luật Dân sự 2015', '91/2015/QH13', 1, 'Quốc hội', '2015-11-24', '2017-01-01', NULL, 'Quy định chung về quyền, nghĩa vụ dân sự.', 'https://example.com/1', NOW()),
-(2, 'Bộ luật Hình sự 2015', '100/2015/QH13', 2, 'Quốc hội', '2015-11-27', '2018-01-01', NULL, 'Quy định về tội phạm và hình phạt.', 'https://example.com/2', NOW()),
-(3, 'Luật Lao động 2019', '45/2019/QH14', 3, 'Quốc hội', '2019-11-20', '2021-01-01', NULL, 'Quy định về quyền và nghĩa vụ của người lao động.', 'https://example.com/3', NOW()),
-(4, 'Luật Đất đai 2013', '45/2013/QH13', 4, 'Quốc hội', '2013-11-29', '2014-07-01', NULL, 'Quy định về quyền sử dụng đất.', 'https://example.com/4', NOW()),
-(5, 'Luật Hôn nhân & Gia đình 2014', '52/2014/QH13', 5, 'Quốc hội', '2014-06-19', '2015-01-01', NULL, 'Quy định về hôn nhân và gia đình.', 'https://example.com/5', NOW()),
-(6, 'Luật Giao thông đường bộ 2008', '23/2008/QH12', 6, 'Quốc hội', '2008-11-13', '2009-07-01', NULL, 'Quy định về giao thông đường bộ.', 'https://example.com/6', NOW()),
-(7, 'Luật Thương mại 2005', '36/2005/QH11', 7, 'Quốc hội', '2005-06-14', '2006-01-01', NULL, 'Quy định về thương mại và kinh doanh.', 'https://example.com/7', NOW()),
-(8, 'Luật Quản lý thuế 2019', '38/2019/QH14', 8, 'Quốc hội', '2019-06-13', '2020-07-01', NULL, 'Quy định về thuế và quản lý thuế.', 'https://example.com/8', NOW()),
-(9, 'Luật Bảo vệ môi trường 2020', '72/2020/QH14', 9, 'Quốc hội', '2020-11-17', '2022-01-01', NULL, 'Quy định về bảo vệ môi trường.', 'https://example.com/9', NOW()),
-(10, 'Luật An ninh mạng 2018', '24/2018/QH14', 10, 'Quốc hội', '2018-06-12', '2019-01-01', NULL, 'Quy định về an ninh mạng.', 'https://example.com/10', NOW());
-
--- ===========================
--- LawArticle (10 bản ghi)
--- ===========================
-INSERT INTO laws_lawarticle (id, document_id, article_number, title, content, `order`) VALUES
-(1, 1, 'Điều 1', 'Phạm vi điều chỉnh', 'Nội dung điều 1...', 1),
-(2, 2, 'Điều 2', 'Tội phạm', 'Nội dung điều 2...', 1),
-(3, 3, 'Điều 3', 'Hợp đồng lao động', 'Nội dung điều 3...', 1),
-(4, 4, 'Điều 4', 'Quyền sử dụng đất', 'Nội dung điều 4...', 1),
-(5, 5, 'Điều 5', 'Kết hôn', 'Nội dung điều 5...', 1),
-(6, 6, 'Điều 6', 'Quy tắc giao thông', 'Nội dung điều 6...', 1),
-(7, 7, 'Điều 7', 'Mua bán hàng hóa', 'Nội dung điều 7...', 1),
-(8, 8, 'Điều 8', 'Khai thuế', 'Nội dung điều 8...', 1),
-(9, 9, 'Điều 9', 'Bảo vệ môi trường', 'Nội dung điều 9...', 1),
-(10, 10, 'Điều 10', 'Bảo mật thông tin', 'Nội dung điều 10...', 1);
-
--- ===========================
--- Tag (10 bản ghi)
--- ===========================
-INSERT INTO laws_tag (id, name) VALUES
-(1, 'Hợp đồng'),
-(2, 'Tội phạm'),
-(3, 'Lao động'),
-(4, 'Đất đai'),
-(5, 'Hôn nhân'),
-(6, 'Giao thông'),
-(7, 'Thương mại'),
-(8, 'Thuế'),
-(9, 'Môi trường'),
-(10, 'An ninh mạng');
-
--- ===========================
--- LegalNews (10 bản ghi)
--- ===========================
-INSERT INTO laws_legalnews (id, title, content, source, publish_date, source_url, thumbnail, created_at) VALUES
-(1, 'Tin tức 1', 'Nội dung tin 1...', 'Báo A', '2025-01-01', 'https://example.com/news1', NULL, NOW()),
-(2, 'Tin tức 2', 'Nội dung tin 2...', 'Báo B', '2025-01-02', 'https://example.com/news2', NULL, NOW()),
-(3, 'Tin tức 3', 'Nội dung tin 3...', 'Báo C', '2025-01-03', 'https://example.com/news3', NULL, NOW()),
-(4, 'Tin tức 4', 'Nội dung tin 4...', 'Báo D', '2025-01-04', 'https://example.com/news4', NULL, NOW()),
-(5, 'Tin tức 5', 'Nội dung tin 5...', 'Báo E', '2025-01-05', 'https://example.com/news5', NULL, NOW()),
-(6, 'Tin tức 6', 'Nội dung tin 6...', 'Báo F', '2025-01-06', 'https://example.com/news6', NULL, NOW()),
-(7, 'Tin tức 7', 'Nội dung tin 7...', 'Báo G', '2025-01-07', 'https://example.com/news7', NULL, NOW()),
-(8, 'Tin tức 8', 'Nội dung tin 8...', 'Báo H', '2025-01-08', 'https://example.com/news8', NULL, NOW()),
-(9, 'Tin tức 9', 'Nội dung tin 9...', 'Báo I', '2025-01-09', 'https://example.com/news9', NULL, NOW()),
-(10, 'Tin tức 10', 'Nội dung tin 10...', 'Báo J', '2025-01-10', 'https://example.com/news10', NULL, NOW());
-
--- Liên kết LegalNews với Tag
-INSERT INTO laws_legalnews_tags (legalnews_id, tag_id) VALUES
-(1, 1),(2, 2),(3, 3),(4, 4),(5, 5),
-(6, 6),(7, 7),(8, 8),(9, 9),(10, 10);
-
--- ===========================
--- UserQuery (10 bản ghi, user_id=1)
--- ===========================
-INSERT INTO laws_userquery (id, user_id, query_text, created_at) VALUES
-(1, 1, 'Quy định về hợp đồng lao động', NOW()),
-(2, 1, 'Mức phạt tội phạm mạng', NOW()),
-(3, 1, 'Quyền sử dụng đất', NOW()),
-(4, 1, 'Thủ tục kết hôn', NOW()),
-(5, 1, 'Quy định giao thông', NOW()),
-(6, 1, 'Thuế thu nhập cá nhân', NOW()),
-(7, 1, 'Bảo vệ môi trường', NOW()),
-(8, 1, 'Quy định thương mại điện tử', NOW()),
-(9, 1, 'Tội phạm ma túy', NOW()),
-(10, 1, 'Bảo mật thông tin cá nhân', NOW());
-
--- ===========================
--- QueryIntent (10 bản ghi)
--- ===========================
-INSERT INTO laws_queryintent (id, query_id, intent_label, confidence, created_at) VALUES
-(1, 1, 'Tìm luật lao động', 0.95, NOW()),
-(2, 2, 'Tìm luật an ninh mạng', 0.90, NOW()),
-(3, 3, 'Tìm luật đất đai', 0.88, NOW()),
-(4, 4, 'Tìm luật hôn nhân', 0.92, NOW()),
-(5, 5, 'Tìm luật giao thông', 0.89, NOW()),
-(6, 6, 'Tìm luật thuế', 0.91, NOW()),
-(7, 7, 'Tìm luật môi trường', 0.87, NOW()),
-(8, 8, 'Tìm luật thương mại', 0.93, NOW()),
-(9, 9, 'Tìm luật hình sự', 0.94, NOW()),
-(10, 10, 'Tìm luật bảo mật', 0.90, NOW());
-
--- ===========================
--- QueryRecommendation (10 bản ghi)
--- ===========================
-INSERT INTO laws_queryrecommendation (id, intent_id, recommended_text, related_document_id, created_at) VALUES
-(1, 1, 'Xem Luật Lao động 2019', 3, NOW()),
-(2, 2, 'Xem Luật An ninh mạng 2018', 10, NOW()),
-(3, 3, 'Xem Luật Đất đai 2013', 4, NOW()),
-(4, 4, 'Xem Luật Hôn nhân & Gia đình 2014', 5, NOW()),
-(5, 5, 'Xem Luật Giao thông đường bộ 2008', 6, NOW()),
-(6, 6, 'Xem Luật Quản lý thuế 2019', 8, NOW()),
-(7, 7, 'Xem Luật Bảo vệ môi trường 2020', 9, NOW()),
-(8, 8, 'Xem Luật Thương mại 2005', 7, NOW()),
-(9, 9, 'Xem Bộ luật Hình sự 2015', 2, NOW()),
-(10, 10, 'Xem Bộ luật Dân sự 2015', 1, NOW());
+UPDATE laws_legalnews SET category_id = 8 WHERE id = 11;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 12;
+UPDATE laws_legalnews SET category_id = 13 WHERE id = 13;
+UPDATE laws_legalnews SET category_id = 1 WHERE id = 14;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 15;
+UPDATE laws_legalnews SET category_id = 22 WHERE id = 16;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 17;
+UPDATE laws_legalnews SET category_id = 15 WHERE id = 18;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 19;
+UPDATE laws_legalnews SET category_id = 22 WHERE id = 20;
+UPDATE laws_legalnews SET category_id = 13 WHERE id = 21;
+UPDATE laws_legalnews SET category_id = 3 WHERE id = 22;
+UPDATE laws_legalnews SET category_id = 6 WHERE id = 23;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 24;
+UPDATE laws_legalnews SET category_id = 4 WHERE id = 25;
+UPDATE laws_legalnews SET category_id = 9 WHERE id = 26;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 27;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 28;
+UPDATE laws_legalnews SET category_id = 8 WHERE id = 29;
+UPDATE laws_legalnews SET category_id = 18 WHERE id = 30;
+UPDATE laws_legalnews SET category_id = 13 WHERE id = 31;
+UPDATE laws_legalnews SET category_id = 8 WHERE id = 32;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 33;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 34;
+UPDATE laws_legalnews SET category_id = 10 WHERE id = 35;
+UPDATE laws_legalnews SET category_id = 3 WHERE id = 36;
+UPDATE laws_legalnews SET category_id = 16 WHERE id = 37;
+UPDATE laws_legalnews SET category_id = 18 WHERE id = 38;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 39;
+UPDATE laws_legalnews SET category_id = 11 WHERE id = 40;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 41;
+UPDATE laws_legalnews SET category_id = 6 WHERE id = 42;
+UPDATE laws_legalnews SET category_id = 15 WHERE id = 43;
+UPDATE laws_legalnews SET category_id = 19 WHERE id = 44;
+UPDATE laws_legalnews SET category_id = 4 WHERE id = 45;
+UPDATE laws_legalnews SET category_id = 17 WHERE id = 46;
+UPDATE laws_legalnews SET category_id = 21 WHERE id = 47;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 48;
+UPDATE laws_legalnews SET category_id = 22 WHERE id = 49;
+UPDATE laws_legalnews SET category_id = 20 WHERE id = 50;
+UPDATE laws_legalnews SET category_id = 7 WHERE id = 51;
+UPDATE laws_legalnews SET category_id = 3 WHERE id = 52;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 54;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 55;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 56;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 57;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 58;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 59;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 60;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 61;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 62;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 63;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 64;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 65;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 66;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 67;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 68;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 69;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 70;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 71;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 72;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 73;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 74;
+UPDATE laws_legalnews SET category_id = 22 WHERE id = 75;
+UPDATE laws_legalnews SET category_id = 22 WHERE id = 76;
+UPDATE laws_legalnews SET category_id = 22 WHERE id = 77;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 78;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 79;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 80;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 81;
+UPDATE laws_legalnews SET category_id = 1 WHERE id = 82;
+UPDATE laws_legalnews SET category_id = 1 WHERE id = 83;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 84;
+UPDATE laws_legalnews SET category_id = 25 WHERE id = 85;
+UPDATE laws_legalnews SET category_id = 25 WHERE id = 86;
+UPDATE laws_legalnews SET category_id = 13 WHERE id = 87;
+UPDATE laws_legalnews SET category_id = 13 WHERE id = 88;
+UPDATE laws_legalnews SET category_id = 13 WHERE id = 89;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 90;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 91;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 92;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 93;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 94;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 95;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 96;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 97;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 98;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 99;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 100;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 101;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 102;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 103;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 104;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 105;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 106;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 107;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 108;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 109;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 110;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 111;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 112;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 113;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 114;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 115;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 116;
+UPDATE laws_legalnews SET category_id = 22 WHERE id = 117;
+UPDATE laws_legalnews SET category_id = 22 WHERE id = 118;
+UPDATE laws_legalnews SET category_id = 22 WHERE id = 119;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 120;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 121;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 122;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 123;
+UPDATE laws_legalnews SET category_id = 1 WHERE id = 124;
+UPDATE laws_legalnews SET category_id = 1 WHERE id = 125;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 126;
+UPDATE laws_legalnews SET category_id = 25 WHERE id = 127;
+UPDATE laws_legalnews SET category_id = 25 WHERE id = 128;
+UPDATE laws_legalnews SET category_id = 13 WHERE id = 129;
+UPDATE laws_legalnews SET category_id = 13 WHERE id = 130;
+UPDATE laws_legalnews SET category_id = 13 WHERE id = 131;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 132;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 133;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 134;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 135;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 136;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 137;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 138;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 139;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 140;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 141;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 142;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 143;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 144;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 145;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 146;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 147;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 148;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 149;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 150;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 151;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 152;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 153;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 154;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 155;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 156;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 157;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 158;
+UPDATE laws_legalnews SET category_id = 22 WHERE id = 159;
+UPDATE laws_legalnews SET category_id = 22 WHERE id = 160;
+UPDATE laws_legalnews SET category_id = 22 WHERE id = 161;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 162;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 163;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 164;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 165;
+UPDATE laws_legalnews SET category_id = 1 WHERE id = 166;
+UPDATE laws_legalnews SET category_id = 1 WHERE id = 167;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 168;
+UPDATE laws_legalnews SET category_id = 25 WHERE id = 169;
+UPDATE laws_legalnews SET category_id = 25 WHERE id = 170;
+UPDATE laws_legalnews SET category_id = 13 WHERE id = 171;
+UPDATE laws_legalnews SET category_id = 13 WHERE id = 172;
+UPDATE laws_legalnews SET category_id = 13 WHERE id = 173;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 174;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 175;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 176;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 177;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 178;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 179;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 180;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 181;
+UPDATE laws_legalnews SET category_id = 13 WHERE id = 182;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 183;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 184;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 185;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 186;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 187;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 188;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 189;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 190;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 191;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 192;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 193;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 194;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 195;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 196;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 197;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 198;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 199;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 200;
+UPDATE laws_legalnews SET category_id = 22 WHERE id = 201;
+UPDATE laws_legalnews SET category_id = 22 WHERE id = 202;
+UPDATE laws_legalnews SET category_id = 22 WHERE id = 203;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 204;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 205;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 206;
+UPDATE laws_legalnews SET category_id = 23 WHERE id = 207;
+UPDATE laws_legalnews SET category_id = 1 WHERE id = 208;
+UPDATE laws_legalnews SET category_id = 1 WHERE id = 209;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 210;
+UPDATE laws_legalnews SET category_id = 25 WHERE id = 211;
+UPDATE laws_legalnews SET category_id = 25 WHERE id = 212;
+UPDATE laws_legalnews SET category_id = 13 WHERE id = 213;
+UPDATE laws_legalnews SET category_id = 13 WHERE id = 214;
+UPDATE laws_legalnews SET category_id = 13 WHERE id = 215;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 216;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 217;
+UPDATE laws_legalnews SET category_id = 24 WHERE id = 218;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 219;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 220;
+UPDATE laws_legalnews SET category_id = NULL WHERE id = 221;

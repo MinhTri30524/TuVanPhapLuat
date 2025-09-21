@@ -1,0 +1,1814 @@
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q3e358328c1',
+          'Người nước ngoài cần làm gì để mua chung cư tại việt nam?',
+          4,
+          'https://luatvietnam.vn/luat-su-tu-van/nguoi-nuoc-ngoai-can-lam-gi-de-mua-chung-cu-tai-viet-nam-150840-faqs.html',
+          '2025-09-16',
+          '**Trả lời:**
+
+### **Người nước ngoài được mua nhà chung cư tại Việt Nam không?**
+
+Căn cứ Điều 17 [Luật Nhà ở 2023](https://luatvietnam.vn/dat-dai/luat-nha-o-cua-quoc-hoi-so-27-2023-qh15-284800-d1.html) đối tượng được sở hữu nhà ở tại Việt Nam bao gồm:
+
+- Tổ chức kinh tế có vốn đầu tư nước ngoài đầu tư xây dựng nhà ở theo dự án tại Việt Nam theo quy định của Luật này và quy định khác của pháp luật có liên quan.
+
+- Tổ chức kinh tế có vốn đầu tư nước ngoài, chi nhánh, [văn phòng đại diện](https://luatvietnam.vn/doanh-nghiep/thanh-lap-van-phong-dai-dien-cong-ty-nuoc-ngoai-561-30733-article.html) của doanh nghiệp nước ngoài, quỹ đầu tư nước ngoài và chi nhánh ngân hàng nước ngoài đang hoạt động tại Việt Nam (sau đây gọi chung là tổ chức nước ngoài).
+
+- **Cá nhân nước ngoài được phép nhập cảnh vào Việt Nam, không thuộc đối tượng được hưởng quyền miễn trừ ngoại giao, lãnh sự theo quy định pháp luật.**
+
+Như vậy, tổ chức, cá nhân nước ngoài quy định tại khoản 1, Điều 17 Luật Nhà ở 2023 được sở hữu nhà ở tại Việt Nam, bao gồm căn hộ chung cư thông qua các hình thức:
+
+(1) Đầu tư xây dựng nhà ở theo dự án tại Việt Nam;
+
+(2) Mua, thuê mua nhà ở thương mại của chủ đầu tư dự án đầu tư xây dựng nhà ở, nhận tặng cho, nhận [thừa kế nhà ở](https://luatvietnam.vn/dat-dai-nha-o/chia-thua-ke-nha-dat-567-27315-article.html) thương mại trong dự án đầu tư xây dựng nhà ở không thuộc khu vực cần bảo đảm quốc phòng, an ninh;
+
+(3) Mua, thuê mua nhà ở của tổ chức, cá nhân nước ngoài đã sở hữu nhà ở theo quy định.
+
+**Lưu ý:** Căn cứ Điều 19 Luật Nhà ở 2023, người nước ngoài không được sở hữu quá 30% số căn hộ trong một tòa nhà chung cư; không được sở hữu quá 250 căn nhà riêng lẻ trong một khu vực có quy hoạch dân cư tương đương cấp phường; đồng thời không được mua nhà tại khu vực cấm, khu vực bảo đảm quốc phòng – an ninh theo quy định của Bộ Quốc phòng, Bộ Công an.
+
+### **Thủ tục mua nhà chung cư tại Việt Nam đối với người nước ngoài là gì?**
+
+Khi đáp ứng đủ điều kiện được mua nhà ở tại Việt Nam và nhà ở đó thuộc khu vực được sở hữu thì tổ chức, cá nhân nước ngoài được tự mình thực hiện hoặc ủy quyền cho người khác thực hiện thủ tục mua nhà theo quy định của pháp luật Việt Nam.
+
+Theo Điều 17 [Luật nhà ở 2023](https://luatvietnam.vn/dat-dai/luat-nha-o-cua-quoc-hoi-so-27-2023-qh15-284800-d1.html), người nước ngoài có thể mua nhà chung cư  từ chủ đầu tư dự án xây dựng nhà ở thương mại hoặc tổ chức, cá nhân nước ngoài đã sở hữu nhà ở hợp pháp tại Việt Nam. Do vậy, căn cứ Điều 163 Luật Nhà ở 2023, thủ tục [mua nhà chung cư](https://luatvietnam.vn/dat-dai-nha-o/cam-nang-phap-ly-cho-nguoi-mua-chung-cu-567-90175-article.html) của người nước ngoài có thể thực hiện qua những bước sau:
+
+**Bước 1: Kiểm tra dự án/điều kiện**
+
+- Trường hợp mua nhà từ chủ đầu tư dự án xây dựng nhà ở thương mại cần kiểm tra dự án: không thuộc khu vực cấm người nước ngoài sở hữu và phải là dự án nhà ở thương mại được phép bán cho người nước ngoài.
+
+- Trường hợp mua nhà từ tổ chức, cá nhân nước ngoài đã sở hữu nhà ở hợp pháp: người bán là tổ chức, cá nhân nước ngoài có quyền chuyển nhượng nhà ở và căn nhà vẫn còn thời hạn sở hữu hoặc được gia hạn.
+
+**Bước 2: Chuẩn bị các loại giấy tờ cần thiết**
+
+*Đối với chủ đầu tư dự án:*
+
+- Giấy chứng nhận đăng ký kinh doanh có ngành nghề kinh doanh bất động sản.
+
+- Giấy phép đầu tư, văn bản chấp thuận chủ trương đầu tư.
+
+- Giấy chứng nhận quyền sử dụng đất của khu đất thực hiện dự án.
+
+- Hồ sơ chứng từ liên quan việc hoàn thành nghĩa vụ thuế và các nghĩa vụ tài chính của chủ đầu tư.
+
+- Giấy phép xây dựng và các giấy phép khác liên quan đến việc xây dựng.
+
+- Hợp đồng bảo lãnh, văn bản cho phép bán, cho thuê mua của cơ quan nhà nước có thẩm quyền đối với việc bán, cho thuê mua nhà ở hình thành trong tương lai.
+
+*Đối với người nước ngoài:*
+
+- Hộ chiếu còn giá trị có đóng dấu kiểm chứng nhập cảnh của cơ quan quản lý xuất, nhập cảnh Việt Nam.
+
+- Thị thực nhập cảnh vào Việt Nam còn thời hạn (cần đảm bảo thời điểm ký hợp đồng mua bán phải trong thời hạn có hiệu lực của thị thực).
+
+- Hoặc Giấy miễn thị thực đối với người nước ngoài có vợ, chồng, con là người Việt Nam hoặc người Việt Nam định cư ở nước ngoài.
+
+- Giấy chứng nhận đăng ký đầu tư hoặc giấy tờ do cơ quan có thẩm quyền của Việt Nam cho phép hoạt động tại Việt Nam còn thời hạn.
+
+**Bước 3: Lựa chọn nhà chung cư và tiến hành đặt cọc**
+
+Người nước ngoài chọn căn hộ chung cư hoặc nhà ở thương mại mong muốn và tiến hành đặt cọc để đăng ký mua với chủ đầu tư, bên môi giới hoặc tổ chức, cá nhân nước ngoài đã sở hữu nhà ở hợp pháp.
+
+Các bên tiến hành ký thỏa thuận với nhau về hợp đồng đặt cọc.
+
+**Bước 4: Ký hợp đồng mua bán và thanh toán tiền**
+
+Hợp đồng mua bán nhà chung cư phải được lập thành hợp đồng với các điều khoản quy định tại Điều 163, Điều 165 Luật Nhà ở 2023. Người nước ngoài thanh toán tiền theo tiến độ đã quy định tại Hợp đồng nêu trên. Đơn vị tiền thanh toán là đồng Việt Nam thông qua hình thức chuyển khoản từ tài khoản mở tại tổ chức tín dụng được phép hoạt động tại Việt Nam.
+
+Hợp đồng được lập thành văn bản và phải được công chứng. Thời điểm có hiệu lực của hợp đồng là thời điểm các bên hoàn thành việc công chứng hoặc chứng thực (Khoản 1 Điều 164 Luật Nhà ở 2023).
+
+**Bước 5: Bàn giao nhà ở và tiến hành làm giấy chứng nhận quyền sở hữu tài sản cho người nước ngoài**
+
+- Trường hợp mua bán nhà chung cư từ chủ đầu tư dự án:
+
++ Khi hoàn thành xây dựng, Chủ đầu tư gửi thông báo bàn giao căn hộ chung cư hoặc nhà ở thương mại theo tiến độ cho người nước ngoài (khoản 7, Điều 39 Luật Nhà ở 2023).
+
+ + Trong thời hạn 50 ngày, kể từ ngày bàn giao nhà ở cho người mua hoặc kể từ ngày bên thuê mua đã thanh toán đủ tiền theo thỏa thuận thì chủ đầu tư phải nộp hồ sơ đề nghị cơ quan nhà nước có thẩm quyền cấp Giấy chứng nhận cho người mua, trừ trường hợp người mua tự nguyện thực hiện thủ tục này (khoản 8, Điều 59 và khoản 2, Điều 162 Luật Nhà ở 2023).
+
+- Trường hợp mua bán nhà chung cư từ tổ chức, cá nhân đã sở hữu nhà ở hợp pháp: Các bên thỏa thuận để một bên thực hiện nộp hồ sơ đề nghị cơ quan nhà nước có thẩm quyền cấp Giấy chứng nhận đối với nhà ở đó; trừ trường hợp bên mua, bên thuê mua tự nguyện làm thủ tục đề nghị cấp Giấy chứng nhận (Kkhoản 2, Điều 162 Luật Nhà ở 2023).
+
+***Xem thêm:*** [Mua nhà ở tại Việt Nam 2025: các quy định người nước ngoài cần biết](https://luatvietnam.vn/dat-dai-nha-o/mua-nha-o-tai-viet-nam-567-32989-article.html)
+
+*Trên đây là nội dung tư vấn về “Người nước ngoài cần làm gì để mua chung cư tại việt nam?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q6d4e65ea5f',
+          'Trúng đấu giá quyền sử dụng đất nhưng không nộp tiền đúng hạn bị xử lý như nào?',
+          4,
+          'https://luatvietnam.vn/luat-su-tu-van/trung-dau-gia-quyen-su-dung-dat-nhung-khong-nop-tien-dung-han-bi-xu-ly-nhu-nao-150839-faqs.html',
+          '2025-09-15',
+          '**Trả lời:**
+
+Theo quy định khoản 9, Điều 55 [Nghị định 102/2024/NĐ-CP](https://luatvietnam.vn/dat-dai/nghi-dinh-102-2024-nd-cp-cua-chinh-phu-quy-dinh-chi-tiet-thi-hanh-mot-so-dieu-cua-luat-dat-dai-361911-d1.html) thì trong thời hạn không quá 05 ngày làm việc kể từ ngày nhận được quyết định công nhận kết quả trúng đấu giá của Ủy ban nhân dân cấp có thẩm quyền, cơ quan thuế gửi thông báo nộp [tiền sử dụng đất](https://luatvietnam.vn/dat-dai-nha-o/khoan-tien-nguoi-su-dung-dat-phai-nop-567-28428-article.html) hoặc tiền thuê đất bằng văn bản cho người đã trúng đấu giá. Người trúng đấu giá đất có trách nhiệm nộp tiền sử dụng đất theo thông báo của cơ quan thuế.
+
+Trường hợp người trúng đấu giá không nộp tiền tiền trúng đấu giá đất theo quy định thì sau 120 ngày kể từ ngày phê duyệt kết quả trúng đấu giá đất, cơ quan thuế sẽ báo cho cơ quan quản lý đất đai trình Ủy ban nhân dân hủy quyết định công nhận kết quả đấu giá. Khi đó, người trúng đấu giá mất tiền [đặt cọc](https://luatvietnam.vn/dat-dai-nha-o/hop-dong-dat-coc-mua-nha-567-25963-article.html). Nếu đã nộp nhiều hơn tiền đặt cọc, Nhà nước sẽ hoàn trả phần chênh lệch.
+
+Ngoài việc bị hủy quyết định công nhận kết quả đấu giá và mất cọc thì theo quy định tại Điều 25 [Nghị định 172/2024/NĐ-CP](https://luatvietnam.vn/tai-chinh/nghi-dinh-172-2024-nd-cp-cua-chinh-phu-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-dau-gia-tai-san-01-2016-qh14-duoc-sua-doi-bo-sung-mot-so-dieu-theo-luat-37-2024-qh15-383049-d1.html), trong thời hạn 10 ngày kể từ ngày ban hành quyết định hủy, người trúng đấu giá quyền sử dụng đất sẽ nhận được quyết định cấm tham gia đấu giá đối với loại tài sản đó. Cụ thể:
+
+- Không nộp tiền trúng đấu giá: Cấm tham gia đấu giá từ 02- 5 năm.
+
+- Không nộp không đầy đủ tiền trúng đấu giá: cấm tham gia đấu giá từ 6 tháng đến 03 năm.
+
+***Xem thêm:*** [Đấu giá quyền sử dụng đất là gì? Điều kiện như thế nào?](https://luatvietnam.vn/dan-su/dau-gia-quyen-su-dung-dat-la-gi-568-98234-article.html)
+
+*Trên đây là nội dung tư vấn về “Trúng đấu giá quyền sử dụng đất nhưng không nộp tiền đúng hạn bị xử lý như nào?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q5a24d44528',
+          'Chuyển mục đích sử dụng đất có phải đáp ứng yêu cầu về diện tích tối thiểu tách thửa không?',
+          4,
+          'https://luatvietnam.vn/luat-su-tu-van/chuyen-muc-dich-su-dung-dat-co-phai-dap-ung-yeu-cau-ve-dien-tich-toi-thieu-tach-thua-khong-150837-faqs.html',
+          '2025-09-11',
+          '**Trả lời:**
+
+Căn cứ Điều 220 Luật Đất đai 2024 thì việc tách thửa đất, hợp thửa đất phải bảo đảm các nguyên tắc, điều kiện sau đây:
+
+- Thửa đất đã được cấp một trong các loại [giấy chứng nhận](https://luatvietnam.vn/dat-dai-nha-o/giay-chung-nhan-quyen-su-dung-dat-30179-article.html) hợp lệ.
+
+- Thửa đất còn trong thời hạn sử dụng đất.
+
+- Đất không có [tranh chấp](https://luatvietnam.vn/dat-dai-nha-o/tranh-chap-dat-dai-567-23380-article.html), không bị kê biên để bảo đảm thi hành án, không bị áp dụng biện pháp khẩn cấp tạm thời của cơ quan nhà nước có thẩm quyền.
+
+- Việc tách thửa đất, hợp thửa đất phải bảo đảm có lối đi, được kết nối với đường giao thông công cộng hiện có, bảo đảm cấp nước, thoát nước và nhu cầu cần thiết khác một cách hợp lý.
+
+Đặc biệt, khoản 2, Điều 220 Luật Đất đai 2024 quy định rõ:
+
+> *Các thửa đất sau khi tách thửa phải bảo đảm diện tích tối thiểu với loại đất đang sử dụng theo quy định của Ủy ban nhân dân cấp tỉnh; Trường hợp thửa đất được tách có diện tích nhỏ hơn diện tích tối thiểu được phép tách thửa thì phải thực hiện đồng thời việc hợp thửa với thửa đất liền kề; Trường hợp chuyển mục đích sử dụng một phần thửa đất thì thực hiện tách thửa, diện tích tối thiểu của thửa đất sau khi tách phải bằng hoặc lớn hơn diện tích tối thiểu của loại đất sau khi chuyển mục đích sử dụng. **Đối với thửa đất có đất ở** và đất khác thì **không bắt buộc thực hiện tách thửa** khi chuyển mục đích sử dụng một phần thửa đất, trừ trường hợp người sử dụng đất có nhu cầu tách thửa.*
+
+Như vậy, thửa đất của bạn có cả đất ở nên không bắt buộc phải [tách thửa](https://luatvietnam.vn/tra-cuu-dien-tich-tach-thua.html) (trừ khi bạn có nhu cầu tách thửa).
+
+***Xem thêm:*** [Loại đất nào không thể tách thửa: Biết rõ để tránh ôm “bom”](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Chuyển mục đích sử dụng đất có phải đáp ứng yêu cầu về diện tích tối thiểu tách thửa không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q990dc739c0',
+          'Mua nhà ở có phải chịu thuế giá trị gia tăng hay không?',
+          4,
+          'https://luatvietnam.vn/luat-su-tu-van/mua-nha-o-co-phai-chiu-thue-gia-tri-gia-tang-hay-khong-150836-faqs.html',
+          '2025-09-11',
+          '**Trả lời:**
+
+Căn cứ Điều 3 [Luật Thuế giá trị gia tăng 2024](https://luatvietnam.vn/thue/luat-thue-gia-tri-gia-tang-cua-quoc-hoi-so-48-2024-qh15-379409-d1.html) thì hàng hóa, dịch vụ sử dụng cho sản xuất, kinh doanh và tiêu dùng ở Việt Nam là đối tượng chịu thuế giá trị gia tăng, trừ các đối tượng quy định tại Điều 5 của Luật này.
+
+Đối với hoạt động mua nhà, việc có phải chịu thuế giá trị gia tăng (VAT) hay không phụ thuộc vào loại nhà và chủ thể bán nhà:
+
+**1. Mua nhà ở thương mại từ doanh nghiệp kinh doanh bất động sản:**
+
+Theo quy định tại Điều 3 và không thuộc các trường hợp không chịu thuế tại Điều 5 Luật Thuế giá trị gia tăng 2024, việc mua nhà ở thương mại từ doanh nghiệp kinh doanh bất động sản là đối tượng chịu thuế giá trị gia tăng. Người mua sẽ phải trả thuế VAT theo mức thuế suất quy định (thường là 10%, trừ trường hợp được áp dụng mức thuế suất ưu đãi khác theo quy định của pháp luật tại từng thời điểm).
+
+**2. Mua nhà ở xã hội:**
+
+Căn cứ điểm n, khoản 2, Điều 9 Luật Thuế giá trị gia tăng 2024 thì bán, cho thuê, cho thuê mua [nhà ở xã hội](https://luatvietnam.vn/dat-dai-nha-o/nha-o-xa-hoi-567-30110-article.html) theo quy định của Luật Nhà ở áp dụng mức thuế suất thuế giá trị gia tăng là 5%.
+
+**3. Mua nhà ở thuộc tài sản công do Nhà nước bán cho người đang thuê:**
+
+Theo khoản 5 Điều 5 Luật Thuế giá trị gia tăng 2024, trường hợp mua nhà ở thuộc tài sản công do Nhà nước bán cho người đang thuê thì không phải chịu thuế giá trị gia tăng.
+
+**4. Mua nhà ở của cá nhân (không kinh doanh bất động sản):**
+
+Nếu mua nhà ở của cá nhân không kinh doanh bất động sản thì giao dịch này không thuộc đối tượng chịu thuế giá trị gia tăng.
+
+Như vậy, nếu bạn mua nhà ở của cá nhận thì không phải chịu thuế giá trị gia tăng.
+
+***Xem thêm:*** [Thuế, phí sang tên trước bạ nhà đất và người phải nộp](https://luatvietnam.vn/dat-dai-nha-o/hop-dong-mua-ban-nha-dat-vo-hieu-567-26391-article.html)
+
+*Trên đây là nội dung tư vấn về “Mua nhà ở có phải chịu thuế giá trị gia tăng hay không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q0b87da2a1c',
+          'Đang nợ thuế kinh doanh có được cấp sổ đỏ không?',
+          4,
+          'https://luatvietnam.vn/luat-su-tu-van/dang-no-thue-kinh-doanh-co-duoc-cap-so-do-khong-150835-faqs.html',
+          '2025-09-11',
+          '**Trả lời:**
+
+Khoản 3, Điều 135 [Luật Đất đai 2024](https://luatvietnam.vn/dat-dai/luat-dat-dai-2024-296638-d1.html) quy định về nguyên tắc cấp Giấy chứng nhận liên quan đến nghĩa vụ tài chính như sau:
+
+> 3. Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất chỉ được cấp sau khi người sử dụng đất, chủ sở hữu tài sản gắn liền với đất hoàn thành nghĩa vụ tài chính theo quy định của pháp luật.
+>
+> Trường hợp người sử dụng đất, chủ sở hữu tài sản gắn liền với đất không thuộc đối tượng phải thực hiện nghĩa vụ tài chính hoặc được miễn, được ghi nợ nghĩa vụ tài chính thì Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp sau khi cơ quan có thẩm quyền xác định không phải thực hiện nghĩa vụ tài chính hoặc được miễn, được ghi nợ nghĩa vụ tài chính; trường hợp thuê đất trả tiền thuê đất hằng năm thì Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất được cấp sau khi cơ quan có thẩm quyền ban hành quyết định cho thuê đất, ký hợp đồng thuê đất.
+
+Như vậy, Giấy chứng nhận quyền chỉ được cấp sau khi người sử dụng đất, chủ sở hữu tài sản gắn liền với đất hoàn thành nghĩa vụ tài chính theo quy định của pháp luật. Nghĩa vụ tài chính theo quy định của pháp luật ở đây chính là các loại nghĩa vụ tài chính liên quan đến thủ tục cấp Giấy chứng nhận, ví dụ: [tiền sử dụng đất](https://luatvietnam.vn/dat-dai-nha-o/khoan-tien-nguoi-su-dung-dat-phai-nop-567-28428-article.html) (nếu thuộc trường hợp phải nộp tiền sử dụng đất), tiền thuê đất (nếu thuộc trường hợp được cấp giấy chứng nhận theo hình thức thuê đất phải nộp tiền thuê đất), lệ phí trước bạ, phí thẩm định hồ sơ, phí cấp Giấy chứng nhận …
+
+Tóm lại:
+
+- Nếu khoản thuế kinh doanh bạn đang nợ là nghĩa vụ tài chính liên quan đến [thủ tục cấp Giấy chứng nhận](https://luatvietnam.vn/dat-dai-nha-o/cap-giay-chung-nhan-quyen-su-dung-dat-lan-dau-567-32437-article.html) thì bạn phải hoàn thành nghĩa vụ này hoặc được xác nhận thuộc trường hợp được ghi nợ/mmiễn thì mới được cấp sổ đỏ.
+
+- Nếu khoản thuế kinh doanh bạn đang nợ không liên quan đến nghĩa vụ tài chính về đất đai (ví dụ thuế thu nhập cá nhân, thuế giá trị gia tăng trong hoạt động kinh doanh của hộ kinh doanh của bạn) thì việc cấp sổ đỏ vẫn được xem xét nếu bạn đáp ứng đủ các điều kiện về cấp Giấy chứng nhận theo quy định.
+
+***Xem thêm:*** [Đang nợ thuế kinh doanh có được bán đất không?](https://luatvietnam.vn/luat-su-tu-van/nguyen-don-chet-thi-vu-an-co-duoc-tiep-tuc-xet-xu-khong-150418-faqs.html)
+
+*Trên đây là nội dung tư vấn về vấn đề “Đang nợ thuế kinh doanh có được cấp sổ đỏ không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Qa0474c35a5',
+          'Ly thân rồi có thể quay lại với nhau được không?',
+          5,
+          'https://luatvietnam.vn/luat-su-tu-van/ly-than-roi-co-the-quay-lai-voi-nhau-duoc-khong-150831-faqs.html',
+          '2025-08-22',
+          '**Trả lời:**
+
+### **Ly thân là gì?**
+
+Thực tế, khái niệm ly thân không có trong các văn bản pháp luật hôn nhân và gia đình hiện hành. Đây là cách thể hiện tình cảm bị rạn nứt giữa các cặp vợ chồng. Có thể hiểu ly thân là việc hai vợ chồng không sống chung với nhau khi quan hệ tình cảm có rạn nứt nhưng chưa thực hiện các thủ tục [ly hôn](https://luatvietnam.vn/bieu-mau/mau-don-ly-hon-571-23882-article.html).
+
+Quan hệ vợ chồng chỉ chấm dứt bằng bản án hoặc quyết định của Toà án khi thực hiện thủ tục ly hôn (theo yêu cầu của một bên hoặc do hai bên thoả thuận với nhau). Được quy định tại khoản 14, Điều 3 [Luật Hôn nhân và Gia đình năm 2014](https://luatvietnam.vn/hon-nhan-gia-dinh/luat-hon-nhan-va-gia-dinh-2014-87930-d1.html).
+
+Theo đó, đây chỉ là trạng thái mà hai vợ chồng không còn sống chung với nhau nữa khi không còn tình cảm vợ chồng và chưa thực hiện thủ tục ly hôn theo quy định tại Toà án cơ thẩm quyền. Ly thân không phải sự kiện pháp lý làm chấm dứt quan hệ hôn nhân hợp pháp. Do đó, hai vợ chồng dù ly thân thì quan hệ hôn nhân và gia đình vẫn còn tồn tại, hai người vẫn là vợ, chồng hợp pháp và có đầy đủ quyền cũng như phải thực hiện mọi nghĩa vụ giữa vợ và chồng.
+
+### **Ly thân rồi quay lại có được không?**
+
+Thực tế việc ly thân là do hai bên vợ chồng quyết định khi tình cảm bị rạn nứt, đây là quan hệ giữa hai vợ chồng. Sau ly thân, các cặp vợ chồng hoàn toàn có thể quay lại với nhau bình thường mà không cần bất cứ thủ tục gì.
+
+Tuy nhiên, trước khi quyết định quay lại sau ly thân, quan trọng để hai người xem xét kỹ lưỡng các vấn đề tìm ra nguyên nhân mâu thuẫn và cách giải quyết. Cả hai phải thật lòng và chân thành trong việc đánh giá lại mối quan hệ và xem xét các khía cạnh như sự thay đổi, sự tin tưởng, sự cải thiện và khả năng giải quyết vấn đề.
+
+### **Vợ chồng đã ly hôn có quay lại được không?**
+
+Theo quy định tại Điều 57 của [Luật hôn nhân và gia đình năm 2014](https://luatvietnam.vn/hon-nhan-gia-dinh/luat-hon-nhan-va-gia-dinh-2014-87930-d1.html) thì mối quan hệ hôn nhân của vợ chồng sẽ chấm dứt kể từ ngày có bản án quyết định ly hôn của tòa án nhân dân có thẩm quyền có hiệu lực.
+
+Nếu vợ và chồng đã ly hôn với nhau và cả hai người đều không trong một mối quan hệ nào, có nghĩa cả hai vẫn còn là độc thân. Trường hợp này vợ chồng vẫn có thể quay lại với nhau.
+
+Điều kiện để vợ chồng ly hôn quay lại với nhau: Cả hai vợ chồng đều tự nguyện quay lại với nhau; Cả hai vợ chồng đều độc thân, không có vợ hoặc chồng khác; Không có con chung hoặc con riêng của một bên chưa thành niên; Không có tranh chấp về tài sản chung, con chung (nếu có).
+
+Căn cứ khoản 2, Điều 9 Luật Hôn nhân và gia đình 2014 nêu rõ, khi đã ly hôn muốn quay lại với nhau thì bắt buộc phải làm thủ tục đăng ký kết hôn.
+
+- Việc [đăng ký kết hôn](https://luatvietnam.vn/dan-su/thu-tuc-dang-ky-ket-hon-moi-nhat-568-17676-article.html) lại phải được thực hiện sau khi bản án ly hôn có hiệu lực pháp luật ít nhất 3 tháng.
+
+- Nếu hai bên có tranh chấp về tài sản chung, con chung, cần phải giải quyết tranh chấp trước khi đăng ký kết hôn lại.
+
+- Vợ chồng ly hôn quay lại với nhau có thể ly hôn lần thứ hai theo quy định của pháp luật.
+
+Trong trường hợp hai người ly hôn, vẫn còn tình cảm với nhau nhưng khi quay lại không đăng ký kết hôn thì pháp luật sẽ không công nhận họ là vợ chồng.
+
+***Xem thêm:*** [Thủ tục ly hôn 2025: Cần giấy tờ gì? Nộp ở đâu?](https://luatvietnam.vn/dan-su/thu-tuc-ly-hon-568-19423-article.html)
+
+*Trên đây là nội dung tư vấn về vấn đề “Ly thân rồi có thể quay lại với nhau được không?”dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q578cdd889f',
+          'Giám đốc có được tự ký HĐLĐ với chính mình không?',
+          23,
+          'https://luatvietnam.vn/luat-su-tu-van/giam-doc-co-duoc-tu-ky-hdld-voi-chinh-minh-khong-150830-faqs.html',
+          '2025-08-21',
+          '**Trả lời:**
+
+### **Giám đốc có được tự ký HĐLĐ với chính mình không?**
+
+Căn cứ khoản 3, Điều 141 [Bộ luật Dân sự 2015](https://luatvietnam.vn/dan-su/bo-luat-dan-su-2015-101333-d1.html) quy định như sau:
+
+> ***Điều 141. Phạm vi đại diện***
+>
+> *1. Người đại diện chỉ được xác lập, thực hiện giao dịch dân sự trong phạm vi đại diện theo căn cứ sau đây:*
+>
+> *a) Quyết định của cơ quan có thẩm quyền;*
+>
+> *b) Điều lệ của pháp nhân;*
+>
+> *c) Nội dung ủy quyền;*
+>
+> *d) Quy định khác của pháp luật.*
+>
+> *2. Trường hợp không xác định được cụ thể phạm vi đại diện theo quy định tại khoản 1 Điều này thì người đại diện theo pháp luật có quyền xác lập, thực hiện mọi giao dịch dân sự vì lợi ích của người được đại diện, trừ trường hợp pháp luật có quy định khác.*
+>
+> ***3. Một cá nhân, pháp nhân có thể đại diện cho nhiều cá nhân hoặc pháp nhân khác nhau nhưng không được nhân danh người được đại diện để xác lập, thực hiện giao dịch dân sự với chính mình hoặc với bên thứ ba mà mình cũng là người đại diện của người đó, trừ trường hợp pháp luật có quy định khác.***
+
+Theo quy định trên thì cá nhân, pháp nhân không được nhân danh người được đại diện để xác lập thực hiện [giao dịch dân sự](https://luatvietnam.vn/dan-su/giao-dich-dan-su-la-gi-568-95663-article.html) với chính mình hoặc với bên thứ ba mà mình cũng là người đại diện của người đó. Do đó, giám đốc (người đại diện theo pháp luật) của công ty sẽ không thể đại diện cho pháp nhân để ký [hợp đồng lao động](https://luatvietnam.vn/bieu-mau/mau-hop-dong-lao-dong-571-19352-article.html) (thực hiện giao dịch dân sự) với chính mình.
+
+### **Giám đốc công ty có phải đóng bảo hiểm xã hội không?**
+
+Khoản 24, Điều 4 [Luật Doanh nghiệp 2020](https://luatvietnam.vn/doanh-nghiep/luat-doanh-nghiep-2020-186272-d1.html) quy định như sau:
+
+> ***Điều 4. Giải thích từ ngữ***
+>
+> *[...]*
+>
+> *24. Người quản lý doanh nghiệp là người quản lý doanh nghiệp tư nhân và người quản lý công ty, bao gồm chủ doanh nghiệp tư nhân, thành viên hợp danh, Chủ tịch Hội đồng thành viên, thành viên Hội đồng thành viên, Chủ tịch công ty, Chủ tịch Hội đồng quản trị, thành viên Hội đồng quản trị, Giám đốc hoặc Tổng giám đốc và cá nhân giữ chức danh quản lý khác theo quy định tại Điều lệ công ty.*
+
+Ngoài ra, căn cứ khoản 1, Điều 2 [Luật Bảo hiểm xã hội 2024](https://luatvietnam.vn/lao-dong/luat-bao-hiem-xa-hoi-2024-360809-d1.html) như sau:
+
+> ***Điều 2. Đối tượng tham gia bảo hiểm xã hội bắt buộc và bảo hiểm xã hội tự nguyện***
+>
+> *1. Người lao động là công dân Việt Nam thuộc đối tượng tham gia bảo hiểm xã hội bắt buộc bao gồm:*
+>
+> *[…]*
+>
+> *i) Người quản lý doanh nghiệp, kiểm soát viên, người đại diện phần vốn nhà nước, người đại diện phần vốn của doanh nghiệp theo quy định của pháp luật; thành viên Hội đồng quản trị, Tổng giám đốc, Giám đốc, thành viên Ban kiểm soát hoặc kiểm soát viên và các chức danh quản lý khác được bầu của hợp tác xã, liên hiệp hợp tác xã theo quy định của Luật Hợp tác xã có hưởng tiền lương;*
+>
+> *[…]*
+>
+> *n) Người quản lý doanh nghiệp, kiểm soát viên, người đại diện phần vốn nhà nước, người đại diện phần vốn của doanh nghiệp theo quy định của pháp luật; thành viên Hội đồng quản trị, Tổng giám đốc, Giám đốc, thành viên Ban kiểm soát hoặc kiểm soát viên và các chức danh quản lý khác được bầu của hợp tác xã, liên hiệp hợp tác xã theo quy định của Luật Hợp tác xã không hưởng tiền lương.*
+
+Như vậy, trong trường hợp này giám đốc công ty được xem là người quản lý doanh nghiệp, do đó theo quy định trên trường hợp giám đốc công ty sẽ thuộc đối tượng phải tham gia đóng bảo hiểm xã hội.
+
+### **Giám đốc không hưởng tiền lương thì đóng BHXH như thế nào?**
+
+Theo điểm d, khoản 1, Điều 31 Luật Bảo hiểm xã hội 2024 quy định về tiền lương tháng làm căn cứ đóng BHXH của người quản lý doanh nghiệp như sau:
+
+> ***Điều 31. Căn cứ đóng bảo hiểm xã hội***
+>
+> *1. Tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc được quy định như sau:*
+>
+> *[...]*
+>
+> *d) Đối tượng quy định tại các điểm g, h, m và n khoản 1 Điều 2 của Luật này được lựa chọn tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc nhưng thấp nhất bằng mức tham chiếu và cao nhất bằng 20 lần mức tham chiếu tại thời điểm đóng.*
+>
+> *Sau ít nhất 12 tháng thực hiện đóng bảo hiểm xã hội theo tiền lương làm căn cứ đóng bảo hiểm xã hội đã lựa chọn thì người lao động được lựa chọn lại tiền lương làm căn cứ đóng bảo hiểm xã hội;*
+
+Như vậy, [tiền lương](https://luatvietnam.vn/bao-hiem/muc-dong-bhxh-nam-2022-563-34785-article.html) tháng làm căn cứ đóng BHXH của người quản lý doanh nghiệp không hưởng lương sẽ do chính người đó lựa chọn tiền lương làm căn cứ đóng bảo hiểm xã hội bắt buộc nhưng thấp nhất bằng mức tham chiếu và cao nhất bằng 20 lần mức tham chiếu tại thời điểm đóng.
+
+**Lưu ý:** Hiện nay chưa bãi bỏ mức lương cơ sở 2,34 triệu đồng theo Nghị định [73/2024/NĐ-CP](https://luatvietnam.vn/lao-dong/nghi-dinh-73-2024-nd-cp-muc-luong-co-so-cua-cong-chuc-vien-chuc-luc-luong-vu-trang-358403-d1.html) thì mức tham chiếu bằng mức lương cơ sở. Khi bãi bỏ mức lương cơ sở 2,34 triệu đồng theo Nghị định 73/2024/NĐ-CP thì mức tham chiếu không thấp hơn mức lương cơ sở đó (tức mức tham chiếu không thấp hơn 2,34 triệu đồng).
+
+***Xem thêm:*** [Tỷ lệ đóng BHXH 2025 của doanh nghiệp và người lao động](https://luatvietnam.vn/bao-hiem/ty-le-dong-bhxh-cua-doanh-nghiep-va-nguoi-lao-dong-563-100379-article.html)
+
+*Trên đây là nội dung tư vấn về vấn đề “Giám đốc có được tự ký HĐLĐ với chính mình không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q0a78299cba',
+          'Từ ngày 01/7/2025, thẩm quyền của cấp xã trong lĩnh vực đất đai là gì?',
+          4,
+          'https://luatvietnam.vn/luat-su-tu-van/tu-ngay-0172025-tham-quyen-cua-cap-xa-trong-linh-vuc-dat-dai-la-gi-150829-faqs.html',
+          '2025-08-18',
+          '**Trả lời:**
+
+Căn cứ vào Điều 5, 6, 10, 13, 14, 17 và Phụ lục I Phần II, Phần V, Phần VI, Nghị định [151/2025/NĐ-CP](https://luatvietnam.vn/dat-dai/nghi-dinh-151-2025-nd-cp-cua-chinh-phu-quy-dinh-ve-phan-dinh-tham-quyen-cua-chinh-quyen-dia-phuong-02-cap-phan-quyen-phan-cap-trong-linh-vuc-dat-dai-402745-d1.html) của Chính phủ có hiệu lực từ ngày 01/07/2025 đến ngày 01/03/2027, cấp xã được giao các thẩm quyền rất rộng trong lĩnh vực đất đai, cụ thể như sau:
+
+**Thẩm quyền chuyển giao từ cấp huyện sang cấp xã:**
+
+- Chấp thuận phương án sử dụng đất nông nghiệp của tổ chức kinh tế, phê duyệt phương án sử dụng đất lúa của cá nhân.
+
+- Quyết định thu hồi đất trong nhiều trường hợp (ví dụ: thu hồi đất do vi phạm pháp luật, thu hồi đất để phát triển kinh tế - xã hội vì lợi ích quốc gia, công cộng…).
+
+- Ban hành Thông báo thu hồi đất.
+
+- Quyết định phê duyệt phương án bồi thường, hỗ trợ, tái định cư.
+
+- Phê duyệt phương án cưỡng chế quyết định thu hồi đất và kinh phí cho hoạt động cưỡng chế.
+
+- Quyết định giá đất cụ thể, giá bán nhà ở tái định cư trong địa bàn.
+
+- Cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất cho cá nhân, cộng đồng dân cư.
+
+- Xác định lại diện tích đất ở và cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất.
+
+- Ghi giá đất trong các quyết định liên quan đến giao đất, cho thuê đất, chuyển mục đích sử dụng đất, gia hạn sử dụng đất, điều chỉnh thời hạn sử dụng đất, chuyển hình thức sử dụng đất.
+
+- Quyết định thành lập Hội đồng thẩm định giá đất cụ thể.
+
+- Quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất đối với cá nhân, cộng đồng dân cư.
+
+- Phê duyệt phương án góp quyền sử dụng đất, điều chỉnh lại đất đai để thực hiện dự án chỉnh trang, phát triển khu dân cư nông thôn, mở rộng, nâng cấp đường giao thông nông thôn.
+
+- Quyết định thành lập Hội đồng bồi thường, hỗ trợ, tái định cư đối với từng dự án.
+
+- Ban hành quyết định kiểm đếm bắt buộc, quyết định cưỡng chế thực hiện quyết định kiểm đếm bắt buộc, quyết định cưỡng chế thực hiện quyết định thu hồi đất, thành lập Ban cưỡng chế thu hồi đất.
+
+- Quyết định trưng dụng đất, gia hạn trưng dụng đất, xác định mức bồi thường thiệt hại do trưng dụng đất gây ra.
+
+- Giải quyết tranh chấp đất đai giữa hộ gia đình, cá nhân, cộng đồng dân cư với nhau; ban hành quyết định giải quyết tranh chấp đất đai, quyết định cưỡng chế thực hiện quyết định giải quyết tranh chấp đất đai.
+
+**Thẩm quyền của cơ quan quản lý đất đai cấp xã:**
+
+- Ban hành kế hoạch kiểm tra, quyết định kiểm tra đối với lĩnh vực đất đai trên địa bàn quản lý.
+
+- Chủ trì, phối hợp thẩm định phương án bồi thường, hỗ trợ, tái định cư.
+
+- Ký xác nhận mảnh trích đo bản đồ địa chính phục vụ đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất.
+
+- Quản lý, sử dụng thông tin từ hồ sơ địa chính, cập nhật biến động đất đai, phản ánh tình hình vi phạm trong quản lý, sử dụng đất vào hồ sơ địa chính.
+
+- Tổ chức kiểm tra chuyên ngành đất đai, tham gia Hội đồng hòa giải tranh chấp đất đai, kiểm tra, đôn đốc, hướng dẫn thi hành công vụ của cán bộ, công chức, giải quyết khiếu nại, tố cáo và xử lý vi phạm pháp luật về quản lý, sử dụng đất đai tại địa phương.
+
+**Thẩm quyền phân quyền, phân cấp từ cấp tỉnh cho cấp xã:**
+
+- Quyết định biện pháp, mức hỗ trợ khác đối với từng dự án cụ thể.
+
+- Quyết định thu hồi đất trong một số trường hợp đặc biệt.
+
+- Quyết định giao đất không thu tiền sử dụng đất, cho thuê đất thu tiền thuê đất hằng năm, chấp thuận thỏa thuận nhận quyền sử dụng đất để thực hiện dự án, quyết định giao đất, cho thuê đất, cho phép chuyển mục đích sử dụng đất đối với các trường hợp được miễn toàn bộ tiền sử dụng đất, tiền thuê đất cho cả thời hạn thuê.
+
+- Quyết định hình thức sử dụng đất, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với các trường hợp sử dụng đất theo hình thức đặc biệt.
+
+- Phê duyệt phương án bố trí lại diện tích đất ở thành khu dân cư, quyết định giao đất, cho thuê đất cảng hàng không, sân bay dân dụng.
+
+**Trách nhiệm của Hội đồng nhân dân cấp xã:**
+
+- Tham dự họp Hội đồng [bồi thường](https://luatvietnam.vn/dat-dai-nha-o/boi-thuong-ve-dat-567-90616-article.html), hỗ trợ, tái định cư để giám sát.
+
+- Thông qua quy hoạch, kế hoạch sử dụng đất cấp xã.
+
+**Trách nhiệm của Ủy ban nhân dân cấp xã:**
+
+- Cho ý kiến về quy hoạch sử dụng đất cấp tỉnh.
+
+- Tổ chức lập, điều chỉnh quy hoạch sử dụng đất cấp xã, kế hoạch sử dụng đất 05 năm cấp xã.
+
+- Công bố công khai quy hoạch, kế hoạch sử dụng đất cấp xã.
+
+- Tổ chức thực hiện quy hoạch, kế hoạch sử dụng đất của địa phương.
+
+- Công bố, công khai phạm vi thu hồi đất theo tiến độ dự án.
+
+- Báo cáo kết quả thực hiện quy hoạch, kế hoạch sử dụng đất đến Ủy ban nhân dân cấp tỉnh.
+
+- Chỉ đạo và tổ chức thực hiện nhiệm vụ bồi thường, hỗ trợ, tái định cư.
+
+- Quản lý đất đã thu hồi tại khu vực nông thôn.
+
+- Tổ chức thực hiện việc cưỡng chế thực hiện quyết định thu hồi đất, giải quyết khiếu nại liên quan đến cưỡng chế.
+
+- Lập và tổ chức thực hiện dự án tái định cư, phương án đào tạo, chuyển đổi nghề và tìm kiếm việc làm tại địa phương.
+
+- Giao trách nhiệm cho đơn vị, tổ chức thực hiện nhiệm vụ bồi thường, hỗ trợ, tái định cư.
+
+- Quản lý phần diện tích đất của các công ty nông, lâm nghiệp bàn giao về địa phương, đất bãi bồi ven sông, ven biển.
+
+- Thực hiện trách nhiệm về quản lý, sử dụng đất đai theo các nghị định quy định chi tiết thi hành Luật Đất đai.
+
+**Trình tự, thủ tục trong lĩnh vực đất đai do cấp xã thực hiện**
+
+- Tổ chức họp với người có đất trong khu vực thu hồi, ban hành thông báo thu hồi đất, điều tra, khảo sát, đo đạc, kiểm đếm, lập phương án bồi thường, hỗ trợ, tái định cư, niêm yết công khai phương án, lấy ý kiến, thẩm định, phê duyệt, phổ biến, niêm yết công khai quyết định phê duyệt, gửi phương án bồi thường, hỗ trợ, tái định cư, thực hiện bồi thường, hỗ trợ, bố trí tái định cư, ban hành quyết định thu hồi đất, tổ chức vận động, thuyết phục, cưỡng chế thu hồi đất, quản lý đất đã được thu hồi.
+
+- Thực hiện thủ tục đăng ký, [cấp Giấy chứng nhận](https://luatvietnam.vn/dat-dai-nha-o/dieu-kien-cap-giay-chung-nhan-quyen-su-dung-dat-567-24449-article.html) quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất đối với trường hợp tặng cho quyền sử dụng đất cho Nhà nước hoặc cộng đồng dân cư hoặc mở rộng đường giao thông.
+
+- Thực hiện thủ tục [cung cấp dữ liệu thông tin, dữ liệu đất đai](https://luatvietnam.vn/dat-dai-nha-o/xem-thong-tin-du-lieu-dat-dai-o-dau-567-102136-article.html) cho tổ chức, cá nhân có nhu cầu.
+
+**Lưu ý:**
+
++ Từ ngày 01/07/2025, mọi nhiệm vụ, vai trò, chức năng, thẩm quyền của chính quyền cấp Huyện đã được chuyển tiếp cho chính quyền cấp xã hoặc cấp tỉnh theo quy định tại các Nghị định mới ban hành về phân quyền, phân cấp, phân định thẩm quyền của chính quyền địa phương 02 cấp.
+
++ Khi thực hiện các thủ tục hành chính về đất đai, người dân và tổ chức cần liên hệ trực tiếp với Ủy ban nhân dân cấp xã nơi có đất để được hướng dẫn và giải quyết theo đúng thẩm quyền mới.
+
+***Xem thêm:***[Danh sách các Phòng chuyên môn thuộc UBND cấp xã](https://luatvietnam.vn/linh-vuc-khac/danh-sach-cac-phong-chuyen-mon-thuoc-ubnd-cap-xa-570-102548-article.html)
+
+*Trên đây là nội dung tư vấn về vấn đề “Thẩm quyền của cấp xã trong lĩnh vực đất đai từ ngày 01/7/2025?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q21d7fe62e2',
+          'Thế nào là hôn nhân thực tế?',
+          5,
+          'https://luatvietnam.vn/luat-su-tu-van/the-nao-la-hon-nhan-thuc-te-150828-faqs.html',
+          '2025-08-11',
+          '**Trả lời:**
+
+### **Thế nào là hôn nhân thực tế?**
+
+Hôn nhân thực tế là mối quan hệ giữa một nam và một nữ sống chung với nhau như vợ chồng, có đầy đủ các biểu hiện của một gia đình – như cùng nhau tổ chức cuộc sống, có [con chung](https://luatvietnam.vn/tin-phap-luat/con-sinh-ra-sau-ly-hon-van-la-con-chung-230-19107-article.html), chia sẻ tài chính và nghĩa vụ với nhau – nhưng lại không đăng ký kết hôn tại cơ quan nhà nước có thẩm quyền, dù thực tế họ đủ điều kiện để kết hôn theo quy định của [Luật Hôn nhân và Gia đình](https://luatvietnam.vn/hon-nhan-gia-dinh/luat-hon-nhan-va-gia-dinh-2014-87930-d1.html) (ví dụ: cả hai đều đủ tuổi, không có [quan hệ huyết thống](https://luatvietnam.vn/dan-su/ket-hon-can-huyet-bi-phat-the-nao-568-98038-article.html), không bị mất năng lực hành vi dân sự, ...).
+
+Hiện nay, pháp luật Việt Nam không công nhận mọi trường hợp sống chung như vợ chồng là hôn nhân thực tế. Chỉ một số trường hợp nhất định, đáp ứng các điều kiện cụ thể, mới được pháp luật xem xét công nhận.
+
+Như vậy, hôn nhân thực tế là trường hợp nam nữ chung sống với nhau và thỏa mãn những điều kiện theo quy định của pháp luật nhưng không thực hiện thủ tục đăng ký kết hôn vẫn được pháp luật công nhận hôn nhân hợp pháp, được giải quyết quyền, lợi ích và nghĩa vụ như hôn nhân hợp pháp. Hôn nhân thực tế là một thuật ngữ pháp lý để chỉ những trường hợp hai bên nam nữ chung sống trong quan hệ vợ chồng, đã được gia đình, xã hội thừa nhận nhưng chưa được đăng ký tại cơ quan hộ tịch, chưa được cấp giấy chứng nhận kết hôn.
+
+### **Điều kiện để hôn nhân thực tế được công nhận là gì?**
+
+Thông tư liên tịch số [01/2001/TTLT-TANDTC-VKSNDTC-BTP](https://luatvietnam.vn/linh-vuc-khac/thong-tu-lien-tich-01-2001-ttlt-tandtc-vksndtc-btp-huong-dan-thi-hanh-nghi-quyet-so-35-2000-qh10-ngay-9-6-2000-cua-quoc-hoi-ve-viec-thi-hanh-luat-hon-nhan-va-gia-dinh-11383-d1.html), hôn nhân thực tế được xác nhận là hợp pháp trong hai trường hợp chính sau đây:
+
+***Trường hợp 1: Quan hệ vợ chồng được xác lập trước ngày 03/01/1987***
+
+Đây là những cặp đôi bắt đầu chung sống như vợ chồng trước ngày [Luật Hôn nhân và Gia đình 1986](https://luatvietnam.vn/linh-vuc-khac/luat-21-lct-hdnn7-quoc-hoi-1367-d1.html) có hiệu lực (03/01/1987), và chưa đăng ký kết hôn.
+
+- Theo quy định tại mục 3 Nghị quyết [35/2000/QH10](https://luatvietnam.vn/hon-nhan-gia-dinh/nghi-quyet-35-2000-qh10-cua-quoc-hoi-ve-viec-thi-hanh-luat-hon-nhan-va-gia-dinh-10560-d1.html), các cặp đôi này được khuyến khích đăng ký kết hôn. Điều này có nghĩa là, ngay cả khi họ không đăng ký kết hôn, quan hệ vợ chồng của họ vẫn được pháp luật công nhận.
+
+- Thời điểm công nhận quan hệ vợ chồng: Quan hệ vợ chồng được công nhận từ thời điểm các bên bắt đầu chung sống với nhau như vợ chồng.
+
+- Điều kiện xác định: Hai bên phải có đủ điều kiện kết hôn theo quy định pháp luật hiện hành và thỏa mãn một trong các trường hợp sau:
+
++ Có tổ chức lễ cưới.
+
++ Được gia đình của một bên hoặc cả hai bên chấp thuận.
+
++ Được cá nhân/tổ chức khác chứng kiến.
+
++ Thực sự chung sống, chăm sóc, giúp đỡ lẫn nhau và cùng nhau xây dựng gia đình.
+
+- Giải quyết ly hôn: Nếu một bên hoặc các bên yêu cầu ly hôn, Tòa án sẽ áp dụng Luật Hôn nhân và Gia đình năm 2000 để giải quyết, mặc dù họ không đăng ký kết hôn.
+
+***Trường hợp 2: Quan hệ vợ chồng được xác lập từ 03/01/1987 đến trước 01/01/2001***
+
+Các cặp đôi xác lập quan hệ vợ chồng trong khoảng thời gian này có nghĩa vụ đăng ký kết hôn nếu đủ điều kiện.
+
+- Nghĩa vụ đăng ký kết hôn: mục 3 Nghị quyết 35/2000/QH10 thì các cặp đôi này cần đăng ký kết hôn trong thời hạn từ 01/01/2001 đến ngày 01/01/2003 để được công nhận là hôn nhân hợp pháp.
+
+- Thời điểm công nhận: Nếu đăng ký kết hôn trong thời hạn này, hôn nhân thực tế được công nhận từ ngày hai bên bắt đầu chung sống như vợ chồng chứ không phải kể từ ngày đăng ký kết hôn.
+
+- Hậu quả khi không đăng ký kết hôn:
+
++ Trường hợp đăng ký kết hôn sau ngày 01/01/2003, quan hệ vợ chồng chỉ được công nhận từ ngày đăng ký kết hôn. Khoảng thời gian chung sống trước đó không được công nhận là hôn nhân thực tế.
+
++ Trường hợp không đăng ký kết hôn: Nếu không đăng ký kết hôn sau thời hạn này, pháp luật không công nhận họ là vợ chồng, dù có chung sống như vợ chồng.
+
+***Xem thêm:*** [Thủ tục đăng ký kết hôn: Hồ sơ, trình tự thế nào?](https://luatvietnam.vn/dan-su/thu-tuc-dang-ky-ket-hon-moi-nhat-568-17676-article.html)
+
+*Trên đây là nội dung tư vấn về vấn đề “*Thế nào là hôn nhân thực tế?*” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q42edbabec3',
+          'Đất công ích có được bồi thường khi Nhà nước thu hồi đất không?',
+          4,
+          'https://luatvietnam.vn/luat-su-tu-van/dat-cong-ich-co-duoc-boi-thuong-khi-nha-nuoc-thu-hoi-dat-khong-150824-faqs.html',
+          '2025-08-07',
+          '**Trả lời:**
+
+Theo quy định tại điểm d, khoản 1, Điều 107 [Luật Đất đai 2024](https://luatvietnam.vn/dat-dai/luat-dat-dai-2024-296638-d1.html?gad_source=1&gclid=CjwKCAiApsm7BhBZEiwAvIu2X7ywQQyDQb4fjCKqyfR3vARJdxv7MJtYcGdThtskS41kVkC16CPUrhoCcnsQAvD_BwE#) thì trường hợp đất thuộc quỹ đất nông nghiệp sử dụng vào mục đích công ích do Ủy ban nhân dân cấp xã cho thuê thì không được [bồi thường](https://luatvietnam.vn/dat-dai-nha-o/boi-thuong-ve-dat-567-90616-article.html) về đất nhưng được bồi thường chi phí đầu tư vào đất còn lại khi Nhà nước thu hồi đất (nếu có).
+
+Tuy nhiên, theo thông tin bạn cung cấp, thửa đất của bạn có nguồn gốc do bạn khai hoang vào năm 1992. Sau đó, UBND xã hướng dẫn bạn ký vào hợp đồng thầu đất công ích. Như vậy, cần làm rõ vấn đề hợp đồng thầu đất công ích này có được tiến hành ký kết đúng quy định của pháp luật hay không. Bởi theo quy định hiện hành, quy trình để một thửa đất được xác lập là đất công ích (quỹ đất nông nghiệp sử dụng vào mục đích công ích) tại cấp xã thường bao gồm các bước sau:
+
+- Xác định nguồn gốc và hiện trạng thửa đất:
+
++ Đất công ích được hình thành từ các nguồn: đất do tổ chức, hộ gia đình, cá nhân **trả lại hoặc tặng cho Nhà nước**; đất nông nghiệp **thu hồi**; hoặc đất chưa sử dụng được giao cho xã, phường, thị trấn quản lý.
+
++ UBND cấp xã rà soát, xác định rõ nguồn gốc, hiện trạng sử dụng của thửa đất dự kiến đưa vào quỹ đất công ích.
+
+- Lập hồ sơ đề nghị giao đất để quản lý:
+
++ UBND cấp xã lập hồ sơ đề nghị giao đất công ích để quản lý.
+
++ Hồ sơ gồm: Đơn đề nghị giao đất để quản lý, bản đồ vị trí thửa đất, các giấy tờ liên quan đến nguồn gốc đất (nếu có).
+
+- Trình cơ quan có thẩm quyền xem xét, quyết định giao đất:
+
++ UBND cấp xã gửi hồ sơ đến cơ quan có chức năng quản lý đất đai để thẩm định và quyết định giao đất cho UBND cấp xã quản lý
+
+- Đăng ký đất đai, cập nhật vào hồ sơ địa chính:
+
++ Sau khi có quyết định giao đất để quản lý, UBND cấp xã thực hiện đăng ký đất đai đối với thửa đất này.
+
++ Thửa đất được cập nhật vào hồ sơ địa chính với mục đích sử dụng là đất nông nghiệp sử dụng vào mục đích công ích.
+
+- Quản lý, sử dụng theo quy hoạch, kế hoạch sử dụng đất: UBND cấp xã quản lý, sử dụng thửa đất công ích theo đúng quy hoạch, kế hoạch sử dụng đất đã được phê duyệt và các quy định pháp luật về đất đai.
+
+Tóm lại, quy trình để UBND cấp xã đăng ký một thửa đất trở thành đất công ích là: xác định nguồn gốc đất, lập hồ sơ đề nghị giao đất để quản lý, trình cơ quan có thẩm quyền quyết định giao đất, thực hiện đăng ký đất đai và cập nhật vào hồ sơ địa chính, sau đó quản lý, sử dụng theo quy hoạch, kế hoạch sử dụng đất.
+
+Như vậy, nếu thửa đất của bạn có nguồn gốc do bạn khai hoang vào năm 1992 và sử dụng ổn định đến cuối năm 2024, để thửa đất này trở thành đất công ích thì phải có quy trình Nhà nước thu hồi thửa đất này của bạn hoặc bạn đã thực hiện thủ tục trả lại/ tặng quyền sử dụng thửa đất này cho Nhà nước. Ngược lại, nếu quá trình sử dụng đất của bạn từ khi khai hoang đến nay chưa từng có quy trình thu hồi đất, quy trình trả lại/ tặng quyền sử dụng thửa đất này cho Nhà nước thì thửa đất của bạn không thể trở thành đất công ích được.
+
+Trong trường hợp này, hợp đồng thầu đất công ích mà bạn đã ký với UBND xã sẽ không có giá trị pháp lý. Và cũng chính vì vậy, bạn sẽ được xem xét điều kiện để được bồi thường về đất khi Nhà nước thu hồi đất.
+
+Cụ thể, theo quy định tại Điều 95 Luật Đất đai 2024 và Điều 5 Nghị định [88/2024/NĐ-CP](https://luatvietnam.vn/dat-dai/nghi-dinh-88-2024-nd-cp-quy-dinh-boi-thuong-ho-tro-tai-dinh-cu-khi-nha-nuoc-thu-hoi-dat-360348-d1.html) thì nếu thửa đất của bạn chưa được cấp Giấy chứng nhận nhưng đủ điều kiện được cấp giấy chứng nhận và không phải là đất thuê trả tiền thuê đất hằng năm thì sẽ đủ điều kiện được bồi thường về đất khi Nhà nước thu hồi đất.
+
+Mặt khác, theo quy định tại Điều 138 và khoản 4, Điều 139 [Luật Đất đai 2024](https://luatvietnam.vn/dat-dai/luat-dat-dai-2024-296638-d1.html?gad_source=1&gclid=CjwKCAiApsm7BhBZEiwAvIu2X7ywQQyDQb4fjCKqyfR3vARJdxv7MJtYcGdThtskS41kVkC16CPUrhoCcnsQAvD_BwE#) thì nếu bạn khai hoang thửa đất này từ năm 1992, quá trình [sử dụng đất ổn định](https://luatvietnam.vn/dat-dai-nha-o/su-dung-dat-on-dinh-la-gi-567-33812-article.html), không có tranh chấp, không thuộc trường hợp có giấy tờ về quyền sử dụng đất mà không [vi phạm pháp luật về đất đai](https://luatvietnam.vn/dat-dai-nha-o/vi-pham-phap-luat-dat-dai-van-duoc-cap-so-do-567-23899-article.html), không thuộc trường hợp đất được giao không đúng thẩm quyền thì sẽ đủ điều kiện cấp Giấy chứng nhận. Và như vậy, bạn sẽ được bồi thường về đất khi Nhà nước thu hồi đất.
+
+***Xem thêm:*** [Đất công ích là gì? Có được được cấp Sổ đỏ và bồi thường không?](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về vấn đề “Đất công ích có được bồi thường khi Nhà nước thu hồi đất không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q81341f491a',
+          'Đã nhận tiền bồi thường khi Nhà nước thu hồi đất thì có được khởi kiện nữa không?',
+          4,
+          'https://luatvietnam.vn/luat-su-tu-van/da-nhan-tien-boi-thuong-khi-nha-nuoc-thu-hoi-dat-thi-co-duoc-khoi-kien-nua-khong-150825-faqs.html',
+          '2025-08-07',
+          '**Trả lời:**
+
+Theo quy định tại khoản 1, Điều 237 [Luật Đất đai 2024](https://luatvietnam.vn/dat-dai/luat-dat-dai-2024-296638-d1.html?gad_source=1&gclid=CjwKCAiApsm7BhBZEiwAvIu2X7ywQQyDQb4fjCKqyfR3vARJdxv7MJtYcGdThtskS41kVkC16CPUrhoCcnsQAvD_BwE#) thì *“Người sử dụng đất, người có quyền và nghĩa vụ liên quan đến sử dụng đất có quyền khiếu nại, khởi kiện quyết định hành chính, hành vi hành chính về quản lý đất đai”*, bao gồm cả quyết định phê duyệt phương án bồi thường, hỗ trợ, tái định cư.
+
+Sau khi nhận được quyết định phê duyệt phương án bồi thường, hỗ trợ, tái định cư và nhận được tiền chi trả, người có đất thu hồi có quyền khiếu nại, khởi kiện nếu cho rằng việc bồi thường, hỗ trợ chưa đúng quy định bởi việc đã nhận tiền bồi thường không đồng nghĩa với việc mất quyền [khiếu nại](https://luatvietnam.vn/dat-dai-nha-o/cach-viet-don-khieu-nai-dat-dai-567-21590-article.html), khởi kiện.
+
+Như vậy, sau khi nhận tiền, nếu bạn phát hiện có sai sót trong việc xác định mức bồi thường, hỗ trợ, hoặc có căn cứ cho rằng quyền, lợi ích hợp pháp của mình bị xâm phạm, thì bạn có quyền khiếu nại, khởi kiện để yêu cầu xem xét lại mức bồi thường, hỗ trợ. Bạn lưu ý thời hiệu khởi kiện để được Tòa án giải quyết theo quy định.
+
+***Xem thêm:*** [Có được khiếu nại tăng tiền khi đã nhận bồi thường thu hồi thu hồi đất](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Đã nhận tiền bồi thường khi Nhà nước thu hồi đất thì có được khởi kiện nữa không?” dựa trên những thông tin mà Luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q7422d709e0',
+          'Đang nợ thuế kinh doanh có được bán đất không?',
+          4,
+          'https://luatvietnam.vn/luat-su-tu-van/dang-no-thue-kinh-doanh-co-duoc-ban-dat-khong-150823-faqs.html',
+          '2025-08-06',
+          '**Trả lời:**
+
+Theo khoản 1, Điều 45 [Luật Đất đai 2024](https://luatvietnam.vn/dat-dai/luat-dat-dai-2024-296638-d1.html?gad_source=1&gclid=CjwKCAiApsm7BhBZEiwAvIu2X7ywQQyDQb4fjCKqyfR3vARJdxv7MJtYcGdThtskS41kVkC16CPUrhoCcnsQAvD_BwE) thì người sử dụng đất được thực hiện các quyền chuyển nhượng, chuyển đổi, cho thuê, cho thuê lại, thừa kế, tặng cho quyền sử dụng đất khi có đủ các điều kiện sau:
+
+> *a) Có Giấy chứng nhận quyền sử dụng đất hoặc Giấy chứng nhận quyền sở hữu nhà ở và quyền sử dụng đất ở hoặc Giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất hoặc Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất, trừ trường hợp thừa kế quyền sử dụng đất, chuyển đổi đất nông nghiệp khi dồn điền, đổi thửa, tặng cho quyền sử dụng đất cho Nhà nước, cộng đồng dân cư và trường hợp quy định tại khoản 7 Điều 124 và điểm a khoản 4 Điều 127 của Luật này;*
+>
+> *b) Đất không có tranh chấp hoặc tranh chấp đã được giải quyết bởi cơ quan nhà nước có thẩm quyền, bản án, quyết định của Tòa án, quyết định hoặc phán quyết của Trọng tài đã có hiệu lực pháp luật;*
+>
+> *c) Quyền sử dụng đất không bị kê biên, áp dụng biện pháp khác để bảo đảm thi hành án theo quy định của pháp luật thi hành án dân sự;*
+>
+> *d) Trong thời hạn sử dụng đất;*
+>
+> *đ) Quyền sử dụng đất không bị áp dụng biện pháp khẩn cấp tạm thời theo quy định của pháp luật.*
+
+Ngoài ra, theo khoản 5, Điều 45 Luật Đất đai 2024 thì *“Trường hợp người sử dụng đất được chậm thực hiện nghĩa vụ tài chính hoặc được ghi nợ nghĩa vụ tài chính thì phải thực hiện xong nghĩa vụ tài chính trước khi thực hiện các quyền chuyển đổi, chuyển nhượng, cho thuê, cho thuê lại, tặng cho quyền sử dụng đất, thế chấp, góp vốn bằng quyền sử dụng đất”.*
+
+Như vậy, nếu bạn đang được chậm hoặc được [ghi nợ](https://luatvietnam.vn/dat-dai-nha-o/thu-tuc-ghi-no-tien-su-dung-dat-567-19748-article.html) nghĩa vụ tài chính **liên quan đến đất đai** thì bạn phải hoàn thành xong nghĩa vụ tài chính này trước khi thực hiện việc bán (chuyển nhượng) đất. Nếu chưa hoàn thành nghĩa vụ tài chính, bạn sẽ không đủ [điều kiện để chuyển nhượng](https://luatvietnam.vn/dat-dai-nha-o/dieu-kien-chuyen-nhuong-quyen-su-dung-dat-567-25033-article.html) quyền sử dụng đất.
+
+***Lưu ý:*** Nghĩa vụ tài chính ở đây bao gồm các khoản như tiền sử dụng đất, tiền thuê đất, thuế, phí, lệ phí **liên quan đến đất đai**. Các khoản nợ về [thuế thu nhập cá nhân](https://luatvietnam.vn/thue-phi/huong-dan-nop-thue-thu-nhap-ca-nhan-khi-mua-ban-nha-dat-565-21621-article.html) hay thuế giá trị gia tăng của hộ kinh doanh mà bạn đã từng là chủ hộ mà không liên quan đến thửa đất của bạn sẽ không được coi là lý do để bạn không có quyền bán đất.
+
+***Xem thêm:*** [Đang nợ tiền sử dụng đất có được sang tên Sổ đỏ không?](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về vấn đề “Đang nợ thuế kinh doanh có được bán đất không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q68c656e156',
+          'Thế nào là di chúc hợp pháp?',
+          1,
+          'https://luatvietnam.vn/luat-su-tu-van/the-nao-la-di-chuc-hop-phap-150822-faqs.html',
+          '2025-08-06',
+          '**Trả lời:**
+
+### **Di chúc hợp pháp được quy định tại Điều 630 Bộ Luật dân sự 2015 (BLDS):**
+
+> ***Điều 630. Di chúc hợp pháp***
+>
+> *1. Di chúc hợp pháp phải có đủ các điều kiện sau đây:*
+>
+> *a) Người lập di chúc minh mẫn, sáng suốt trong khi lập di chúc; không bị lừa dối, đe doạ, cưỡng ép;*
+>
+> *b) Nội dung của di chúc không vi phạm điều cấm của luật, không trái đạo đức xã hội; hình thức di chúc không trái quy định của luật.*
+>
+> *2. Di chúc của người từ đủ mười lăm tuổi đến chưa đủ mười tám tuổi phải được lập thành văn bản và phi được cha, mẹ hoặc người giám hộ đồng ý về việc lập di chúc.*
+>
+> *3. Di chúc của người bị hạn chế về thể chất hoặc của người không biết chữ phải được người làm chứng lập thành văn bản và có công chứng hoặc chứng thực.*
+>
+> *4. Di chúc bằng văn bản không có công chứng, chứng thực chỉ được coi là hợp pháp, nếu có đủ các điều kiện được quy định tại khoản 1 Điều này.*
+>
+> *5. Di chúc miệng được coi là hợp pháp nếu người di chúc miệng thể hiện ý chí cuối cùng của mình trước mặt ít nhất hai người làm chứng và ngay sau khi người di chúc miệng thể hiện ý chí cuối cùng, người làm chứng ghi chép lại, cùng ký tên hoặc điểm chỉ. Trong thời hạn 05 ngày làm việc, kể từ ngày người di chúc miệng thể hiện ý chí cuối cùng thì di chúc phải được công chứng viên hoặc cơ quan có thẩm quyền chứng thực xác nhận chữ ký hoặc điểm chỉ của người làm chứng.*
+
+### **Di chúc được coi là hợp pháp sẽ có những điều kiện gì?**
+
+**Thứ nhất, điều kiện về năng lực lập di chúc của người lập di chúc:**
+
+***Về độ tuổi***, Điều 625 [BLDS](https://luatvietnam.vn/dan-su/bo-luat-dan-su-2015-101333-d1.html) quy định độ tuổi lập di chúc gồm:
+
+1) Người đã thành niên (là người từ đủ 18 tuổi trở lên) và;
+
+2) Người từ đủ mười lăm tuổi đến chưa đủ mười tám tuổi được lập di chúc, nếu được cha, mẹ hoặc người giám hộ đồng ý về việc lập di chúc.
+
+Theo quy định này, người đủ 18 được xác định là có đầy đủ năng lực hành vi dân sự, vì vậy họ có thể tự mình thực hiện việc lập di chúc. Ngoài ra, pháp luật cũng quy định người từ đủ mười lăm tuổi đến chưa đủ mười tám tuổi được lập di chúc. Đây không phải là quy định mới mà đã có từ Bộ luật dân sự năm 1995, 2005, tuy nhiên Bộ luật năm 2015 có sự bổ sung hợp lý hơn khi thay vì quy định “Nếu được cha, mẹ hoặc người giám hộ đồng ý” thì bổ sung “nếu được cha, mẹ hoặc người giám hộ đồng ý về việc lập di chúc”. Việc quy định thêm cụm từ “về việc lập di chúc” cho thấy pháp luật quy định rõ việc cha, mẹ, người giám hộ chỉ được đồng ý hay không về việc lập di chúc mà không được can thiệp vào nội dung của di chúc.
+
+***Về năng lực nhận thức và làm chủ hành vi***, để di chúc hợp pháp, người lập di chúc minh mẫn, sáng suốt trong khi lập di chúc; không bị lừa dối, đe doạ, cưỡng ép (điểm a, khoản 1, Điều 630 BLDS). Pháp luật đã loại trừ một số trường hợp không được lập di chúc vì trong những trường hợp này, người lập di chúc không đủ năng lực nhận thức và làm chủ hành vi của mình, không thể hiện được chính xác, đầy đủ ý chí của mình trong di chúc, cụ thể gồm:
+
+- [Người mất năng lực hành vi dân sự](https://luatvietnam.vn/dan-su/nang-luc-hanh-vi-dan-su-la-gi-568-93263-article.html). Theo quy định tại Điều 22 BLDS 2015, người mất năng lực hành vi dân sự không thể tự mình xác lập, thực hiện giao dịch dân sự mà phải do người đại diện theo pháp luật thực hiện, bao gồm cả việc lập di chúc.
+
+- Người không minh mẫn, sáng suốt trong khi lập di chúc: Sự minh mẫn, sáng suốt là yếu tố quan trọng trong tính hợp pháp của di chúc, vì khi đó người lập di chúc mới có thể thể hiện chính xác, đầy đủ ý chí của mình mà không bị sai lệch. Một người có thể được xác định không minh mẫn, sáng suốt như đang trong tình trạng ốm, bệnh nặng, tuổi già sức yếu và không thể hoạt động, nói, viết một cách rõ ràng, chính xác, hoặc người lập di chúc đang có vấn đề về tâm sinh lý khiến bản thân hoảng loạn, hoang mang,…
+
+- Người bị lừa dối, đe dọa, cưỡng ép về việc lập di chúc. Điều 127 [BLDS 2015](https://luatvietnam.vn/dan-su/bo-luat-dan-su-2015-101333-d1.html) quy định về việc này như sau:
+
+> ***Điều 127. Giao dịch dân sự vô hiệu do bị lừa dối, đe dọa, cưỡng ép***
+>
+> *Khi một bên tham gia giao dịch dân sự do bị lừa dối hoặc bị đe dọa, cưỡng ép thì có quyền yêu cầu Tòa án tuyên bố giao dịch dân sự đó là vô hiệu.*
+>
+> *Lừa dối trong giao dịch dân sự là hành vi cố ý của một bên hoặc của người thứ ba nhằm làm cho bên kia hiểu sai lệch về chủ thể, tính chất của đối tượng hoặc nội dung của giao dịch dân sự nên đã xác lập giao dịch đó.*
+>
+> *Đe dọa, cưỡng ép trong giao dịch dân sự là hành vi cố ý của một bên hoặc người thứ ba làm cho bên kia buộc phải thực hiện giao dịch dân sự nhằm tránh thiệt hại về tính mạng, sức khỏe, danh dự, uy tín, nhân phẩm, tài sản của mình hoặc của người thân thích của mình.*
+
+Như vậy, khi người lập di chúc bị lừa dối, đe dọe, cưỡng ép trong lập di chúc thì di chúc này được coi là không hợp pháp.
+
+**Thứ hai, điều kiện về nội dung của di chúc:**
+
+Điểm b, Khoản 1, Điều 630 [BLDS 2015](https://luatvietnam.vn/dan-su/bo-luat-dan-su-2015-101333-d1.html) quy định về điều kiện của di chúc hợp pháp *“Nội dung của di chúc không vi phạm điều cấm của luật, không trái đạo đức xã hội”.*
+
+***Về điều kiện không vi phạm điều cấm của luật:*** tại Điều 177 BLDS 2015 quy định: “*c) Mục đích và nội dung của giao dịch dân sự không vi phạm điều cấm của luật, không trái đạo đức xã hội”*. Đây cũng là điểm mới so với quy định của BLDS năm 2005, khi Bộ Luật năm 2005 quy định: *“Nội dung di chúc không trái pháp luật, đạo đức xã hội”* (điểm b khoản 1 Điều 652). Có thể thấy điểm cụm từ *“không trái pháp luật”* được thay bằng *“không vi phạm điều cấm của luật”* đã mở rộng thêm khả năng hợp pháp của di chúc. Bởi cụm từ *“trái pháp luật”* có phạm vi rộng hơn, nghĩa là chỉ cần không phù hợp như không thực hiện, thực hiện không đúng, vi phạm điều cấm quy định của các văn bản pháp luật hiện hành thì di chúc đó sẽ được coi là không hợp pháp, trong khi điều cấm của luật chỉ bao gồm *“những quy định của luật không cho phép chủ thể thực hiện những hành vi nhất định”* (Điều 123 BLDS). Như vậy. thuật ngữ *“trái pháp luật”* có nghĩa rộng hơn thuật ngữ *“không vi phạm điều cấm của luật”*, quy định đổi mới như vậy đã mở rộng phạm vi để di chúc được coi là hợp pháp.
+
+***Về điều kiện không trái đạo đức xã hội:*** Điều 125 BLDS 2015 định nghĩa *“Đạo đức xã hội là những chuẩn mực ứng xử chung trong đời sống xã hội, được cộng đồng thừa nhận và tôn trọng”*. Đạo đức là cơ sở xã hội của pháp luật, xã hội cũng được xây dựng một phần do đạo đức, vì vậy đạo đức xã hội được xác định là một trong những điều kiện hợp pháp của giao dịch dân sự nói chung và di chúc nói riêng.
+
+**Thứ ba, điều kiện về hình thức của di chúc:**
+
+Căn cứ Điều 627 BLDS 2015, di chúc được quy định *“phải được lập thành văn bản; nếu không thể lập được di chúc bằng văn bản thì có thể di chúc miệng”.*
+
+***Đối với [di chúc bằng miệng](https://luatvietnam.vn/tin-phap-luat/di-chuc-mieng-duoc-coi-la-hop-phap-khi-nao-230-17967-article.html#:~:text=Di%20ch%C3%BAc%20mi%E1%BB%87ng%20l%C3%A0%20di,di%20ch%C3%BAc%20b%E1%BA%B1ng%20v%C4%83n%20b%E1%BA%A3n.):*** Pháp luật quy định trong một số trường hợp theo khoản 1, Điều 629 BLDS 2015 thì khi không thể lập di chúc bằng văn bản thì được quyền lập di chúc bằng miệng như sau “*1. Trường hợp tính mạng một người bị cái chết đe dọa và không thể lập di chúc bằng văn bản thì có thể lập di chúc miệng.”* (Điều 629 BLDS 2015). Như vậy chỉ trong trường hợp nguy hiểm đến tính mạng và không có đủ thời gian, điều kiện lập di chúc bằng văn bản như bị tai nạn bất ngờ, bệnh nặng nguy kịch,… Việc lập di chúc miệng cũng mang nhiều rủi ro pháp lý. Theo quy định tại khoản 5 Điều 630 BLDS 2015:
+
+> *5. Di chúc miệng được coi là hợp pháp nếu người di chúc miệng thể hiện ý chí cuối cùng của mình trước mặt ít nhất hai người làm chứng và ngay sau khi người di chúc miệng thể hiện ý chí cuối cùng, người làm chứng ghi chép lại, cùng ký tên hoặc điểm chỉ. Trong thời hạn 05 ngày làm việc, kể từ ngày người di chúc miệng thể hiện ý chí cuối cùng thì di chúc phải được công chứng viên hoặc cơ quan có thẩm quyền chứng thực xác nhận chữ ký hoặc điểm chỉ của người làm chứng.*
+
+Điều kiện để di chúc miệng hợp pháp được quy định rất đầy đủ, kĩ càng nhằm đảm bảo ý nguyện của người lập di chúc được xác định một cách kịp thời, chính xác, rõ ràng và được ghi nhận khách quan. Trên thực tế di chúc miệng sẽ có nhiều rủi ro pháp lý như:
+
+- Không đáp ứng điều kiện lập di chúc miệng khi người lập di chúc vẫn có đủ điều kiện lập di chúc bằng văn bản nhưng lại lựa chọn lập di chúc miệng
+
+- Không đủ người làm chứng hợp lệ khi người làm chứng chỉ có 1 người hoặc những người làm chứng là người thừa kế, người chưa thành niên,… (Điều 632 BLDS 2015)
+
+- Không thực hiện công chứng, chứng thực chữ ký trong thời hạn 05 ngày làm việc vì nhiều lý do như không hiểu biết quy định pháp luật, trong lúc tang gia bối rối đã không nhớ ra,…
+
+- Tranh chấp do nghi ngờ người làm chứng gian đối, không ghi nhận đầy đủ, chính xác và khách quan ý chí của người để lại di chúc.
+
+***Đối với di chúc bằng văn bản:*** Điều 628 BLDS 2015 quy định về các loại di chúc bằng văn bản bao gồm:
+
+- Di chúc bằng văn bản không có người làm chứng (Điều 633 BLDS 2015): Đây là di chúc được người lập di chúc tự mình viết tay và kí vào bản di chúc, có thể hiểu đã tự thể hiện được ý chí của mình nên không cần có người làm chứng. Ưu điểm của di chúc là mang tính bí mật cao, tuy nhiên có một số rủi ro như mất bản gốc, bản gốc di chúc bị người khác tiêu hủy do có nội dung bất lợi,…
+
+- [Di chúc bằng văn bản có người làm chứng](https://luatvietnam.vn/tin-phap-luat/huong-dan-viet-di-chuc-chuan-nhat-230-19004-article.html#:~:text=H%C3%ACnh%20th%E1%BB%A9c%20c%E1%BB%A7a%20di%20ch%C3%BAc,ban%20nh%C3%A2n%20d%C3%A2n%20c%E1%BA%A5p%20x%C3%A3.) (Điều 634 BLDS 2015): Loại di chúc này được lập khi người lập di chúc không thể tự viết di chúc, vì vậy sẽ khó xác định được ý chí của người lập di chúc nên luật quy định cần có 02 người làm chứng. Thực tế phát sinh nhiều rủi ro với loại di chúc này như: Người làm chứng chỉ ký nhưng không xác nhận chữ ký, điểm chỉ của người lập di chúc; di chúc có thể bị giả mạo, lập sau khi người để lại di sản mất sau đó 02 người làm chứng kí vào văn bản, lúc này rất khó xác định thời gian lập di chúc là thời điểm người để lại di chúc còn sống hay không; những người làm chứng không tuân thủ quy định của điều 632 BLDS 2015 về những người không được làm chứng.
+
+- Di chúc có công chứng hoặc chứng thực (Điều 635, Điều 636 BLDS 2015): Đây là loại di chúc được sử dụng phổ biến và an toàn về mặt pháp lý nhất trong các loại di chúc vì di chúc được công nhận bởi một cơ quan, tổ chức có thẩm quyền. Tuy nhiên người lập di chúc cần thực hiện đầy đủ thủ tục công chứng, chứng thực quy định tại Bộ luật dân sự để di chúc được công nhận là hợp pháp.
+
+***Xem thêm:***[Mẫu Di chúc chuẩn và hướng dẫn chi tiết cách viết](https://luatvietnam.vn/bieu-mau/mau-di-chuc-chuan-571-19386-article.html)
+
+*Trên đây là nội dung tư vấn về “Thế nào là di chúc hợp pháp?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q982f99b64c',
+          'Sáp nhập tỉnh, thành thì có bắt buộc đính chính sổ đỏ không?',
+          4,
+          'https://luatvietnam.vn/luat-su-tu-van/sap-nhap-tinh-thanh-thi-co-bat-buoc-dinh-chinh-so-do-khong-150818-faqs.html',
+          '2025-08-01',
+          '**Trả lời:**
+
+### **Có bắt buộc đính chính sổ đỏ khi sáp nhập tỉnh, thành không?**
+
+Theo khoản 1, Điều 152 [Luật Đất đai 2024](https://luatvietnam.vn/dat-dai/luat-dat-dai-2024-296638-d1.html?gad_source=1&gclid=CjwKCAiApsm7BhBZEiwAvIu2X7ywQQyDQb4fjCKqyfR3vARJdxv7MJtYcGdThtskS41kVkC16CPUrhoCcnsQAvD_BwE), cơ quan có thẩm quyền [cấp Giấy chứng nhận](https://luatvietnam.vn/dat-dai-nha-o/thu-tuc-cap-giay-chung-nhan-quyen-su-dung-dat-567-24850-article.html) quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất có trách nhiệm đính chính giấy chứng nhận đã cấp có sai sót trong các trường hợp sau đây:
+
+- Có sai sót thông tin của người được cấp giấy chứng nhận so với thông tin tại thời điểm đính chính;
+
+- Có sai sót thông tin về thửa đất, tài sản gắn liền với đất so với hồ sơ kê khai đăng ký đất đai, tài sản gắn liền với đất đã được tổ chức đăng ký đất đai kiểm tra xác nhận hoặc được thể hiện trong văn bản có hiệu lực của cơ quan nhà nước có thẩm quyền về [giải quyết tranh chấp đất đai](https://luatvietnam.vn/tin-phap-luat/quy-trinh-giai-quyet-tranh-chap-dat-dai-theo-phap-luat-hien-nay-230-101333-article.html).
+
+Bên cạnh đó, ngày 11/4/2025 vừa qua, Bộ Nông nghiệp và Môi trường (trước đây là Bộ Tài nguyên và Môi trường) đã ban hành Công văn [991/BNNMT-QLĐĐ](https://luatvietnam.vn/dia-gioi-hanh-chinh/cong-van-991-bnnmt-qldd-2025-huong-dan-chinh-ly-ho-so-dia-chinh-co-so-du-lieu-dat-dai-khi-sap-xep-don-vi-hanh-chinh-cac-cap-397726-d6.html) hướng dẫn chỉnh lý hồ sơ địa chính, cơ sở dữ liệu đất đai và tổng hợp số liệu diện tích tự nhiên khi sắp xếp đơn vị hành chính.
+
+Như vậy, người dân không bắt buộc phải chỉnh lý, làm lại các Giấy chứng nhận đã cấp như làm lại Sổ đỏ khi sáp nhập tỉnh thành, trừ trường hợp người sử dụng đất, chủ sở hữu tài sản gắn liền với đất có nhu cầu hoặc thực hiện đồng thời với thủ tục hành chính về đất đai.
+
+Tuy nhiên, mặc dù không cần làm lại sổ đỏ sau khi sáp nhập tỉnh, nhưng khi phát sinh các thủ tục hành chính về đất đai, người sử dụng đất có thể đề nghị cơ quan có thẩm quyền thực hiện chỉnh lý, cập nhật thông tin trên sổ đỏ để bảo đảm tính thống nhất, tạo thuận lợi trong quá trình giao dịch và sử dụng đất sau này.
+
+### **Thủ tục đính chính sổ đỏ khi sáp nhập tỉnh, thành**
+
+Thủ tục đính chính sổ đỏ đã cấp được thực hiện theo điểm XIV, Mục C, Phần V, Phụ lục I Nghị Định [151/2025/NĐ-CP](https://luatvietnam.vn/dat-dai/nghi-dinh-151-2025-nd-cp-cua-chinh-phu-quy-dinh-ve-phan-dinh-tham-quyen-cua-chinh-quyen-dia-phuong-02-cap-phan-quyen-phan-cap-trong-linh-vuc-dat-dai-402745-d1.html) như sau:
+
+***Bước 1: Chuẩn bị hồ sơ đính chính sổ đỏ***
+
+Hồ sơ nộp khi thực hiện thủ tục đính chính sổ đỏ đã cấp đối với trường hợp người sử dụng đất, chủ sở hữu tài sản gắn liền với đất phát hiện Sổ đỏ đã cấp có sai sót bao gồm:
+
+- Đơn đăng ký biến động đất đai, tài sản gắn liền với đất theo Mẫu số 18 ban hành kèm theo Nghị định 151/2025/NĐ-CP;
+
+- Bản gốc Giấy chứng nhận đã cấp;
+
+- Giấy tờ liên quan đến việc đính chính Sổ đỏ đã cấp;
+
+- Trường hợp người sử dụng đất, chủ sở hữu tài sản gắn liền với đất thực hiện thủ tục thông qua người đại diện theo quy định của pháp Luật về dân sự thì phải có văn bản về việc ủy quyền theo quy định của pháp luật về dân sự.
+
+***Bước 2: Nộp hồ sơ và Cơ quan quản lý đất đai thẩm định, giải quyết hồ sơ***
+
+Hồ sơ được nộp tại Bộ phận Một cửa theo quy định, Văn phòng đăng ký đất đai hoặc chi nhánh văn phòng. Cơ quan tiếp nhận sẽ cấp giấy hẹn và chuyển hồ sơ đến đơn vị có thẩm quyền xử lý.
+
+***Bước 3: Trả kết quả***
+
+Căn cứ Điểm II, Mục C, Phần V, Phụ lục I Nghị định 151/2025/NĐ-CP, trường hợp đính chính Giấy chứng nhận đã cấp là không quá 08 ngày làm việc.
+
+Thời gian trên được tính kể từ ngày nhận được hồ sơ đã đảm bảo tính đầy đủ; không tính thời gian cơ quan có thẩm quyền xác định nghĩa vụ tài chính về đất đai, thời gian thực hiện nghĩa vụ tài chính của người sử dụng đất, thời gian xem xét xử lý đối với trường hợp sử dụng đất có [vi phạm pháp luật](https://luatvietnam.vn/dat-dai-nha-o/dat-vi-pham-la-gi-567-33312-article.html), thời gian trưng cầu giám định, thời gian niêm yết công khai, đăng tin trên phương tiện thông tin đại chúng, thời gian thực hiện thủ tục [chia thừa kế](https://luatvietnam.vn/dat-dai-nha-o/khoi-kien-chia-thua-ke-nha-dat-567-34142-article.html) quyền sử dụng đất, tài sản gắn liền với đất đối với trường hợp thực hiện thủ tục cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất mà người sử dụng đất, chủ sở hữu tài sản gắn liền với đất chết trước khi trao Giấy chứng nhận.
+
+Đối với các xã miền núi, hải đảo, vùng sâu, vùng xa, vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn thì thời gian thực hiện được tăng thêm 10 ngày làm việc.
+
+***Xem thêm:*** [Sau sáp nhập tỉnh đến đâu để làm Sổ đỏ?](https://luatvietnam.vn/dat-dai-nha-o/sau-sap-nhap-tinh-den-dau-de-lam-so-do-567-102105-article.html)
+
+*Trên đây là nội dung tư vấn về “*Sáp nhập tỉnh, thành thì có bắt buộc đính chính sổ đỏ không?*” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Qdfbdfcbc90',
+          'HĐLĐ hết thời hạn trong thời gian nghỉ thai sản thì công ty có phải báo giảm BHXH không?',
+          23,
+          'https://luatvietnam.vn/luat-su-tu-van/hdld-het-thoi-han-trong-thoi-gian-nghi-thai-san-thi-cong-ty-co-phai-bao-giam-bhxh-khong-150817-faqs.html',
+          '2025-07-31',
+          '**Trả lời:**
+
+### **Hợp đồng lao động hết hạn trong thời gian nghỉ chế độ thai sản thì công ty có phải báo giảm không?**
+
+Căn cứ theo quy định tại khoản 1, Điều 34 [Bộ luật Lao động 2019](https://luatvietnam.vn/lao-dong/bo-luat-lao-dong-2019-179015-d1.html) quy định như sau:
+
+> ***Điều 34. Các trường hợp chấm dứt hợp đồng lao động***
+>
+> *1. Hết hạn hợp đồng lao động, trừ trường hợp quy định tại khoản 4 Điều 177 của Bộ luật này.*
+
+Bên cạnh đó, căn cứ theo quy định tại khoản 1, Điều 45 Bộ luật Lao động 2019 thì:
+
+> ***Điều 45. Thông báo chấm dứt hợp đồng lao động***
+>
+> *1. Người sử dụng lao động phải thông báo bằng văn bản cho người lao động về việc chấm dứt hợp đồng lao động khi hợp đồng lao động chấm dứt theo quy định của Bộ luật này, trừ trường hợp quy định tại các khoản 4, 5, 6, 7 và 8 Điều 34 của Bộ luật này.*
+
+Như vậy, theo quy định trên thì hợp đồng lao động của bạn hết hạn trong thời gian nghỉ chế độ thai sản là một trong những căn cứ chấm dứt hợp đồng lao động. Theo đó, người sử dụng lao động phải thông báo bằng văn bản cho người lao động về việc chấm dứt hợp đồng lao động khi hợp đồng lao động hết thời hạn.
+
+Đồng thời, khi công ty chấm dứt hợp đồng lao động với người lao động thì không tồn tại quan hệ lao động. Do đó, không thuộc đối tượng tham gia bảo hiểm xã hội nên phía công ty phải báo giảm người lao động trên hệ thống của cơ quan bảo hiểm xã hội.
+
+### **HĐLĐ hết hạn khi đang nghỉ chế độ thai sản có được tính là thời gian đã đóng BHXH không?**
+
+Căn cứ quy định tại điểm a, khoản 4, Điều 9 [Thông tư 12/2025/TT-BNV](https://luatvietnam.vn/bao-hiem/thong-tu-12-2025-tt-bnv-cua-bo-noi-vu-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-bao-hiem-xa-hoi-ve-bao-hiem-xa-hoi-bat-buoc-404606-d1.html) như sau:
+
+> ***Điều 9. Xác định thời gian nghỉ việc hưởng chế độ thai sản***
+>
+> *[…]*
+>
+> *4. Việc tính thời gian nghỉ việc hưởng chế độ thai sản là thời gian đóng bảo hiểm xã hội bắt buộc được thực hiện theo quy định tại khoản 8 Điều 53 của Luật Bảo hiểm xã hội và được hướng dẫn cụ thể như sau:*
+>
+> *a) Trường hợp hợp đồng lao động hết thời hạn trong thời gian người lao động nghỉ việc hưởng chế độ thai sản thì thời gian hưởng chế độ thai sản từ khi nghỉ việc hưởng chế độ thai sản đến trước khi hợp đồng lao động hết thời hạn được tính là thời gian đóng bảo hiểm xã hội, thời gian hưởng chế độ thai sản từ khi hợp đồng lao động hết thời hạn không được tính là thời gian đóng bảo hiểm xã hội;*
+
+Như vậy, trường hợp người lao động đang nghỉ chế độ thai sản nhưng hợp đồng lao động hết hạn thì thời gian hưởng [chế độ thai sản](https://luatvietnam.vn/bao-hiem/che-do-thai-san-563-19578-article.html) sau khi hợp đồng lao động hết thời hạn không được tính là thời gian đã đóng bảo hiểm xã hội.
+
+Do đó, trường hợp người lao động của bạn đến ngày 24/04 [hợp đồng lao động](https://luatvietnam.vn/bieu-mau/mau-hop-dong-lao-dong-571-19352-article.html) hết hạn và công ty báo giảm người lao động nghỉ hẳn thì người lao động này chỉ được hỗ trợ đóng bảo hiểm xã hội đến hết tháng 4.
+
+***Xem thêm:*** [Cần biết: 6 chính sách mới về chế độ thai sản từ 01/7/2025](https://luatvietnam.vn/bao-hiem/chinh-sach-moi-ve-che-do-thai-san-tu-01-7-2025-563-102612-article.html)
+
+*Trên đây là nội dung tư vấn về “HĐLĐ hết thời hạn trong thời gian nghỉ thai sản thì công ty có phải báo giảm BHXH không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Qd1d54852cd',
+          'Vợ/chồng có thể rút lại đơn ly hôn khi đã lỡ nộp lên Toà án không?',
+          1,
+          'https://luatvietnam.vn/luat-su-tu-van/vochong-co-the-rut-lai-don-ly-hon-khi-da-lo-nop-len-toa-an-khong--150816-faqs.html',
+          '2025-07-30',
+          '**Trả lời:**
+
+### **Nộp đơn ly hôn rồi có rút lại được không?**
+
+Theo khoản 4, Điều 70 và khoản 2, Điều 5 [Bộ luật Tố tụng dân sự 2015](https://luatvietnam.vn/hanh-chinh/bo-luat-to-tung-dan-su-nam-2015-luat-so-92-2015-qh13-101332-d1.html), trong quá trình giải quyết ly hôn, cả vợ và chồng đều có quyền thay đổi hoặc rút đơn yêu cầu. Thời điểm rút đơn ly hôn tùy thuộc vào giai đoạn xử lý vụ việc như sau:
+
+- Trước khi Tòa án thụ lý: Theo Điều 363 và Điều 191 Bộ luật Tố tụng dân sự 2015, trước khi Tòa án thụ lý đơn (thường trong vòng 8 ngày làm việc), vợ chồng có thể rút đơn và Tòa án sẽ trả lại hồ sơ.
+
+- Sau khi Tòa án thụ lý:
+
++ Trước khi mở phiên tòa hoặc phiên họp: Trong giai đoạn chuẩn bị xét xử, nếu vợ chồng rút đơn, Tòa án sẽ đình chỉ giải quyết và trả lại đơn ly hôn (theo điểm c, khoản 1, Điều 217 và điểm c, khoản 2, Điều 366 Bộ luật Tố tụng dân sự 2015).
+
++ Trong khi phiên tòa hoặc phiên họp diễn ra: Căn cứ khoản 2, Điều 244 Bộ luật Tố tụng dân sự 2015, nếu vợ chồng tự nguyện rút đơn khi phiên tòa đang diễn ra, Hội đồng xét xử sẽ đình chỉ giải quyết phần yêu cầu đã được rút.
+
+### **Khi nào được rút đơn ly hôn?**
+
+*\* Rút đơn khi Tòa án chưa thụ lý vụ án*
+
+Theo khoản 2, Điều 5 Bộ luật Tố tụng dân sự 2015, trong quá trình giải quyết vụ việc dân sự, đương sự có quyền tự nguyện thay đổi, rút lại yêu cầu hoặc thỏa thuận với nhau nếu không vi phạm quy định pháp luật và không trái đạo đức xã hội.
+
+Dựa trên quy định này, đương sự có quyền chấm dứt yêu cầu của mình. Do đó, trong vụ án ly hôn, nếu Tòa án chưa thụ lý, vợ chồng hoàn toàn có thể rút [đơn ly hôn](https://luatvietnam.vn/bieu-mau/mau-don-ly-hon-571-23882-article.html) mà không gặp trở ngại nào.
+
+*\* Trường hợp Toà án đã thụ lý đơn*
+
+- Giai đoạn trước khi mở phiên tòa hoặc phiên họp: Trước khi bước vào quá trình xét xử chính thức, Tòa án tiến hành chuẩn bị cặn kẽ, đặc biệt là khi một trong hai bên, tức vợ hoặc chồng, quyết định rút yêu cầu ly hôn. Theo quy định tại căn cứ điểm c, khoản 1, Điều 217 và điểm c, khoản 2, Điều 366 Bộ luật Tố tụng dân sự 2015 như sau:
+
+> ***Điều 217. Đình chỉ giải quyết vụ án dân sự***
+>
+> *1. Sau khi thụ lý vụ án thuộc thẩm quyền của mình, Tòa án ra quyết định đình chỉ giải quyết vụ án dân sự trong các trường hợp sau đây:*
+>
+> *[…]*
+>
+> *c) Người khởi kiện rút toàn bộ yêu cầu khởi kiện hoặc nguyên đơn đã được triệu tập hợp lệ lần thứ hai mà vẫn vắng mặt, trừ trường hợp họ đề nghị xét xử vắng mặt hoặc vì sự kiện bất khả kháng, trở ngại khách quan;*
+>
+> *[…]*
+>
+> ***Điều 366. Chuẩn bị xét đơn yêu cầu***
+>
+> *[…]*
+>
+> *2. Trong thời hạn chuẩn bị xét đơn yêu cầu, Tòa án tiến hành công việc sau đây:*
+>
+> *[…]*
+>
+> *c) Quyết định đình chỉ việc xét đơn yêu cầu và trả lại đơn yêu cầu, tài liệu, chứng cứ kèm theo nếu người yêu cầu rút đơn yêu cầu;*
+
+Như vậy, đương sự có quyết định rút yêu cầu, Tòa án sẽ đình chỉ mọi thủ tục và trả lại đơn ly hôn cho bên đó. Điều này tạo ra một cơ hội cho bên liên quan để tái định hình quan hệ và mở cửa cho các đàm phán hòa giải.
+
+- Trong khi diễn ra phiên tòa hoặc phiên họp: Căn cứ quy định tại khoản 2, Điều 244 Bộ luật Tố tụng dân sự 2015 thì trong quá trình này, vợ hoặc chồng tự nguyện quyết định rút yêu cầu ly hôn, Hội đồng xét xử sẽ có quyền đình chỉ xét xử đối với phần yêu cầu đã rút.
+
+*\* Rút đơn trong vụ án ly hôn đơn phương*
+
+Theo khoản 3, Điều 217 Bộ luật Tố tụng dân sự 2015, nếu một bên vợ hoặc chồng muốn rút đơn ly hôn đơn phương, Tòa án sẽ xóa tên vụ án, trả lại đơn ly hôn cùng các tài liệu, chứng cứ liên quan nếu có yêu cầu.
+
+Tòa án cũng sẽ sao lưu hồ sơ để phục vụ việc giải quyết khiếu nại hoặc kiến nghị sau này nếu cần.
+
+Như vậy, trong trường hợp ly hôn đơn phương, người nộp đơn cần gửi yêu cầu rõ ràng để được trả lại hồ sơ. Nếu không, Tòa án chỉ xóa tên vụ án khỏi sổ thụ lý mà không hoàn trả giấy tờ.
+
+### **Rút đơn ly hôn thuận tình có cần sự đồng ý của cả vợ và chồng không?**
+
+Ly hôn thuận tình là việc vợ chồng cùng nhau thoả thuận về việc chấm dứt quan hệ hôn nhân, phân chia tài sản chung, quyền nuôi con, nghĩa vụ cấp dưỡng (nếu có). Việc ly hôn thuận tình thể hiện sự tự nguyện của cả hai bên.
+
+Đơn phương rút đơn ly hôn thuận tình không được chấp nhận. Vì đơn ly hôn thuận tình đã thể hiện sự đồng thuận của cả hai vợ chồng, nên việc rút đơn cũng phải dựa trên sự thống nhất chung này. Nếu chỉ một người muốn rút đơn, nghĩa là không còn sự thuận tình nữa. Lúc này, nếu vẫn muốn ly hôn, người đó phải nộp đơn ly hôn đơn phương.
+
+Nếu cả hai vợ chồng đều đồng ý rút đơn ly hôn thuận tình, họ cần cùng nhau làm đơn xin rút đơn và nộp tại cơ quan đã thụ lý đơn ly hôn ban đầu (Tòa án hoặc Ủy ban nhân dân cấp huyện). Nếu chỉ một người muốn rút đơn, việc ly hôn sẽ không được dừng lại dựa trên đơn rút đơn đó. Người còn lại vẫn có quyền yêu cầu Tòa án tiếp tục giải quyết vụ án ly hôn theo thủ tục ly hôn đơn phương.
+
+### **Rút đơn xin ly hôn sau bao lâu nộp lại được?**
+
+Hiện nay, pháp luật chưa quy định thời gian tối thiểu giữa hai lần nộp đơn xin ly hôn, do đó, nếu các bên vẫn quyết định tiếp tục thủ tục ly hôn sau khi rút đơn, họ hoàn toàn có quyền nộp lại theo đúng quy định của pháp luật. Nghĩa là, ngay sau khi thủ tục rút đơn ly hôn hoàn tất, các bên có thể nộp lại đơn ly hôn nếu muốn, dù là ly hôn thuận tình hay đơn phương.
+
+Tuy nhiên, việc liên tục nộp đơn rồi rút đơn có thể bị coi là lạm dụng quyền ly hôn. Mặc dù không có quy định cụ thể nào về việc này, nhưng tòa án có thể xem xét động cơ của việc nộp đơn và rút đơn liên tục để đảm bảo quyền lợi của các bên và tránh việc sử dụng thủ tục tố tụng một cách tùy tiện.
+
+Về mặt pháp lý, bạn có thể nộp lại đơn ly hôn ngay sau khi đã rút đơn. Tuy nhiên, hãy cân nhắc kỹ lưỡng về quyết định của mình để tránh mất thời gian, công sức và chi phí không cần thiết.
+
+***Xem thêm:*** [Thủ tục ly hôn 2025: Cần giấy tờ gì? Nộp ở đâu?](https://luatvietnam.vn/dan-su/thu-tuc-ly-hon-568-19423-article.html)
+
+*Trên đây là nội dung tư vấn về “Vợ/chồng có thể rút lại đơn ly hôn khi đã lỡ nộp lên Toà án không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Qe94d5ad5e3',
+          'Có thể khởi kiện hành vi chủ tịch xã không tổ chức hòa giải tranh chấp đất đai được không?',
+          4,
+          'https://luatvietnam.vn/luat-su-tu-van/co-the-khoi-kien-hanh-vi-chu-tich-xa-khong-to-chuc-hoa-giai-tranh-chap-dat-dai-duoc-khong-150815-faqs.html',
+          '2025-07-25',
+          '**Trả lời:**
+
+Theo quy định tại khoản 2, Điều 235 [Luật Đất đai năm 2024](https://luatvietnam.vn/dat-dai/luat-dat-dai-2024-296638-d1.html) thì Chủ tịch Ủy ban nhân dân cấp xã có trách nhiệm tổ chức việc [hòa giải tranh chấp đất đai](https://luatvietnam.vn/dat-dai-nha-o/hoa-giai-tranh-chap-dat-dai-567-30205-article.html) tại địa phương mình. Thủ tục hòa giải tranh chấp đất đai tại Ủy ban nhân dân cấp xã được thực hiện trong thời hạn không quá 30 ngày, kể từ ngày nhận được đơn yêu cầu giải quyết tranh chấp đất đai.
+
+Theo quy định tại khoản 3 và khoản 4, Điều 3 của [Luật Tố tụng hành chính](https://luatvietnam.vn/hanh-chinh/luat-to-tung-hanh-chinh-2015-101331-d1.html) hiện hành thì hành vi hành chính là hành vi của cơ quan hành chính nhà nước hoặc của người có thẩm quyền trong cơ quan hành chính nhà nước hoặc cơ quan, tổ chức được giao thực hiện quản lý hành chính nhà nước thực hiện hoặc không thực hiện nhiệm vụ, công vụ theo quy định của pháp luật. Hành vi hành chính bị kiện là hành vi nêu trên mà hành vi đó làm ảnh hưởng đến việc thực hiện quyền, lợi ích hợp pháp của cơ quan, tổ chức, cá nhân.
+
+Theo các quy định nêu trên thì hành vi không tổ chức hòa giải cơ sở đối với tranh chấp đất đai của Chủ tịch Ủy ban nhân dân cấp xã mà bạn nêu là đối tượng khởi kiện vụ án hành chính. Vì vậy, bạn có quyền [khởi kiện](https://luatvietnam.vn/luat-su-tu-van/khoi-kien-quyet-dinh-hanh-chinh-nha-nuoc-150321-faqs.html) hành vi này của chủ tịch UBND xã.
+
+***Xem thêm:*** [UBND cấp xã không hòa giải, xử lý tranh chấp đất đai thế nào](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Có thể khởi kiện hành vi chủ tịch xã không tổ chức hòa giải tranh chấp đất đai được không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q548c893d0a',
+          'Giao dịch mua bán đất bị tuyên vô hiệu nhưng đất đã thế chấp ngân hàng thì việc thế chấp có bị vô hiệu không?',
+          1,
+          'https://luatvietnam.vn/luat-su-tu-van/giao-dich-mua-ban-dat-bi-tuyen-vo-hieu-nhung-dat-da-the-chap-ngan-hang-thi-viec-the-chap-co-bi-vo-hieu-khong-150814-faqs.html',
+          '2025-07-25',
+          '',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q6c5858aa32',
+          'Trộm cắp tài sản nhiều lần nhưng đều dưới 2 triệu thì có bị truy cứu không?',
+          2,
+          'https://luatvietnam.vn/luat-su-tu-van/trom-cap-tai-san-nhieu-lan-nhung-deu-duoi-2-trieu-thi-co-bi-truy-cuu-khong-150813-faqs.html',
+          '2025-07-25',
+          '**Trả lời:**
+
+### **Trộm cắp tài sản bao nhiêu thì mới bị truy cứu trách nhiệm hình sự?**
+
+Căn cứ theo quy định tại Điều 173 [Bộ luật Hình sự 2015](https://luatvietnam.vn/hinh-su/bo-luat-hinh-su-2015-101324-d1.html) quy định như sau:
+
+> *1. Người nào trộm cắp tài sản của người khác trị giá từ 2.000.000 đồng đến dưới 50.000.000 đồng hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 03 năm:*
+>
+> *a) Đã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;*
+>
+> *b) Đã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;*
+>
+> *c) Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;*
+>
+> *d) Tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ;*
+>
+> *đ) Tài sản là di vật, cổ vật.*
+>
+> *2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:*
+>
+> *a) Có tổ chức;*
+>
+> *b) Có tính chất chuyên nghiệp;*
+>
+> *c) Chiếm đoạt tài sản trị giá từ 50.000.000 đồng đến dưới 200.000.000 đồng;*
+>
+> *d) Dùng thủ đoạn xảo quyệt, nguy hiểm;*
+>
+> *đ) Hành hung để tẩu thoát;*
+>
+> *e) Tài sản là bảo vật quốc gia;*
+>
+> *g) Tái phạm nguy hiểm.*
+>
+> *3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:*
+>
+> *a) Chiếm đoạt tài sản trị giá từ 200.000.000 đồng đến dưới 500.000.000 đồng;*
+>
+> *b) Lợi dụng thiên tai, dịch bệnh.*
+>
+> *4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 12 năm đến 20 năm:*
+>
+> *a) Chiếm đoạt tài sản trị giá 500.000.000 đồng trở lên;*
+>
+> *b) Lợi dụng hoàn cảnh chiến tranh, tình trạng khẩn cấp.*
+>
+> *5. Người phạm tội còn có thể bị phạt tiền từ 5.000.000 đồng đến 50.000.000 đồng.*
+
+Theo đó, người nào trộm cắp tài sản của người khác trị giá từ 2.000.000 đồng trở lên hoặc dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp nêu trên thì sẽ bị truy cứu trách nhiệm hình sự về tội [trộm cắp tài sản](https://luatvietnam.vn/hinh-su/toi-trom-cap-tai-san-569-27026-article.html).
+
+Như vậy, nếu người đó trộm cắp tài sản của bạn mà các món đồ đó đều trị giá dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp tại khoản 1, Điều 173 nêu trên thì vẫn sẽ bị truy cứu trách nhiệm hình sự.
+
+### **Trộm cắp tài sản nhiều lần nhưng mỗi lần chưa tới 2 triệu đồng thì có bị truy cứu hình sự không nếu tổng các lần trộm cắp trên 2 triệu đồng?**
+
+Như trên đã đề cập, nếu người nào trộm cắp tài sản của người khác trị giá dưới 2.000.000 đồng nhưng thuộc một trong các trường hợp tại khoản 1, Điều 173 nêu trên thì vẫn sẽ bị truy cứu trách nhiệm hình sự, cụ thể như sau:
+
+> *a) Đã bị xử phạt vi phạm hành chính về hành vi chiếm đoạt tài sản mà còn vi phạm;*
+>
+> *b) Đã bị kết án về tội này hoặc về một trong các tội quy định tại các điều 168, 169, 170, 171, 172, 174, 175 và 290 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;*
+>
+> *c) Gây ảnh hưởng xấu đến an ninh, trật tự, an toàn xã hội;*
+>
+> *d) Tài sản là phương tiện kiếm sống chính của người bị hại và gia đình họ;*
+>
+> *đ) Tài sản là di vật, cổ vật.*
+
+Ngoài ra, theo tinh thần hướng dẫn của [Công văn 64/TANDTC-PC](https://luatvietnam.vn/hinh-su/cong-van-64-tandtc-pc-toa-an-nhan-dan-toi-cao-171808-d6.html) năm 2019 thông báo kết quả giải đáp trực tuyến một số vướng mắc về hình sự, dân sự và tố tụng hành chính do Tòa án nhân dân tối cao ban hành như sau:
+
+> *Bộ luật Hình sự năm 2015 đã có nhiều quy định kế thừa quy định của Bộ luật Hình sự năm 1999 về việc lấy trị giá tài sản bị chiếm đoạt làm căn cứ để xử lý trách nhiệm hình sự. Trước đây, nội dung này đã được hướng dẫn tại Thông tư liên tịch số 02/2001/TTLT-TANDTC-VKSNDTC-BCA-BTP ngày 25-12-2001 hướng dẫn áp dụng một số quy định tại Chương XIV của Bộ luật Hình sự năm 1999.*
+>
+> *Hiện nay, chưa có Nghị quyết của Hội đồng thẩm phán Tòa án nhân dân tối cao hướng dẫn quy định này của Bộ luật Hình sự năm 2015. Tuy nhiên, vận dụng Thông tư liên tịch số 02 này thì trường hợp một người thực hiện nhiều lần cùng loại hành vi xâm phạm sở hữu, nhưng mỗi lần trị giá tài sản bị xâm phạm dưới mức tối thiểu để truy cứu trách nhiệm hình sự theo quy định của Bộ luật Hình sự và không thuộc một trong các trường hợp khác để truy cứu trách nhiệm hình sự, đồng thời trong các hành vi xâm phạm đó chưa có lần nào bị xử phạt hành chính và chưa hết thời hiệu xử phạt hành chính, nếu tổng trị giá tài sản của các lần bị xâm phạm bằng hoặc trên mức tối thiểu để truy cứu trách nhiệm hình sự theo quy định của Bộ luật Hình sự, thì người thực hiện nhiều lần cùng loại hành vi xâm phạm sở hữu phải bị truy cứu trách nhiệm hình sự về tội phạm tương ứng theo tổng trị giá tài sản của các lần bị xâm phạm, nếu các hành vi xâm phạm sở hữu được thực hiện một cách liên tục, kế tiếp nhau về mặt thời gian.*
+
+Theo đó, nếu các hành vi trộm cắp tài sản được thực hiện một cách liên tục, kế tiếp nhau về mặt thời gian thì người thực hiện nhiều lần cùng loại hành vi này sẽ phải chịu trách nhiệm hình sự về tội trộm cắp tài sản nếu tổng trị giá tài sản trộm cắp của các lần trộm cắp bằng hoặc trên mức tối thiểu để truy cứu trách nhiệm hình sự theo quy định của Bộ luật Hình sự.
+
+Như vậy, với trường hợp của bạn, nếu người đó trộm cắp các món đồ của bạn một cách liên tục, kế tiếp nhau về mặt thời gian thì người đó sẽ phải chịu trách nhiệm hình sự về tội trộm cắp tài sản nếu tổng trị giá tài sản trộm cắp của các lần trộm cắp bằng hoặc trên mức tối thiểu để truy cứu trách nhiệm hình sự theo quy định của Bộ luật Hình sự, kể cả không thuộc các trường hợp được quy định tại khoản 1, Điều 173 nêu trên.
+
+***Xem thêm:*** [Trộm cắp tài sản dưới 2 triệu có bị phạt tù không?](https://luatvietnam.vn/luat-su-tu-van/nguyen-don-chet-thi-vu-an-co-duoc-tiep-tuc-xet-xu-khong-150418-faqs.html)
+
+*Trên đây là nội dung tư vấn về “Trộm cắp tài sản nhiều lần nhưng đều dưới 2 triệu thì có bị truy cứu không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q2d45a252bb',
+          'Hợp đồng vay vốn của công ty thiếu biên bản họp thì có giá trị không?',
+          25,
+          'https://luatvietnam.vn/luat-su-tu-van/hop-dong-vay-von-cua-cong-ty-thieu-bien-ban-hop-thi-co-gia-tri-khong-150811-faqs.html',
+          '2025-07-23',
+          '**Trả lời:**
+
+Điểm d, khoản 2, Điều 55 của [Luật Doanh nghiệp năm 2014](https://luatvietnam.vn/doanh-nghiep/luat-doanh-nghiep-2020-186272-d1.html) quy định Hội đồng thành viên của Công ty trách nhiệm hữu hạn hai thành viên trở lên có quyền và nghĩa vụ: *“**Thông qua hợp đồng vay**, cho vay, bán tài sản và hợp đồng khác do Điều lệ công ty quy định có giá trị từ 50% tổng giá trị tài sản trở lên được ghi trong báo cáo tài chính tại thời điểm công bố gần nhất của công ty hoặc một tỷ lệ hoặc giá trị khác nhỏ hơn quy định tại Điều lệ công ty;”.*
+
+Điều 143 của [Bộ luật Dân sự năm 2015](https://luatvietnam.vn/dan-su/bo-luat-dan-su-2015-101333-d1.html) về hậu quả của giao dịch dân sự do người đại diện xác lập, thực hiện vượt quá phạm vi đại diện quy định:
+
+> *1. Giao dịch dân sự do người đại diện xác lập, thực hiện vượt quá phạm vi đại diện không làm phát sinh quyền, nghĩa vụ của người được đại diện đối với phần giao dịch được thực hiện vượt quá phạm vi đại diện, trừ một trong các trường hợp sau đây:*
+>
+> *a) Người được đại diện đồng ý;*
+>
+> *b) Người được đại diện biết mà không phản đối trong một thời hạn hợp lý;*
+>
+> *c) Người được đại diện có lỗi dẫn đến việc người đã giao dịch không biết hoặc không thể biết về việc người đã xác lập, thực hiện giao dịch dân sự với mình vượt quá phạm vi đại diện.*
+>
+> *2. Trường hợp giao dịch dân sự do người đại diện xác lập, thực hiện vượt quá phạm vi đại diện không làm phát sinh quyền, nghĩa vụ của người được đại diện đối với phần giao dịch được xác lập, thực hiện vượt quá phạm vi đại diện thì người đại diện phải thực hiện nghĩa vụ đối với người đã giao dịch với mình về phần giao dịch vượt quá phạm vi đại diện, trừ trường hợp người đã giao dịch biết hoặc phải biết về việc vượt quá phạm vi đại diện mà vẫn giao dịch.*
+>
+> *…*
+
+Như vậy, theo quy định trên thì hợp đồng tín dụng có giá trị lớn hơn 50% tổng giá trị tài sản được ghi trong báo cáo tài chính tại thời điểm công bố gần nhất của công ty giữa tổ chức tín dụng với [Công ty TNHH hai thành viên trở lên](https://luatvietnam.vn/pldn/thu-tuc-cty-tnhh-hai/dac-diem-cong-ty-tnhh-2-thanh-vien-tro-len-2810-66020-legal.html) phải được Hội đồng thành viên Công ty thông qua.
+
+Nếu người đại diện theo pháp luật của Công ty bạn giao kết hợp đồng tín dụng có giá trị lớn hơn 50% tổng giá trị tài sản được ghi trong báo cáo tài chính tại thời điểm công bố gần nhất của công ty mà không được Hội đồng thành viên thông qua thì được xác định là giao dịch dân sự do người đại diện xác lập, thực hiện vượt quá phạm vi đại diện. Theo đó:
+
+- Trường hợp hợp đồng tín dụng do người đại diện xác lập, thực hiện vượt quá phạm vi đại diện nhưng thuộc một trong các trường hợp quy định tại điểm a, b, c khoản 1, Điều 143 của Bộ luật Dân sự năm 2015 *(a) Người được đại diện đồng ý; b) Người được đại diện biết mà không phản đối trong một thời hạn hợp lý; c) Người được đại diện có lỗi dẫn đến việc người đã giao dịch không biết hoặc không thể biết về việc người đã xác lập, thực hiện giao dịch dân sự với mình vượt quá phạm vi đại diện.)* thì làm phát sinh quyền, nghĩa vụ của Công ty (người được đại diện); khi đó, hợp đồng vay vẫn có giá trị pháp lý và bên vay được xác định là Công ty. Trường hợp hồ sơ vay không có biên bản họp thành viên của Hội đồng thành viên về nội dung thông qua [hợp đồng vay](https://luatvietnam.vn/dan-su/phan-biet-hop-dong-vay-tien-va-hop-dong-tin-dung-568-95766-article.html), nhưng có tài liệu, chứng cứ thể hiện khoản tiền vay được chuyển vào tài khoản của Công ty, được Công ty sử dụng, được hạch toán trên sổ sách, giấy tờ của Công ty thì được coi là Công ty đồng ý với hợp đồng tín dụng do người đại diện của Công ty xác lập, thuộc trường hợp quy định tại điểm a, khoản 1, Điều 143 của Bộ luật Dân sự năm 2015.
+
+- Trường hợp hợp đồng tín dụng do người đại diện xác lập, thực hiện vượt quá phạm vi đại diện không thuộc một trong các trường hợp quy định tại điểm a, b, c khoản 1, Điều 143 của [Bộ luật Dân sự năm 2015](https://luatvietnam.vn/dan-su/bo-luat-dan-su-2015-101333-d1.html) và có tài liệu, chứng cứ cho thấy người đại diện theo pháp luật sử dụng số tiền vay được cho mục đích cá nhân thì hợp đồng vay này không làm phát sinh quyền, nghĩa vụ của Công ty. Căn cứ khoản 2, Điều 143 của Bộ luật này, bên vay được xác định là cá nhân người đại diện đã ký [hợp đồng tín dụng](https://luatvietnam.vn/bieu-mau/hop-dong-tin-dung-571-90238-article.html).
+
+***Xem thêm:*** [Phân biệt hợp đồng vay tiền và hợp đồng tín dụng chi tiết nhất.](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+Trên đây là nội dung tư vấn về “Hợp đồng vay vốn của công ty thiếu biên bản họp thì có giá trị không?” dựa trên những thông tin mà Luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q7e13b2b144',
+          'Bên mua bảo hiểm cung cấp thông tin sai sự thật thì hợp đồng có vô hiệu không?',
+          1,
+          'https://luatvietnam.vn/luat-su-tu-van/ben-mua-bao-hiem-cung-cap-thong-tin-sai-su-that-thi-hop-dong-co-vo-hieu-khong-150810-faqs.html',
+          '2025-07-23',
+          '**Trả lời:**
+
+Khoản 2, Điều 19 của [Luật Kinh doanh bảo hiểm](https://luatvietnam.vn/bao-hiem/luat-kinh-doanh-bao-hiem-2022-moi-nhat-dang-ap-dung-224108-d1.html) hiện hành quy định:
+
+> *2. Doanh nghiệp bảo hiểm có quyền đơn phương đình chỉ thực hiện hợp đồng bảo hiểm và thu phí bảo hiểm đến thời điểm đình chỉ thực hiện hợp đồng bảo hiểm khi bên mua bảo hiểm có một trong những hành vi sau đây:*
+>
+> *a) Cố ý cung cấp thông tin sai sự thật nhằm giao kết hợp đồng bảo hiểm để được trả tiền bảo hiểm hoặc được bồi thường.*
+
+Như vậy, trường hợp bên mua bảo hiểm cố ý cung cấp thông tin không trung thực để giao kết hợp đồng bảo hiểm và hưởng chế độ bảo hiểm thì doanh nghiệm bảo hiểm của bạn có quyền đơn phương đình chỉ thực hiện hợp đồng bảo hiểm và thu phí bảo hiểm đến thời điểm đình chỉ thực hiện hợp đồng. Việc giải quyết hậu quả của việc đình chỉ thực hiện hợp đồng bảo hiểm được thực hiện theo các thỏa thuận của hợp đồng phù hợp với quy định của pháp luật.
+
+Bên cạnh đó, theo điểm d, khoản 1, Điều 22 của Luật Kinh doanh bảo hiểm thì một trong các trường hợp hợp đồng bảo hiểm vô hiệu là *"Bên mua bảo hiểm hoặc doanh nghiệp bảo hiểm có hành vi lừa dối khi giao kết hợp đồng bảo hiểm"*. Đồng thời, Điều 127 của [Bộ luật Dân sự](https://luatvietnam.vn/dan-su/bo-luat-dan-su-2015-101333-d1.html) quy định: *"Lừa dối trong giao dịch dân sự là hành vi cố ý của một bên hoặc của người thứ ba nhằm làm cho bên kia hiểu sai lệch về chủ thể, tính chất của đối tượng hoặc nội dung của giao dịch dân sự nên đã xác lập giao dịch đó".* Như vậy, hành vi cố ý cung cấp thông tin không trung thực của bên mua bảo hiểm có thể bị coi là [hành vi lừa dối](https://luatvietnam.vn/linh-vuc-khac/toi-lua-doi-khach-hang-883-90852-article.html) dẫn đến hợp đồng bảo hiểm [vô hiệu](https://luatvietnam.vn/dan-su/giao-dich-dan-su-vo-hieu-la-gi-568-95793-article.html).
+
+Trên thực tế, khi có tranh chấp, trong trường hợp doanh nghiệp bảo hiểm của bạn đơn phương chấm dứt hợp đồng bảo hiểm do bên mua bảo hiểm có hành vi cố ý cung cấp thông tin sai sự thật nhằm giao kết hợp đồng bảo hiểm để được trả tiền bảo hiểm hoặc được bồi thường thì nếu vụ việc được đưa ra giải quyết tại Tòa án có thẩm quyền, Tòa án sẽ căn cứ tài liệu, chứng cứ, quá trình tranh tụng (trong đó chú ý thỏa thuận của các bên tại hợp đồng bảo hiểm) để xác định nếu doanh nghiệp bảo hiểm đơn phương đình chỉ thực hiện hợp đồng đúng pháp luật thì Tòa án sẽ không tuyên hợp đồng bảo hiểm vô hiệu theo quy định tại điểm d khoản 1 Điều 22 của Luật Kinh doanh bảo hiểm mà tuyên đình chỉ thực hiện hợp đồng bảo hiểm theo quy định tại điểm a, khoản 2, Điều 19 của Luật Kinh doanh bảo hiểm, Điều 422 (Chấm dứt hợp đồng) và Điều 428 của Bộ luật Dân sự (Đơn phương chấm dứt hợp đồng).
+
+***Xem thêm:*** [Hiệu lực của hợp đồng bảo hiểm](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Bên mua bảo hiểm cung cấp thông tin sai sự thật thì hợp đồng có vô hiệu không?” dựa trên những thông tin mà Luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q80e99d596d',
+          'Góp vốn bằng tài sản nhưng chưa sang tên cho công ty thì có được công nhận là thành viên không?',
+          25,
+          'https://luatvietnam.vn/luat-su-tu-van/gop-von-bang-tai-san-nhung-chua-sang-ten-cho-cong-ty-thi-co-duoc-cong-nhan-la-thanh-vien-khong-150809-faqs.html',
+          '2025-07-23',
+          '**Trả lời:**
+
+Điều 35 của [Luật Doanh nghiệp 2020](https://luatvietnam.vn/doanh-nghiep/luat-doanh-nghiep-2020-186272-d1.html) quy định về việc chuyển quyền sở hữu tài sản góp vốn như sau:
+
+> **Điều 35. Chuyển quyền sở hữu tài sản góp vốn**
+>
+> 1. Thành viên công ty trách nhiệm hữu hạn, công ty hợp danh và cổ đông công ty cổ phần phải chuyển quyền sở hữu tài sản góp vốn cho công ty theo quy định sau đây:
+>
+> a) Đối với tài sản có đăng ký quyền sở hữu hoặc quyền sử dụng đất thì người góp vốn phải làm thủ tục chuyển quyền sở hữu tài sản đó hoặc quyền sử dụng đất cho công ty theo quy định của pháp luật. Việc chuyển quyền sở hữu, chuyển quyền sử dụng đất đối với tài sản góp vốn không phải chịu lệ phí trước bạ; …
+
+Căn cứ vào quy định nêu trên thì ông B phải có nghĩa vụ làm thủ tục sang tên nhà xưởng cho [Công ty TNHH hai thành viên](https://luatvietnam.vn/pldn/thu-tuc-cty-tnhh-hai/dac-diem-cong-ty-tnhh-2-thanh-vien-tro-len-2810-66020-legal.html) ngay từ khi góp vốn. Về pháp lý, thủ tục chuyển quyền chưa được thực hiện, nhưng trên thực tế Công ty TNHH hai thành viên đã nhận và sử dụng nhà xưởng do ông B góp vốn từ khi thành lập (năm 2022), được xác định vào vốn [Điều lệ của Công ty](https://luatvietnam.vn/doanh-nghiep/dieu-le-cong-ty-la-gi-561-93328-article.html), được hạch toán là giá trị của Công ty trong báo cáo tài chính hàng năm. Do đó, phải căn cứ vào quá trình hoạt động của Công ty, các tài liệu có liên quan (báo cáo tài chính hàng năm, Giấy chứng nhận góp vốn...) để từ đó xác định việc góp vốn của ông B đã hoàn thành.
+
+Trong trường hợp ông B có Giấy chứng nhận phần vốn góp theo quy định tại Điều 47 của Luật Doanh nghiệp năm 2020, có tên trong Giấy chứng nhận đăng ký kinh doanh với phần giá trị vốn góp tương ứng nhà xưởng đã được định giá; có tên trong Sổ đăng ký thành viên theo quy định tại Điều 48 của Luật Doanh nghiệp năm 2020, thực hiện các quyền và nghĩa vụ của thành viên theo Điều 49, 50 của Luật Doanh nghiệp năm 2020, nên mặc dù thủ tục chuyển quyền sở hữu chưa được thực hiện, nhưng ông B đã là thành viên trên thực tế của Công ty.
+
+Khoản 1, Điều 52 của Luật Doanh nghiệp năm 2020 quy định:
+
+> ***Điều 52. Chuyển nhượng phần vốn góp***
+>
+> *1. Trừ trường hợp quy định tại khoản 4 Điều 51, khoản 6 và khoản 7 Điều 53 của Luật này, thành viên công ty trách nhiệm hữu hạn hai thành viên trở lên có quyền chuyển nhượng một phần hoặc toàn bộ phần vốn góp của mình cho người khác theo quy định sau đây:*
+>
+> *a) Chào bán phần vốn góp đó cho các thành viên còn lại theo tỷ lệ tương ứng với phần vốn góp của họ trong công ty với cùng điều kiện chào bán;*
+>
+> *b) Chuyển nhượng với cùng điều kiện chào bán đối với các thành viên còn lại quy định tại điểm a khoản này cho người không phải là thành viên nếu các thành viên còn lại của công ty không mua hoặc không mua hết trong thời hạn 30 ngày kể từ ngày chào bán**.*
+
+Căn cứ quy định nêu trên thì việc ông B tự ý chuyển nhượng phần vốn góp của mình cho bà C mà không chào bán phần vốn góp cho bạn (bạn không biết) là không đúng quy định của pháp luật nên Hợp đồng chuyển nhượng giữa ông B và bà C bị vô hiệu do vi phạm điều cấm của luật (Điều 123 của [Bộ luật Dân sự năm 2015](https://luatvietnam.vn/dan-su/bo-luat-dan-su-2015-101333-d1.html)), do đó các bên phải hoàn trả lại cho nhau những gì đã nhận (Điều 131 của Bộ luật Dân sự năm 2015). Theo đó, bà C phải trả lại phần vốn góp đã nhận chuyển nhượng từ ông B; bà C không trở thành thành viên Công ty.
+
+***Xem thêm:*** [Tài sản góp vốn là gì? Tài sản góp vốn gồm những loại nào?](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Góp vốn bằng tài sản nhưng chưa sang tên cho công ty thì có được công nhận là thành viên không?” dựa trên những thông tin mà Luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Qee26718d7d',
+          'Con riêng gửi tiền nuôi mẹ kế nhưng không sống chung thì có được hưởng thừa kế không?',
+          1,
+          'https://luatvietnam.vn/luat-su-tu-van/con-rieng-gui-tien-nuoi-me-ke-nhung-khong-song-chung-thi-co-duoc-huong-thua-ke-khong-150808-faqs.html',
+          '2025-07-22',
+          '**Trả lời:**
+
+Điều 654 của [Bộ luật Dân sự năm 2015](https://luatvietnam.vn/dan-su/bo-luat-dan-su-2015-101333-d1.html) quy định:
+
+> *Con riêng và bố dượng, mẹ kế nếu có quan hệ chăm sóc, nuôi dưỡng nhau như cha con, mẹ con thì được thừa kế di sản của nhau và còn được chia thừa kế theo quy định tại Điều 652 và Điều 653 của Bộ luật này**.*
+
+Việc xác định có quan hệ nuôi dưỡng, chăm sóc nhau trên thực tế như cha con, mẹ con thì cần căn cứ vào các quy định của [Luật Hôn nhân và gia đình](https://luatvietnam.vn/hon-nhan-gia-dinh/luat-hon-nhan-va-gia-dinh-2014-87930-d1.html) về quyền và nghĩa vụ của cha, mẹ, con (Điều 69, 70, 71, 72), trong đó, phải đánh giá một cách toàn diện các yếu tố như: bố dượng, mẹ kế hàng tháng có trả tiền nuôi dưỡng, chăm sóc, chăm lo đến việc học tập, giáo dục con, thương yêu con... hoặc nếu bố dượng, mẹ kế không đủ điều kiện sinh sống ở mức độ trung bình ở địa phương thì con riêng đã chu cấp tiền nuôi dưỡng, chăm sóc hàng tháng... Đồng thời, mức độ quan hệ nuôi dưỡng, chăm sóc nhau trên thực tế như cha con, mẹ con phải đảm bảo được cuộc sống của họ.
+
+Do vậy, căn cứ quy định nêu trên thì con riêng, bố dượng, mẹ kế chỉ cần có quan hệ chăm sóc, nuôi dưỡng nhau trên thực tế như cha, mẹ con thì được [thừa kế](https://luatvietnam.vn/dan-su/chua-du-18-tuoi-co-duoc-nhan-di-san-thua-ke-568-97016-article.html) di sản của nhau, không bắt buộc những người này phải sống chung.
+
+Advertisements
+
+[](blob:https://luatvietnam.vn/ba8df6bc-c9c1-4aae-9a11-7473d8d23994)
+
+[](https://gcdn.2mdn.net/videoplayback/id/01b8f675c08531b4/itag/37/source/web_video_ads/xpc/EgVovf3BOg%3D%3D/ctier/L/acao/yes/ip/0.0.0.0/ipbits/0/expire/1789657466/sparams/ip,ipbits,expire,id,itag,source,xpc,ctier,acao/signature/4E8ED8C53545C0CF24544E9186474D3955E0D957.7B5C124C4E5A16FAAB9C9291B06A90A9EC66607A/key/ck2/file/file.mp4)
+
+X
+
+***Xem thêm:*** [Con bị cha mẹ từ mặt có được hưởng di sản thừa kế không?](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Con riêng gửi tiền nuôi mẹ kế nhưng không sống chung thì có được hưởng thừa kế không?” dựa trên những thông tin mà Luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Qad51019027',
+          'Hồ sơ khởi kiện hành vi hành chính thiếu tài liệu thì có bị trả lại hay không?',
+          13,
+          'https://luatvietnam.vn/luat-su-tu-van/ho-so-khoi-kien-hanh-vi-hanh-chinh-thieu-tai-lieu-thi-co-bi-tra-lai-hay-khong-150807-faqs.html',
+          '2025-07-22',
+          '**Trả lời:**
+
+Theo quy định tại khoản 2, Điều 118 của [Luật Tố tụng hành chính](https://luatvietnam.vn/hanh-chinh/luat-to-tung-hanh-chinh-2015-101331-d1.html) hiện hành thì:
+
+> *Kèm theo đơn khởi kiện phải có tài liệu, chứng cứ chứng minh quyền, lợi ích hợp pháp của người khởi kiện bị xâm phạm. Trường hợp vì lý do khách quan mà người khởi kiện không thể nộp đầy đủ các tài liệu, chứng cứ kèm theo đơn khởi kiện thì họ phải nộp tài liệu, chứng cứ hiện có để chứng minh quyền, lợi ích hợp pháp của người khởi kiện bị xâm phạm. Các tài liệu, chứng cứ khác, người khởi kiện phải tự mình bổ sung hoặc bổ sung theo yêu cầu của Tòa án trong quá trình giải quyết vụ án.*
+
+Mặt khác, theo quy định tại khoản 1 Điều 123 của Luật Tố tụng hành chính thì Thẩm phán chỉ được trả lại đơn khởi kiện trong những trường hợp được quy định tại các điểm từ điểm a đến điểm h, khoản 1 Điều 123 của Luật Tố tụng hành chính gồm:
+
+> *a) Người khởi kiện không có quyền khởi kiện;*
+>
+> *b) Người khởi kiện không có năng lực hành vi tố tụng hành chính đầy đủ;*
+>
+> *c) Trường hợp pháp luật có quy định về điều kiện khởi kiện nhưng người khởi kiện đã khởi kiện đến Tòa án khi còn thiếu một trong các điều kiện đó;*
+>
+> *d)Sự việc đã được giải quyết bằng bản án hoặc quyết định của Tòa án có hiệu lực pháp luật;*
+>
+> *đ) Sự việc không thuộc thẩm quyền giải quyết của Tòa án;*
+>
+> *e) Người khởi kiện lựa chọn giải quyết vụ việc theo thủ tục giải quyết khiếu nại trong trường hợp quy định tại Điều 33 của Luật này;*
+>
+> *g) Đơn khởi kiện không có đủ nội dung quy định tại khoản 1 Điều 118 của Luật này mà không được người khởi kiện sửa đổi, bổ sung theo quy định tại Điều 122 của Luật này;*
+>
+> *h) Hết thời hạn được thông báo quy định tại khoản 1 Điều 125 của Luật này mà người khởi kiện không xuất trình biên lai nộp tiền tạm ứng án phí cho Tòa án, trừ trường hợp người khởi kiện được miễn nộp tiền tạm ứng án phí, không phải nộp tiền tạm ứng án phí hoặc có lý do chính đáng.*
+
+Như vậy, theo quy định tại khoản 1, Điều 123 của [Luật Tố tụng hành chính](https://luatvietnam.vn/hanh-chinh/luat-to-tung-hanh-chinh-2015-101331-d1.html) thì không có quy định về trường hợp trả lại đơn khởi kiện nếu người khởi kiện không gửi kèm theo đơn khởi kiện tài liệu, chứng cứ chứng minh quyền, lợi ích hợp pháp của người khởi kiện bị xâm phạm.
+
+Đối với trường hợp người khởi kiện không nộp hoặc nộp không đầy đủ kèm theo đơn khởi kiện tài liệu, chứng cứ chứng minh quyền, lợi ích hợp pháp của mình bị xâm phạm được xử lý theo quy định tại khoản 2, Điều 118 của Luật Tố tụng hành chính. Thẩm phán không được trả lại đơn khởi kiện chỉ vì lý do người khởi kiện không nộp hoặc nộp không đầy đủ kèm theo đơn khởi kiện tài liệu, chứng cứ chứng minh quyền, lợi ích hợp pháp của mình bị xâm phạm.
+
+Trường hợp người khởi kiện không cung cấp được tài liệu, chứng cứ chứng minh quyền, lợi ích hợp pháp bị xâm phạm kèm theo đơn khởi kiện, thì Tòa án vẫn phải xem xét, thụ lý vụ án theo quy định. Trong quá trình tố tụng, trên cơ sở yêu cầu của người khởi kiện thì Tòa án yêu cầu cơ quan, tổ chức, cá nhân đang quản lý, lưu giữ cung cấp cho mình tài liệu, chứng cứ theo quy định tại khoản 3, Điều 93 của Luật Tố tụng hành chính.
+
+Như vậy, với trường hợp của bạn, việc Tòa án trả lại đơn khởi kiện của bạn với lý do hồ sơ khởi kiện không có các tài liệu, chứng cứ để chứng minh quyền và lợi ích bị xâm phạm là không đúng quy định của pháp luật.
+
+***Xem thêm:*** [Khi nào bị trả hồ sơ khởi kiện tranh chấp đất đai?](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Hồ sơ khởi kiện hành vi hành chính thiếu tài liệu thì có bị trả lại hay không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Qb8455cc31b',
+          'Bị hại xin giảm nhẹ hình phạt cho bị cáo có được coi là tình tiết giảm nhẹ không?',
+          2,
+          'https://luatvietnam.vn/luat-su-tu-van/bi-hai-xin-giam-nhe-hinh-phat-cho-bi-cao-co-duoc-coi-la-tinh-tiet-giam-nhe-khong-150806-faqs.html',
+          '2025-07-22',
+          '**Trả lời:**
+
+Theo quy định tại khoản 2, Điều 51 [Bộ luật Hình sự 2015](https://luatvietnam.vn/hinh-su/bo-luat-hinh-su-2015-101324-d1.html) thì:
+
+> *Khi quyết định hình phạt, Tòa án có thể coi đầu thú hoặc tình tiết khác là tình tiết giảm nhẹ, nhưng phải ghi rõ lý do giảm nhẹ trong bản án.*
+
+Thực tế, trong quá trình xét xử, Tòa án có thể xác định các tình tiết khác là tình tiết giảm nhẹ trách nhiệm hình sự theo quy định trên, ví dụ như các tình tiết sau:
+
+- Vợ, chồng, cha, mẹ, con, anh, chị, em ruột bị cáo là [người có công với nước](https://luatvietnam.vn/linh-vuc-khac/muc-chuan-huong-tro-cap-uu-dai-nguoi-co-cong-voi-cach-mang-883-98404-article.html) hoặc có thành tích xuất sắc được Nhà nước tặng một trong các danh hiệu vinh dự như: anh hùng lao động, anh hùng lực lượng vũ trang, bà mẹ Việt Nam anh hùng, nghệ sỹ nhân dân, nghệ sĩ ưu tú, nhà giáo nhân dân, nhà giáo ưu tú, thầy thuốc nhân dân, thầy thuốc ưu tú hoặc các danh hiệu cao quý khác theo quy định của Nhà nước:
+
+- Bị cáo có anh, chị, em ruột là [liệt sỹ](https://luatvietnam.vn/tin-phap-luat/dieu-kien-cong-nhan-liet-si-tu-01-7-2021-230-31146-article.html);
+
+- Bị cáo là người tàn tật do bị tai nạn trong lao động hoặc trong công tác, có tỷ lệ thương tật từ 31 % trở lên;
+
+- Người bị hại cũng có lỗi;
+
+- Thiệt hại do lỗi của người thứ ba;
+
+- Gia đình bị cáo sửa chữa, bồi thường thiệt hại thay cho bị cáo;
+
+- Người bị hại hoặc đại diện hợp pháp của người bị hại xin giảm nhẹ hình phạt cho bị cáo trong trường hợp chỉ gây tổn hại về sức khoẻ của người bị hại, gây thiệt hại về tài sản;
+
+- Phạm tội trong trường hợp vì phục vụ yêu cầu công tác đột xuất như đi chống bão, lụt, cấp cứu.
+
+Ngoài ra, khi Tòa án xét xử, tùy từng trường hợp cụ thể và hoàn cảnh cụ thể của người phạm tội mà còn có thể coi các tình tiết khác là [tình tiết giảm nhẹ](https://luatvietnam.vn/linh-vuc-khac/dieu-51-bo-luat-hinh-su-2015-883-99430-article.html), nhưng phải ghi rõ trong bản án.
+
+***Xem thêm:*** [Đề xuất: 6 tình tiết được giảm nhẹ trách nhiệm hình sự](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Người bị hại xin giảm nhẹ hình phạt cho bị cáo có được coi là tình tiết giảm nhẹ không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q44a2c599bb',
+          'Viên chức không phải đền bù chi phí đào tạo khi đơn phương chấm dứt hợp đồng làm việc?',
+          19,
+          'https://luatvietnam.vn/luat-su-tu-van/vien-chuc-khong-phai-den-bu-chi-phi-dao-tao-khi-don-phuong-cham-dut-hop-dong-lam-viec-150804-faqs.html',
+          '2025-07-21',
+          '**Trả lời:**
+
+Theo quy định tại  Điều 80 [Luật Giáo dục 2019](https://luatvietnam.vn/giao-duc/luat-giao-duc-2019-so-43-2019-qh14-175003-d1.html) và Điều 2, Điều 6, Điều 19 Thông tư [18/2021/TT-BGDĐT](https://luatvietnam.vn/giao-duc/thong-tu-18-2021-tt-bgddt-bo-giao-duc-va-dao-tao-204808-d1.html) thì đi học nghiên cứu sinh chính là một hình thức được cử đi tham gia đào tạo theo quy định của pháp luật.
+
+Theo quy định tại khoản 3 Điều 35 [Luật Viên chức 2010](https://luatvietnam.vn/chinh-sach/luat-vien-chuc-2010-57541-d1.html) thì: *“Viên chức được đơn vị sự nghiệp công lập cử đi đào tạo nếu đơn phương chấm dứt hợp đồng làm việc hoặc tự ý bỏ việc phải đền bù chi phí đào tạo theo quy định của Chính phủ.”.*
+
+Điều 7 Nghị định [101/2017/NĐ-CP](https://luatvietnam.vn/giao-duc/nghi-dinh-101-2017-nd-cp-chinh-phu-116743-d1.html) quy định những trường hợp viên chức được cử đi đào tạo phải đền bù chi phí đào tạo như sau:
+
+> ***Điều 7. Đền bù chi phí đào tạo***
+>
+> *Cán bộ, công chức, viên chức, được cử đi đào tạo từ trình độ trung cấp trở lên bằng nguồn ngân sách nhà nước hoặc kinh phí của cơ quan quản lý, sử dụng cán bộ, công chức, viên chức phải đền bù chi phí đào tạo khi thuộc một trong các trường hợp sau đây:*
+>
+> *1. Tự ý bỏ học, bỏ việc hoặc đơn phương chấm dứt hợp đồng làm việc trong thời gian đào tạo.*
+>
+> *2. Không được cơ sở đào tạo cấp văn bằng tốt nghiệp.*
+>
+> *3. Đã hoàn thành và được cấp văn bằng tốt nghiệp khóa học nhưng bỏ việc hoặc đơn phương chấm dứt hợp đồng làm việc khi chưa phục vụ đủ thời gian cam kết quy định tại Điều 5 hoặc Điều 6 Nghị định này.*
+
+Như vậy, viên chức được cử đi đào tạo sẽ phải đền bù chi phí đào tạo khi bị rơi vào đủ 2 yếu tố sau:
+
+- Được cử đi học nghiên cứu sinh bằng nguồn ngân sách nhà nước hoặc kinh phí của trường;
+
+- Thuộc ít nhất 1 trong 3 trường hợp sau:
+
++ Tự ý bỏ học, bỏ việc hoặc đơn phương chấm dứt hợp đồng làm việc trong thời gian đào tạo.
+
++ Không được cơ sở đào tạo cấp văn bằng tốt nghiệp.
+
++ Đã hoàn thành và được cấp văn bằng tốt nghiệp khóa học nhưng bỏ việc hoặc đơn phương chấm dứt hợp đồng làm việc khi chưa phục vụ đủ thời gian cam kết theo quy định.
+
+Tuy nhiên, theo thông tin bạn cung cấp, bạn *phải tự trang trải chi phí đào tạo, chi phí sinh hoạt* nên việc nhà trường yêu cầu bạn đền bù chi phí đào tạo trong thời gian anh đi học ở nước ngoài là không có căn cứ.
+
+***Xem thêm:*** [Viên chức được cử đi học nghiên cứu sinh ở nước ngoài có được tài trợ chi phí đào tạo hay không?](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Viên chức không phải đền bù chi phí đào tạo khi đơn phương chấm dứt hợp đồng làm việc?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q9887387542',
+          'Viên chức được cử đi học nghiên cứu sinh ở nước ngoài có được tài trợ chi phí đào tạo hay không?',
+          19,
+          'https://luatvietnam.vn/luat-su-tu-van/vien-chuc-duoc-cu-di-hoc-nghien-cuu-sinh-o-nuoc-ngoai-co-duoc-tai-tro-chi-phi-dao-tao-hay-khong-150803-faqs.html',
+          '2025-07-21',
+          '**Trả lời:**
+
+Theo quy định tại Điều 80 [Luật Giáo dục 2019](https://luatvietnam.vn/giao-duc/luat-giao-duc-2019-so-43-2019-qh14-175003-d1.html) và Điều 2, Điều 6, Điều 19 Thông tư [18/2021/TT-BGDĐT](https://luatvietnam.vn/giao-duc/thong-tu-18-2021-tt-bgddt-bo-giao-duc-va-dao-tao-204808-d1.html) thì đi học nghiên cứu sinh chính là một hình thức được cử đi tham gia đào tạo theo quy định của pháp luật.
+
+Khoản 4, Điều 5 Thông tư [36/2018/TT-BTC](https://luatvietnam.vn/tai-chinh/thong-tu-36-2018-tt-btc-lap-du-toan-quan-ly-kinh-phi-dao-tao-boi-duong-can-bo-cong-chuc-163651-d1.html) quy định về mức chi đào tạo, bồi dưỡng viên chức như sau:
+
+> ***Điều 5. Mức chi đào tạo, bồi dưỡng CBCC, viên chức:***
+>
+> *[…]*
+>
+> *4. Mức chi đào tạo, bồi dưỡng viên chức:*
+>
+> *Căn cứ nguồn lực tài chính bố trí cho công tác đào tạo, bồi dưỡng viên chức tại cơ quan, đơn vị; căn cứ nội dung chi đào tạo, bồi dưỡng CBCC, viên chức quy định tại Điều 4 Thông tư này và mức chi đào tạo, bồi dưỡng đối với CBCC quy định tại Khoản 1, Khoản 2, Khoản 3 Điều 5 Thông tư này; thủ trưởng đơn vị sự nghiệp công lập quyết định mức chi đào tạo, bồi dưỡng đối với viên chức phù hợp với quy định của pháp luật về cơ chế tài chính của đơn vị mình.*
+
+Mặt khác, khoản 2, Điều 6 Thông tư 36/2018/TT-BTC quy định về việc lập, phân bổ, quản lý, quyết toán kinh phí đào tạo, bồi dưỡng đối với viên chức như sau:
+
+> *2. Lập, phân bổ, quản lý, quyết toán kinh phí đào tạo, bồi dưỡng đối với viên chức:*
+>
+> *Căn cứ nhu cầu đào tạo, bồi dưỡng viên chức tại cơ quan, đơn vị; căn cứ nội dung chi, mức chi quy định tại Thông tư này; thủ trưởng các đơn vị sự nghiệp xây dựng dự toán kinh phí đào tạo, bồi dưỡng viên chức tổng hợp trong dự toán chi thường xuyên của cơ quan, đơn vị theo quy định của Luật Ngân sách nhà nước và các văn bản quy phạm pháp luật quy định cơ chế tài chính đối với đơn vị sự nghiệp công lập theo lĩnh vực hoạt động.*
+>
+> *Việc phân bổ, quyết toán kinh phí đào tạo, bồi dưỡng viên chức thực hiện theo quy định của Luật Ngân sách nhà nước và pháp luật quy định về cơ chế tài chính đối với đơn vị sự nghiệp công lập theo từng lĩnh vực hoạt động.*
+
+Như vậy:
+
+- Thời gian bạn đi học nghiên cứu sinh ở nước ngoài sẽ được nhà trường tài trợ chi phí đào tạo.
+
+- Mức chi, nội dung chi cụ thể do nhà trường của bạn quyết định trên cơ sở quy định của pháp luật và nguồn kinh phí của nhà trường.
+
+Các khoản chi cụ thể mà bạn được hưởng quy định chi tiết tại Điều 4 và khoản 1, Khoản 2, Khoản 3 Điều 5 Thông tư [36/2018/TT-BTC](https://luatvietnam.vn/tai-chinh/thong-tu-36-2018-tt-btc-lap-du-toan-quan-ly-kinh-phi-dao-tao-boi-duong-can-bo-cong-chuc-163651-d1.html), ví dụ như:
+
++ Chi phí dịch vụ đào tạo, phí triển khai nhiệm vụ nghiên cứu và các chi phí khác liên quan đến khóa đào tạo bắt buộc phải trả cho các cơ sở đào tạo ở nước ngoài;
+
++ Chi phí cho công tác phiên dịch, biên dịch tài liệu;
+
++ Chi phí mua bảo hiểm y tế trong thời gian học tập ở nước ngoài;
+
++ Chi phí cho công tác tổ chức lớp học: Khảo sát, đàm phán, xây dựng chương trình học tập với cơ sở đào tạo ở nước ngoài; chi phí phải trả cho tổ chức trong nước hoặc văn phòng đại diện trong nước của tổ chức đào tạo nước ngoài thực hiện đưa nghiên cứu sinh tham dự các khóa học (nếu có);
+
++ Chi phí ăn, tiêu vặt, ở, đi lại, lệ phí sân bay và những khoản thanh toán theo chế độ công tác phí ...;
+
++ Chi làm thủ tục xuất, nhập cảnh (hộ chiếu, thị thực (visa)).
+
+[…]
+
+Xem thêm: [Viên chức đi học nghiên cứu sinh ở nước ngoài thì có được trả lương không?](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+Trên đây là nội dung tư vấn về “Viên chức được cử đi học nghiên cứu sinh ở nước ngoài có được tài trợ chi phí đào tạo hay không??” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q4dd830afbc',
+          'Viên chức đi học nghiên cứu sinh ở nước ngoài thì có được trả lương không?',
+          19,
+          'https://luatvietnam.vn/luat-su-tu-van/vien-chuc-di-hoc-nghien-cuu-sinh-o-nuoc-ngoai-thi-co-duoc-tra-luong-khong-150802-faqs.html',
+          '2025-07-21',
+          '**Trả lời:**
+
+Theo quy định tại  Điều 80 [Luật Giáo dục 2019](https://luatvietnam.vn/giao-duc/luat-giao-duc-2019-so-43-2019-qh14-175003-d1.html) và Điều 2, Điều 6, Điều 19 Thông tư [18/2021/TT-BGDĐT](https://luatvietnam.vn/giao-duc/thong-tu-18-2021-tt-bgddt-bo-giao-duc-va-dao-tao-204808-d1.html) thì đi học nghiên cứu sinh chính là một hình thức được cử đi tham gia đào tạo theo quy định của pháp luật.
+
+Khoản 2, Điều 35 [Luật Viên chức 2010](https://luatvietnam.vn/chinh-sach/luat-vien-chuc-2010-57541-d1.html) quy định về quyền lợi của viên chức trong thời gian được cử đi tham gia đào tạo như sau:
+
+> ***Điều 35. Trách nhiệm và quyền lợi của viên chức trong đào tạo, bồi dưỡng***
+>
+> *[…]*
+>
+> *2. Viên chức được cử tham gia đào tạo, bồi dưỡng được hưởng tiền lương và phụ cấp theo quy định của pháp luật và quy chế của đơn vị sự nghiệp công lập; thời gian đào tạo, bồi dưỡng được tính là thời gian công tác liên tục, được xét nâng lương.*
+
+Như vậy, bạn là [viên chức](https://luatvietnam.vn/can-bo-cong-chuc/vien-chuc-duoc-cu-di-dao-tao-566-25542-article.html) được cử đi học nghiên cứu sinh ở nước ngoài thì trong thời gian đi học nghiên cứu sinh bạn phải được hưởng đầy đủ [tiền lương](https://luatvietnam.vn/can-bo-cong-chuc/cong-chuc-vien-chuc-co-duoc-tang-luong-trong-nam-2025-566-101980-article.html) và phụ cấp lương theo quy định của pháp luật và quy chế của trường theo quy định trên.
+
+Advertisements
+
+[](blob:https://luatvietnam.vn/68c236fb-59a3-46f9-9e7a-4f9cedc23d19)
+
+X
+
+***Xem thêm:***[3 lưu ý công chức cần biết khi được cử đi học ở nước ngoài](https://luatvietnam.vn/luat-su-tu-van/nguyen-don-chet-thi-vu-an-co-duoc-tiep-tuc-xet-xu-khong-150418-faqs.html)
+
+*Trên đây là nội dung tư vấn về “Viên chức đi học nghiên cứu sinh ở nước ngoài thì có được trả lương không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q2db97b8c23',
+          'Mua ma túy để sử dụng khi bị bắt mới biết là ma túy giả thì có bị truy cứu TNHS?',
+          2,
+          'https://luatvietnam.vn/luat-su-tu-van/mua-ma-tuy-de-su-dung-khi-bi-bat-moi-biet-la-ma-tuy-gia-thi-co-bi-truy-cuu-tnhs-150801-faqs.html',
+          '2025-07-16',
+          '',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q132b4b40bd',
+          'Biên bản hòa giải tranh chấp đất đai bị thiếu thành phần thì có bị trả đơn khởi kiện không?',
+          4,
+          'https://luatvietnam.vn/luat-su-tu-van/bien-ban-hoa-giai-tranh-chap-dat-dai-bi-thieu-thanh-phan-thi-co-bi-tra-don-khoi-kien-khong-150798-faqs.html',
+          '2025-07-15',
+          '**Trả lời:**
+
+Theo khoản 2, Điều 3 Nghị quyết số [04/2017/NQ-HĐTP](https://luatvietnam.vn/dan-su/nghi-quyet-04-2017-nq-hdtp-hoi-dong-tham-phan-toa-an-nhan-dan-toi-cao-114153-d1.html) ngày 05/5/2017 của Hội đồng Thẩm phán TANDTC quy định *“Đối với tranh chấp ai là người có quyền sử dụng đất mà **chưa được hòa giải** tại Ủy ban nhân dân xã, phường, thị trấn nơi có đất tranh chấp theo quy định tại Điều 202 Luật đất đai năm 2013 thì được xác định là chưa có đủ điều kiện khởi kiện quy định tại điểm b, khoản 1, Điều 192 Bộ luật Tố tụng dân sự năm 2015”*.
+
+Theo khoản 1, Điều 105 Nghị định số [102/2024/NĐ-CP](https://luatvietnam.vn/dat-dai/nghi-dinh-102-2024-nd-cp-cua-chinh-phu-quy-dinh-chi-tiet-thi-hanh-mot-so-dieu-cua-luat-dat-dai-361911-d1.html) thì khi nhận được đơn yêu cầu giải quyết tranh chấp đất đai, Ủy ban nhân dân cấp xã có trách nhiệm thực hiện các công việc sau:
+
+> ***Điều 105. Thủ tục hòa giải tranh chấp đất đai***
+>
+> *1. Khi nhận được đơn yêu cầu hoà giải tranh chấp đất đai, Ủy ban nhân dân cấp xã có trách nhiệm thực hiện các công việc sau:*
+>
+> *a) Trong thời hạn 03 ngày làm việc kể từ ngày nhận được đơn, Ủy ban nhân dân cấp xã phải thông báo bằng văn bản cho các bên tranh chấp đất đai và Văn phòng đăng ký đất đai hoặc Chi nhánh Văn phòng đăng ký đất đai nơi có đất tranh chấp về việc thụ lý đơn yêu cầu hòa giải tranh chấp đất đai, trường hợp không thụ lý thì phải thông báo bằng văn bản và nêu rõ lý do;*
+>
+> *b) Thẩm tra, xác minh nguyên nhân phát sinh tranh chấp, thu thập giấy tờ, tài liệu có liên quan do các bên cung cấp về nguồn gốc đất, quá trình sử dụng đất và hiện trạng sử dụng đất;*
+>
+> *c) Thành lập Hội đồng hòa giải tranh chấp đất đai để thực hiện hòa giải quy định tại điểm b khoản 2 Điều 235 Luật Đất đai. Tùy từng trường hợp cụ thể, có thể mời người đại diện cộng đồng dân cư quy định tại khoản 3 Điều 6 Luật Đất đai; người có uy tín trong dòng họ ở nơi sinh sống, nơi làm việc; người có trình độ pháp lý, có kiến thức xã hội; già làng, chức sắc tôn giáo, người biết rõ vụ, việc, công chức Tư pháp - hộ tịch cấp xã; đại diện Hội Nông dân, Hội Phụ nữ, Hội Cựu chiến binh, Đoàn Thanh niên Cộng sản Hồ Chí Minh cấp xã; cá nhân, tổ chức khác có liên quan tham gia Hội đồng hòa giải tranh chấp đất đai;*
+>
+> *d) Tổ chức cuộc họp hòa giải có sự tham gia của các bên tranh chấp, thành viên Hội đồng hòa giải tranh chấp đất đai và người có quyền lợi, nghĩa vụ liên quan.*
+>
+> *Việc hòa giải chỉ được tiến hành khi các bên tranh chấp đều có mặt. Trường hợp một trong các bên tranh chấp vắng mặt đến lần thứ hai thì được coi là việc hòa giải không thành**.*
+
+Hiện nay, pháp luật không quy định nếu Hội đồng hòa giải tranh chấp đất đai không đủ [thành phần](https://luatvietnam.vn/tin-phap-luat/quy-trinh-giai-quyet-tranh-chap-dat-dai-theo-phap-luat-hien-nay-230-101333-article.html) thì cuộc họp hòa giải không được tiến hành hay việc hoà giải không có hiệu lực.
+
+Hội đồng hòa giải tranh chấp đất đai không đưa ra quyết định, không biểu quyết theo đa số. Hơn nữa, theo quy định trên thì Hội đồng có thành phần rất linh hoạt như *“người đại diện cộng đồng dân cư quy định tại khoản 3 Điều 6 Luật Đất đai; người có uy tín trong dòng họ ở nơi sinh sống, nơi làm việc; người có trình độ pháp lý, có kiến thức xã hội; già làng, chức sắc tôn giáo, người biết rõ vụ, việc, công chức Tư pháp - hộ tịch cấp xã; đại diện Hội Nông dân, Hội Phụ nữ, Hội Cựu chiến binh, Đoàn Thanh niên Cộng sản Hồ Chí Minh cấp xã; cá nhân, tổ chức khác có liên quan”*. Do đó, có một số thành phần Hội đồng không mang tính bắt buộc.
+
+Đối với [tranh chấp đất đai](https://luatvietnam.vn/dat-dai-nha-o/tranh-chap-dat-dai-567-23380-article.html) cần qua thủ tục hoà giải tại UBND cấp xã nơi có đất tranh chấp vì đây thuộc loại tranh chấp về quyền sở hữu (quyền sử dụng đất thuộc về ai) nên vai trò của cơ quan quản lý nhà nước về đất đai tại nơi có đất là rất quan trọng (là nơi quản lý hồ sơ, tài liệu về nguồn gốc đất, nắm được quá trình sử dụng đất, những người sử dụng đất, việc thực hiện nghĩa vụ tài chính về đất, thời điểm phát sinh tranh chấp...), đây là cơ sở để Toà án có được thông tin để giải quyết đúng đắn vụ án.
+
+Hơn nữa, việc hoà giải nhằm đến làm rõ quan điểm, ý chí, nguyện vọng của các bên, giúp các bên thoả thuận, thống nhất được với nhau để chấm dứt tranh chấp; do đó, khi các bên đã hoà giải không thành và khởi kiện thì thông thường, Tòa án có thẩm quyền cũng sẽ không đặt nặng những vấn đề mang tính hình thức của việc hoà giải mà làm chậm trễ việc giải quyết tranh chấp của các bên. Vì vậy, thông thường thì Tòa án cũng sẽ không lấy lý do **Biên bản hòa giải tranh chấp đất đai của bạn bị thiếu thành phần hội đồng hòa giải theo quy định của pháp luật** là Hội Cựu chiến binh **trong biên bản hòa giải để trả hồ sơ khởi kiện.**
+
+***Xem thêm:*** [Hòa giải tranh chấp đất đai 2025: Hồ sơ và thủ tục thực hiện](https://luatvietnam.vn/luat-su-tu-van/nguyen-don-chet-thi-vu-an-co-duoc-tiep-tuc-xet-xu-khong-150418-faqs.html)
+
+*Trên đây là nội dung tư vấn về “Biên bản hòa giải tranh chấp đất đai bị thiếu thành phần thì có bị trả đơn khởi kiện không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q46625ead9d',
+          'Người cao tuổi có cháu phượng dưỡng thì có được trợ cấp xã hội hay không?',
+          1,
+          'https://luatvietnam.vn/luat-su-tu-van/nguoi-cao-tuoi-co-chau-phuong-duong-thi-co-duoc-tro-cap-xa-hoi-hay-khong-150800-faqs.html',
+          '2025-07-15',
+          '**Trả lời:**
+
+Khoản 5, Điều 5 Nghị định số [20/2021/NĐ-CP](https://luatvietnam.vn/chinh-sach/nghi-dinh-20-2021-nd-cp-chinh-sach-tro-giup-xa-hoi-voi-doi-tuong-bao-tro-xa-hoi-199788-d1.html) quy định đối tượng được hưởng trợ cấp xã hội hàng tháng là người cao tuổi bao gồm những trường hợp sau:
+
+> **Điều 5. Đối tượng bảo trợ xã hội hưởng trợ cấp xã hội hàng tháng**
+>
+> […]
+>
+> 5. Người cao tuổi thuộc một trong các trường hợp quy định sau đây:
+>
+> a) Người cao tuổi thuộc diện hộ nghèo, không có người có nghĩa vụ và quyền phụng dưỡng hoặc có người có nghĩa vụ và quyền phụng dưỡng nhưng người này đang hưởng trợ cấp xã hội hàng tháng;
+>
+> b) Người cao tuổi thuộc diện hộ nghèo, không có người có nghĩa vụ và quyền phụng dưỡng, không có điều kiện sống ở cộng đồng, đủ điều kiện tiếp nhận vào cơ sở trợ giúp xã hội nhưng có người nhận nuôi dưỡng, chăm sóc tại cộng đồng.
+
+Căn cứ vào khoản 2, Điều 10 [Luật Người cao tuổi](https://luatvietnam.vn/chinh-sach/luat-nguoi-cao-tuoi-2009-48483-d1.html) có hiệu lực từ ngày 01/07/2010 thì:
+
+Người có nghĩa vụ và quyền phụng dưỡng người cao tuổi là:
+
+- Con, cháu của người cao tuổi;
+
+- Những người khác có nghĩa vụ nuôi dưỡng, cấp dưỡng theo quy định của pháp luật về hôn nhân và gia đình.
+
+Ngoài ra, căn cứ vào khoản 6, Điều 2 Nghị định 20/2021/NĐ-CP thì: Người có nghĩa vụ và quyền phụng dưỡng người cao tuổi là vợ, chồng hoặc các con, cháu của người cao tuổi và những người khác có nghĩa vụ nuôi dưỡng, cấp dưỡng theo quy định của pháp luật về hôn nhân và gia đình.
+
+Căn cứ vào Điều 107, 113, 114 [Luật Hôn nhân và Gia đình](https://luatvietnam.vn/hon-nhan-gia-dinh/luat-hon-nhan-va-gia-dinh-2014-87930-d1.html) 2014 thì những người khác có nghĩa vụ nuôi dưỡng, cấp dưỡng bao gồm:
+
+- Anh, chị, em ruột: có nghĩa vụ nuôi dưỡng nhau trong trường hợp không còn cha mẹ hoặc cha mẹ không có điều kiện trông nom, nuôi dưỡng, chăm sóc, giáo dục con.
+
+- Ông bà nội, ông bà ngoại: có nghĩa vụ cấp dưỡng cho cháu trong trường hợp cháu chưa thành niên hoặc cháu đã thành niên không có khả năng lao động, không có tài sản để tự nuôi mình và không có người cấp dưỡng theo quy định; đồng thời, cháu đã thành niên không sống chung với ông bà nội, ông bà ngoại có nghĩa vụ cấp dưỡng cho ông bà trong trường hợp ông bà không có khả năng lao động, không có tài sản để tự nuôi mình và không có người khác cấp dưỡng.
+
+- Cô, dì, chú, cậu, bác ruột: có nghĩa vụ cấp dưỡng cho cháu ruột trong trường hợp cháu chưa thành niên hoặc cháu đã thành niên không có khả năng lao động và không có tài sản để tự nuôi mình mà không có người khác cấp dưỡng; đồng thời, cháu đã thành niên không sống chung với cô, dì, chú, cậu, bác ruột có nghĩa vụ cấp dưỡng cho những người này trong trường hợp họ không có khả năng lao động và không có tài sản để tự nuôi mình mà không có người khác cấp dưỡng.
+
+Như vậy, bạn chính là người có quyền và nghĩa vụ phụng dưỡng bà ngoài của bạn. Vì vậy, nếu bà ngoại của bạn chỉ còn một mình bạn là người có nghĩa vụ phụng dưỡng theo quy định trên mà bạn cũng đang hưởng [trợ cấp xã hội hàng tháng](https://luatvietnam.vn/linh-vuc-khac/tro-cap-huu-tri-xa-hoi-883-102910-article.html) thì bà ngoại của bạn mới được hưởng trợ cấp xã hội hàng tháng; ngược lại, nếu bạn không đang hưởng trợ cấp xã hội hàng tháng thì bà ngoại của bạn không được hưởng trợ cấp xã hội hàng tháng.
+
+***Xem thêm:*** [Đề xuất mức trợ cấp hưu trí xã hội hằng tháng từ 01/7/2025](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Người cao tuổi có cháu phượng dưỡng thì có được trợ cấp xã hội hay không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q1b110d5abe',
+          'Xử lý các cơ quan Nhà nước không cung cấp tài liệu cho Tòa án như thế nào?',
+          13,
+          'https://luatvietnam.vn/luat-su-tu-van/xu-ly-cac-co-quan-nha-nuoc-khong-cung-cap-tai-lieu-cho-toa-an-nhu-the-nao-150799-faqs.html',
+          '2025-07-15',
+          '**Trả lời:**
+
+Theo quy định tại điểm a, khoản 1, Điều 18 [Pháp lệnh về xử phạt vi phạm hành chính đối với hành vi cản trở hoạt động tố tụng](https://luatvietnam.vn/vi-pham-hanh-chinh/phap-lenh-02-2022-ubtvqh15-228882-d1.html) thì hành vi không thực hiện yêu cầu của Tòa án, Viện kiểm sát về việc cung cấp tài liệu, chứng cứ mà người đó đang quản lý, lưu giữ sẽ bị xử phạt vi phạm hành chính, cụ thể như sau:
+
+> **Điều 18. Hành vi cản trở hoạt động xác minh, thu thập chứng cứ của cơ quan, người có thẩm quyền**
+>
+> 1. Phạt cảnh cáo hoặc phạt tiền từ 100.000 đồng đến 1.000.000 đồng đối với một trong các hành vi sau đây:
+>
+> a) Không thực hiện yêu cầu của Tòa án, Viện kiểm sát về việc cung cấp tài liệu, chứng cứ mà người đó đang quản lý, lưu giữ;
+
+Như vậy, hành vi không cung cấp tài liệu, chứng cứ cho Tòa án theo yêu cầu của Tòa án có thể bị xử phạt theo quy định trên.
+
+***Xem thêm:*** [Tòa án yêu cầu giao nộp tài liệu liên quan đến vụ án mà không nộp thì có sao không?](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Xử lý các cơ quan Nhà nước không cung cấp tài liệu cho Tòa án như thế nào?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q1bac851590',
+          'Thế nào là hành vi trái pháp luật nghiêm trọng của nạn nhân?',
+          2,
+          'https://luatvietnam.vn/luat-su-tu-van/the-nao-la-hanh-vi-trai-phap-luat-nghiem-trong-cua-nan-nhan-150789-faqs.html',
+          '2025-07-10',
+          '**Trả lời:**
+
+Tại Nghị quyết số 04/NQ-HĐTP ngày 29-11-1986, Hội đồng Thẩm phán Tòa án nhân dân tối cao đã hướng dẫn:
+
+> *Giết người trong tình trạng tinh thần bị kích động mạnh do hành vi trái pháp luật nghiêm trọng của nạn nhân đối với người phạm tội hoặc đối với người thân thích của người đó. Đây là khung hình phạt giảm nhẹ (khoản 3).*
+>
+> *- Tình trạng tinh thần bị kích động mạnh là tình trạng người phạm tội không hoàn toàn tự chủ, tự kiềm chế được hành vi phạm tội của mình. Nói chung, sự kích động mạnh đó phải là tức thời do hành vi trái pháp luật nghiêm trọng của nạn nhân gây nên sự phản ứng dẫn tới hành vi giết người. Nhưng cá biệt có trường hợp do hành vi trái pháp luật của nạn nhân có tính chất đè nén, áp bức tương đối nặng nề, lặp đi lặp lại, sự kích động đó đã âm ỷ, kéo dài, đến thời điểm nào đó hành vi trái pháp luật của nạn nhân lại tiếp diễn làm cho người bị kích động không tự kiềm chế được; nếu tách riêng sự kích động mới này thì không coi là kích động mạnh, nhưng nếu xét cả quá trình phát triển của sự việc, thì lại được coi là mạnh hoặc rất mạnh.*
+>
+> *Hành vi trái pháp luật nghiêm trọng của nạn nhân đối với người phạm tội hoặc đối với người thân thích của người đó tuy làm cho người phạm tội bị kích động mạnh, nhưng nói chung chưa đến mức là tội phạm. Nếu hành vi trái pháp luật đó trực tiếp xâm phạm tính mạng, sức khỏe hoặc lợi ích hợp pháp của người phạm tội hoặc người thân thích của người phạm tội hoặc của xã hội, đã cấu thành tội phạm, thì hành vi chống trả lại gây chết người có thể được xem xét là trường hợp phòng vệ chính đáng (theo Điều 13) hoặc do vượt quá giới hạn phòng vệ chính đảng (theo Điều 102).*
+>
+> *Trong trường hợp cá biệt hành vi trái pháp luật nghiêm trọng của nạn nhân cấu thành tội phạm nhưng là tội phạm ít nghiêm trọng (như tội làm nhục người khác, tội vu khống) thì cũng được coi là giết người trong tình trạng tinh thần bị kích động mạnh và được xử lý theo khoản 3 Điều 101. Thí dụ: hai anh em đồng hao ở chung nhà bố mẹ vợ, người anh thường xuyên làm nhục thô bạo và trắng trợn vu khống người em, đến thời điểm nào đó lại lăng nhục người em nên người anh bị em giết.*
+
+Mặc dù Nghị quyết số 04/NQ-HĐTP nêu trên là văn bản hướng dẫn Bộ luật hình sự năm 1985 nhưng cho đến nay chưa có văn bản quy phạm pháp luật nào khác có nội dung hướng dẫn mới về quy định này. Do đó, trên thực tế, các Tòa án vẫn có thể vận dụng hướng dẫn này để giải quyết cho đến khi có hướng dẫn mới của Tòa án nhân dân tối cao.
+
+***Xem thêm:*** [Giết người khi tinh thần bị kích động mạnh bị xử phạt thế nào](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Thế nào là hành vi trái pháp luật nghiêm trọng của nạn nhân?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Qb1276c4bfb',
+          'Con từ 7 tuổi trở lên có quyền lựa chọn ở với ai khi bố mẹ ly hôn?',
+          1,
+          'https://luatvietnam.vn/luat-su-tu-van/con-tu-7-tuoi-tro-len-co-quyen-lua-chon-o-voi-ai-khi-bo-me-ly-hon-150788-faqs.html',
+          '2025-07-10',
+          '**Trả lời:**
+
+Theo quy định tại khoản 2, Điều 81 [Luật Hôn nhân và Gia đình năm 2014](https://luatvietnam.vn/hon-nhan-gia-dinh/luat-hon-nhan-va-gia-dinh-2014-87930-d1.html) thì:
+
+> *Vợ chồng thỏa thuận về người trực tiếp nuôi con, nghĩa vụ, quyền của mỗi bên sau khi ly hôn đối với con; trường hợp không thỏa thuận được thì Tòa án quyết định giao con cho một bên trực tiếp nuôi căn cứ vào quyền lợi về mọi mặt của con; nếu con từ đủ 07 tuổi trở lên thì phải xem xét nguyện vọng của con.*
+
+Theo quy định nêu trên thì nguyện vọng của con từ đủ 07 tuổi trở lên chỉ là một trong những yếu tố Tòa án phải xem xét trong quá trình giải quyết vụ án, việc quyết định giao con cho bên nào trực tiếp nuôi phải căn cứ vào quyền lợi về mọi mặt của con.
+
+Mặt khác, theo quy định tại Điều 214, Điều 217 [Bộ luật Tố tụng dân sự năm 2015](https://luatvietnam.vn/hanh-chinh/bo-luat-to-tung-dan-su-nam-2015-luat-so-92-2015-qh13-101332-d1.html) thì việc không lấy được lời khai của các con không phải là căn cứ để đình chỉ hay [tạm đình chỉ](https://luatvietnam.vn/luat-su-tu-van/toa-an-co-duoc-dinh-chi-giai-quyet-vu-an-khi-duong-su-vang-mat-khong-co-ly-do-chinh-dang-khong-150482-faqs.html) giải quyết vụ án dân sự. Do vậy, Tòa án giải quyết theo thủ tục chung và căn cứ vào quyền lợi về mọi mặt của con để xem xét, quyết định người [trực tiếp nuôi dưỡng con](https://luatvietnam.vn/dan-su/gianh-quyen-nuoi-con-khi-ly-hon-568-19692-article.html).
+
+***Xem thêm:*** [Cha mẹ ly hôn con chọn ở với ông bà được không?](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Con từ 7 tuổi trở lên có quyền lựa chọn ở với ai khi bố mẹ ly hôn?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q8c40b8cb99',
+          'Ai phải trả chi phí định giá tài sản do Tòa án ra quyết định định giá?',
+          1,
+          'https://luatvietnam.vn/luat-su-tu-van/ai-phai-tra-chi-phi-dinh-gia-tai-san-do-toa-an-ra-quyet-dinh-dinh-gia-150787-faqs.html',
+          '2025-07-10',
+          '**Trả lời:**
+
+Căn cứ khoản 1, Điều 101 [Bộ luật Tố tụng dân sự năm 2015](https://luatvietnam.vn/hanh-chinh/bo-luat-to-tung-dan-su-nam-2015-luat-so-92-2015-qh13-101332-d1.html), trường hợp xét thấy cần thiết, Thẩm phán tiến hành việc xem xét, thẩm định tại chỗ với sự có mặt của đại diện Ủy ban nhân dân cấp xã hoặc Công an xã, phường, thị trấn hoặc cơ quan, tổ chức nơi có đối tượng cần xem xét, thẩm định và phải báo trước việc xem xét, thẩm định tại chỗ để đương sự biết, chứng kiến việc xem xét, thẩm định đó. Trường hợp này, [nguyên đơn](https://luatvietnam.vn/luat-su-tu-van/nguyen-don-chet-thi-vu-an-co-duoc-tiep-tuc-xet-xu-khong-150418-faqs.html), người kháng cáo theo thủ tục phúc thẩm phải nộp tiền tạm ứng chi phí xem xét, thẩm định tại chỗ theo quy định tại khoản 2, Điều 156 Bộ luật Tố tụng dân sự năm 2015.
+
+Căn cứ vào điểm b, khoản 3, Điều 104 Bộ luật Tố tụng dân sự năm 2015, trường hợp các đương sự không thỏa thuận được giá tài sản thì Tòa án ra quyết định [định giá tài sản](https://luatvietnam.vn/tin-van-ban-moi/tong-hop-cac-van-ban-moi-nhat-ve-tham-dinh-gia-186-98136-article.html) và thành lập Hội đồng định giá. Trường hợp này, nguyên đơn, người [kháng cáo](https://luatvietnam.vn/bieu-mau/don-khang-cao-571-90174-article.html) phải nộp tiền tạm ứng chi phí định giá tài sản theo quy định tại khoản 3, Điều 164 Bộ luật Tố tụng dân sự năm 2015.
+
+Như vậy, trong trường hợp của bạn, nếu bạn và các anh em của bạn không thống nhất được giá trị di sản và cũng không yêu cầu định giá thì Tòa án sẽ ra quyết định định giá tài sản và bên nào là nguyên đơn hoặc người kháng cáo sẽ phải trả chi phí định giá tài sản.
+
+***Xem thêm:*** [Khởi kiện chia thừa kế nhà đất: Thủ tục và mức án phí](https://luatvietnam.vn/luat-su-tu-van/nguyen-don-chet-thi-vu-an-co-duoc-tiep-tuc-xet-xu-khong-150418-faqs.html)
+
+*Trên đây là nội dung tư vấn về “Ai phải trả chi phí định giá tài sản do Tòa án ra quyết định định giá?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q178f83139e',
+          'Một phần của sổ đỏ bị cấp sai thì có bị hủy toàn bị sổ đỏ không?',
+          4,
+          'https://luatvietnam.vn/luat-su-tu-van/mot-phan-cua-so-do-bi-cap-sai-thi-co-bi-huy-toan-bi-so-do-khong-150784-faqs.html',
+          '2025-07-09',
+          '**Trả lời:**
+
+Theo hướng dẫn tại điểm 1, mục I Công văn [02/GĐ-TANDTC](https://luatvietnam.vn/tu-phap/cong-van-02-gd-tandtc-2018-giai-dap-mot-so-van-de-ve-to-tung-hanh-chinh-167244-d6.html) ngày 19/9/2018 của Tòa án nhân dân tối cao giải đáp một số vấn đề về tố tụng hành chính, tố tụng dân sự thì Giấy chứng nhận quyền sử dụng đất là quyết định hành chính.
+
+Theo quy định tại điểm b, khoản 2, Điều 193 của [Luật Tố tụng hành chính năm 2015](https://luatvietnam.vn/hanh-chinh/luat-to-tung-hanh-chinh-2015-101331-d1.html) thì Hội đồng xét xử sơ thẩm có thẩm quyền *“Chấp nhận một phần hoặc toàn bộ yêu cầu khởi kiện, tuyên hủy một phần hoặc toàn bộ quyết định hành chính trái pháp luật và quyết định giải quyết khiếu nại có liên quan (nếu có); ...”*
+
+Như vậy, theo các quy định nêu trên thì khi xét xử Hội đồng xét xử có quyền tuyên hủy một phần quyết định hành chính. Tuy nhiên, trong quá trình giải quyết vụ án có yêu cầu hủy Giấy chứng nhận quyền sử dụng đất thì tùy từng trường hợp cụ thể mà Tòa án xem xét, quyết định, cụ thể như sau:
+
+- Trường hợp [Giấy chứng nhận quyền sử dụng đất](https://luatvietnam.vn/dat-dai-nha-o/giay-chung-nhan-quyen-su-dung-dat-30179-article.html) chỉ cấp chung cho một thửa đất mà có sai sót thì Tòa án chấp nhận yêu cầu khởi kiện và tuyên hủy toàn bộ Giấy chứng nhận quyền sử dụng đất.
+
+- Trường hợp Giấy chứng nhận quyền sử dụng đất cấp chung cho nhiều thửa đất riêng biệt; trình tự, thủ tục, thẩm quyền cấp Giấy chứng nhận quyền sử dụng đất không đúng quy định của pháp luật thì Tòa án chấp nhận yêu cầu khởi kiện và tuyên hủy toàn bộ Giấy chứng nhận quyền sử dụng đất.
+
+- Trường hợp Giấy chứng nhận quyền sử dụng đất cấp chung cho nhiều thửa đất riêng biệt; trình tự, thủ tục, [thẩm quyền cấp Giấy chứng nhận](https://luatvietnam.vn/dat-dai-nha-o/tham-quyen-cong-nhan-quyen-su-dung-dat-567-91869-article.html) quyền sử dụng đất là đúng quy định của pháp luật, nhưng có sai sót đối với một hoặc một số thửa đất về diện tích, tứ cận hay loại đất và phần này độc lập, không ảnh hưởng đến phần còn lại thì Tòa án chấp nhận một phần yêu cầu khởi kiện, tuyên hủy một phần giấy chứng nhận quyền sử dụng đất (đối với thửa đất hoặc những thửa đất có sai sót); buộc Ủy ban nhân dân cấp có thẩm quyền thực hiện nhiệm vụ, công vụ theo đúng quy định của pháp luật đất đai. Tại phần nhận định của bản án, Hội đồng xét xử phải phân tích, đánh giá, xác định rõ phần nào đúng, phần nào sai trong Giấy chứng nhận quyền sử dụng đất.
+
+***Xem thêm:*** [Sổ đỏ bị cấp sai: Khi nào phải đính chính, thu hồi, huỷ?](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Một phần của sổ đỏ bị cấp sai thì có bị hủy toàn bị sổ đỏ không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q58e0501c8f',
+          'Người có uy tín tham gia hòa giải, đối thoại tại Tòa án được xác định như thế nào?',
+          1,
+          'https://luatvietnam.vn/luat-su-tu-van/nguoi-co-uy-tin-tham-gia-hoa-giai-doi-thoai-tai-toa-an-duoc-xac-dinh-nhu-the-nao-150786-faqs.html',
+          '2025-07-09',
+          '**Trả lời:**
+
+Theo quy định tại khoản 7, Điều 21 của [Luật Hòa giải, đối thoại tại Tòa án](https://luatvietnam.vn/tu-phap/luat-hoa-giai-doi-thoai-tai-toa-an-2020-186273-d1.html) thì Hòa giải viên có quyền mời người có uy tín có khả năng tác động đến mỗi bên tham gia [hòa giải](https://luatvietnam.vn/dat-dai-nha-o/hoa-giai-tranh-chap-dat-dai-567-30205-article.html), đối thoại để hỗ trợ cho việc hòa giải, đối thoại khi cần thiết.
+
+Người có uy tín là người có mối liên hệ chặt chẽ và có ảnh hưởng tích cực đến một hoặc các bên tham gia hòa giải, đối thoại, được bên tham gia hòa giải, đối thoại đó tôn trọng, tín nhiệm và tin tưởng. Người có uy tín được mời tham gia hòa giải, đối thoại có thể là người thân thích của người tham gia hòa giải, đối thoại, già làng, trưởng thôn, trưởng dòng họ, người có chức sắc tôn giáo. Người có uy tín không nghiên cứu hồ sơ vụ việc trước khi tham gia hòa giải, đối thoại.
+
+***Xem thêm:*** [6 nội dung đáng chú ý của Luật Hòa giải, đối thoại tại Tòa án](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Người có uy tín tham gia hòa giải, đối thoại tại Tòa án được xác định như thế nào?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q4f40b12c0d',
+          'Có thể khởi kiện quyết định phê duyệt giá đất cụ thể không?',
+          13,
+          'https://luatvietnam.vn/luat-su-tu-van/co-the-khoi-kien-quyet-dinh-phe-duyet-gia-dat-cu-the-khong-150785-faqs.html',
+          '2025-07-09',
+          '**Trả lời:**
+
+Khoản 1, khoản 2 Điều 3 của [Luật Tố tụng hành chính năm 2015](https://luatvietnam.vn/hanh-chinh/luat-to-tung-hanh-chinh-2015-101331-d1.html) quy định:
+
+> *1. Quyết định hành chính là văn bản do cơ quan hành chính nhà nước, cơ quan, tổ chức được giao thực hiện quản lý hành chính nhà nước ban hành hoặc người có thẩm quyền trong cơ quan, tổ chức đó ban hành quyết định về vấn đề cụ thể trong hoạt động quản lý hành chính được áp dụng một lần đối với một hoặc một số đối tượng cụ thể.*
+>
+> *2. Quyết định hành chính bị kiện là quyết định quy định tại khoản 1 Điều này mà quyết định đó làm phát sinh, thay đổi, hạn chế, chấm dứt quyền, lợi ích hợp pháp của cơ quan, tổ chức, cá nhân hoặc có nội dung làm phát sinh nghĩa vụ, ảnh hưởng đến quyền, lợi ích hợp pháp của cơ quan, tổ chức, cá nhân.*
+
+Như vậy, đối với quyết định phê duyệt [giá đất](https://luatvietnam.vn/dat-dai-nha-o/bang-gia-dat-2025-567-99919-article.html) cần phải chia thành hai trường hợp:
+
+- Trường hợp quyết định phê duyệt giá đất tổng thể cho toàn bộ dự án mà không có danh sách các hộ gia đình, cá nhân bị thu hồi đất kèm theo, thì đây là [quyết định hành chính](https://luatvietnam.vn/luat-su-tu-van/khoi-kien-quyet-dinh-hanh-chinh-nha-nuoc-150321-faqs.html) nhưng chưa làm phát sinh, thay đổi, hạn chế, chấm dứt quyền, lợi ích hợp pháp của tổ chức, cá nhân nên căn cứ vào khoản 2, Điều 3 của Luật Tố tụng hành chính năm 2015 quyết định này không phải là đối tượng khởi kiện vụ án hành chính.
+
+- Trường hợp quyết định phê duyệt giá đất tổng thể cho toàn bộ dự án mà có danh sách các hộ gia đình, cá nhân bị [thu hồi đất](https://luatvietnam.vn/dat-dai-nha-o/thu-tuc-thu-hoi-dat-567-89315-article.html) kèm theo thì quyết định này làm phát sinh, thay đổi, hạn chế, chấm dứt quyền, lợi ích hợp pháp của tổ chức, cá nhân nên theo quy định tại khoản 2, Điều 3 của [Luật Tố tụng hành chính năm 2015](https://luatvietnam.vn/hanh-chinh/luat-to-tung-hanh-chinh-2015-101331-d1.html), quyết định này là đối tượng khởi kiện vụ án hành chính.
+
+***Xem thêm:*** [Bồi thường đất không thỏa đáng, người dân cần làm gì?](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Có thể khởi kiện quyết định phê duyệt giá đất cụ thể không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Q5ff1b3c7f6',
+          'Vợ không ký hợp đồng chuyển nhượng quyền sử dụng đất là tài sản chung thì hợp đồng có vô hiệu không?',
+          1,
+          'https://luatvietnam.vn/luat-su-tu-van/vo-khong-ky-hop-dong-chuyen-nhuong-quyen-su-dung-dat-la-tai-san-chung-thi-hop-dong-co-vo-hieu-khong-150783-faqs.html',
+          '2025-07-08',
+          '**Trả lời:**
+
+Theo Điều 130 [Bộ luật Dân sự năm 2015](https://luatvietnam.vn/dan-su/bo-luat-dan-su-2015-101333-d1.html) quy định: “*Giao dịch dân sự vô hiệu từng phần khi một phần nội dung của giao dịch dân sự vô hiệu nhưng không ảnh hưởng đến hiệu lực của phần còn lại của giao dịch”.*
+
+Khoản 1 và khoản 2 Điều 213 của Bộ luật Dân sự năm 2015 quy định:
+
+> *1. Sở hữu chung của vợ chồng là sở hữu chung hợp nhất có thể phân chia.*
+>
+> *2. Vợ chồng cùng nhau tạo lập, phát triển khối tài sản chung; có quyền ngang nhau trong việc chiếm hữu, sử dụng, định đoạt tài sản chung.*
+>
+> Khoản 1, Điều 29 của Luật Hôn nhân và gia đình năm 2014 quy định: *“Vợ, chồng bình đẳng với nhau về quyền, nghĩa vụ trong việc tạo lập, chiếm hữu, sử dụng, định đoạt tài sản chung; không phân biệt giữa lao động trong gia đình và lao động có thu nhập.*
+
+Điều 35 của [Luật Hôn nhân và gia đình năm 2014](https://luatvietnam.vn/hon-nhan-gia-dinh/luat-hon-nhan-va-gia-dinh-2014-87930-d1.html) quy định:
+
+> *1. Việc chiếm hữu, sử dụng, định đoạt tài sản chung do vợ chồng thỏa thuận.*
+>
+> *2. Việc định đoạt tài sản chung phải có sự thỏa thuận bằng văn bản của vợ chồng trong những trường hợp sau đây:*
+>
+> *a) Bất động sản;*
+>
+> *…*
+
+Như vậy, việc định đoạt [tài sản chung của vợ chồng](https://luatvietnam.vn/dan-su/tai-san-chung-vo-chong-la-gi-568-32103-article.html) là bất động sản phải do hai vợ chồng thỏa thuận hoặc phải có sự thỏa thuận bằng văn bản của vợ chồng. Do đó, trong trường hợp vợ chồng không có thỏa thuận định đoạt tài sản chung hoặc không có văn bản thỏa thuận phân chia tài sản; chỉ có một bên vợ hoặc chồng tham gia ký kết [hợp đồng tặng cho](https://luatvietnam.vn/bieu-mau/mau-hop-dong-tang-cho-nha-o-dat-o-571-20019-article.html), chuyển nhượng, thế chấp... bên còn lại không tham gia ký kết, không đồng ý thì [hợp đồng đó vô hiệu](https://luatvietnam.vn/dan-su/giao-dich-dan-su-vo-hieu-la-gi-568-95793-article.html) toàn bộ.
+
+Tuy nhiên, trường hợp nhà đất là tài sản chung của vợ chồng mà chỉ có một người đứng tên ký hợp đồng chuyển nhượng nhà đất đó cho người khác người còn lại không ký tên trong hợp đồng; nếu có đủ căn cứ xác định bên chuyển nhượng đã nhận đủ số tiền theo thỏa thuận, người không ký tên trong hợp đồng biết và cùng sử dụng tiền chuyển nhượng nhà đất; bên nhận chuyển nhượng nhà đất đã nhận và quản lý, sử dụng nhà đất đó công khai; người không ký tên trong hợp đồng biết mà không có ý kiến phản đối gì thì phải xác định là người đó đồng ý với việc chuyển nhượng nhà đất (theo Án lệ số 04/2016/AL ngày 06/4/2016 của Hội đồng Thẩm phán Tòa án nhân dân tối cao).
+
+***Xem thêm:*** [Mua đất có cần hai vợ chồng kí tên không?](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Vợ không ký hợp đồng chuyển nhượng quyền sử dụng đất là tài sản chung thì hợp đồng có vô hiệu không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+
+INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          'Qb5689f4dda',
+          'Đất đang thế chấp thì có được nhận đặt cọc không?',
+          1,
+          'https://luatvietnam.vn/luat-su-tu-van/dat-dang-the-chap-thi-co-duoc-nhan-dat-coc-khong-150782-faqs.html',
+          '2025-07-08',
+          '**Trả lời:**
+
+Theo quy định tại Điều 328 [Bộ luật Dân sự 2015](https://luatvietnam.vn/dan-su/bo-luat-dan-su-2015-101333-d1.html) thì:
+
+> *Đặt cọc là việc một bên (sau đây gọi là bên đặt cọc) giao cho bên kia (sau đây gọi là bên nhận đặt cọc) một khoản tiền hoặc kim khí quý, đá quý hoặc vật có giá trị khác (sau đây gọi chung là tài sản đặt cọc) trong một thời hạn để bảo đảm giao kết hoặc thực hiện hợp đồng.*
+
+Như vậy, [hợp đồng đặt cọc](https://luatvietnam.vn/dat-dai-nha-o/hop-dong-dat-coc-mua-nha-567-25963-article.html) là hợp đồng độc lập, có hiệu lực nhằm bảo đảm giao kết hợp đồng chuyển nhượng quyền sử dụng đất giữa các bên.
+
+Việc người nhận đặt cọc không trả nợ Ngân hàng dẫn đến việc không thể ký kết [hợp đồng chuyển nhượng quyền sử dụng đất](https://luatvietnam.vn/bieu-mau/mau-hop-dong-chuyen-nhuong-quyen-su-dung-dat-571-25869-article.html) như đã thỏa thuận được coi là một hành vi vi phạm thỏa thuận của hợp đồng đặt cọc và đây là lỗi của bên nhận đặt cọc.
+
+Trong trường hợp này, việc quyền sử dụng thửa đất đang bị thế chấp tại ngân hàng không phải là một yếu tố khiến hợp đồng đặt cọc bị [vô hiệu](https://luatvietnam.vn/dan-su/giao-dich-dan-su-vo-hieu-la-gi-568-95793-article.html). Hay nói cách khác, đất đang thế chấp vẫn có thể nhận đặt cọc bình thường.
+
+***Xem thêm:*** [Đặt cọc mua bán nhà đất thế nào để tránh rủi ro?](https://luatvietnam.vn/tin-phap-luat/lam-bang-gia-bi-phat-nhu-the-nao-230-29114-article.html)
+
+*Trên đây là nội dung tư vấn về “Đất đang thế chấp thì có được nhận đặt cọc không?” dựa trên những thông tin mà luật sư đã nhận được. Nếu còn bất kỳ thắc mắc nào liên quan, vui lòng liên hệ [19006192](tel:19006192) để được hỗ trợ kịp thời. Xin cảm ơn!*',
+          NOW()
+        );
+

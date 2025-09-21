@@ -25,7 +25,8 @@ export const endpoints = {
     'articles': "law/law-articles/",
     'chatbot': "/api/chat/chatbot/", 
     'conversations': "api/chat/conversations/",
-    'consultations': "/law/consultations"
+    'consultations': "/law/consultations/",
+    'my_consultations': "/law/my-consultations/"
 };
 
 export default instance;

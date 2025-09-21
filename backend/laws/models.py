@@ -1,4 +1,5 @@
 from django.db import models
+import uuid
 from django.conf import settings
 from django.db.models.signals import post_save
 from django.dispatch import receiver
@@ -65,18 +66,31 @@ class LawArticle(models.Model): #Điều khoản
     def __str__(self):
         return f"{self.article_number} - {self.title or 'No Title'}"
     
-class LegalConsultation(models.Model):  # Câu hỏi tư vấn
-    question_id = models.CharField(max_length=20, unique=True)  
-    question_title = models.CharField(max_length=500)  
-    category = models.ForeignKey(LawCategory, on_delete=models.CASCADE)  # Khóa ngoại
-    question_url = models.URLField(max_length=1000)  
-    asked_date = models.DateField(null=True, blank=True)  
-    answer = models.TextField(blank=True, null=True)  
-
+class LegalConsultation(models.Model):
+    question_id = models.CharField(max_length=20, unique=True, editable=False)  # không cho user nhập
+    question_title = models.CharField(max_length=500)
+    category = models.ForeignKey("laws.LawCategory", on_delete=models.CASCADE)
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="consultations",
+        default=1
+    )
+    question_url = models.URLField(max_length=1000, blank=True, null=True)
+    asked_date = models.DateField(auto_now_add=True)
+    answer = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        ordering = ['-asked_date']
+        ordering = ["-asked_date"]
+
+    def save(self, *args, **kwargs):
+        if not self.question_id:
+            # Tạo ID tự sinh, ví dụ dùng uuid ngắn
+            self.question_id = str(uuid.uuid4().int)[:8]
+        if not self.question_url:
+            self.question_url = "https://example.com/consultations"
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return f"{self.question_id} - {self.question_title}"

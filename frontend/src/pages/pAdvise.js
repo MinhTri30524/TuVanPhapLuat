@@ -1,103 +1,276 @@
-import React, { useState } from 'react';
-import CpHeader from '../components/cpHeader';
-import CpFooter from '../components/cpFooter';
+import React, { useState, useEffect } from "react";
+import CpHeader from "../components/cpHeader";
+import CpFooter from "../components/cpFooter";
+import instance, { endpoints } from "../configs/Apis";
+import ConsultationDialog from "../components/ConsultationDialog";
+import CreateConsultationDialog from "../components/CreateConsultationDialog";
 
 function PAdvise() {
-    const [activeTab, setActiveTab] = useState("chuyengia");
-    const topics = [
-        { name: "Đất đai - Nhà ở", count: 407 },
-        { name: "Dân sự", count: 312 },
-        { name: "Hôn nhân", count: 258 },
-        { name: "Lao động", count: 122 },
-        { name: "Doanh nghiệp", count: 98 },
-        { name: "Hình sự", count: 76 },
-        { name: "Hành chính", count: 60 },
-    ];
+  const [activeTab, setActiveTab] = useState("chuyengia");
+  const [consultations, setConsultations] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [openDetail, setOpenDetail] = useState(false);
+  const [selectedConsultation, setSelectedConsultation] = useState(null);
+  const [openCreate, setOpenCreate] = useState(false);
 
-    const questions = [
-        {
-            id: 12169,
-            title: "Có thể khởi kiện hành vi chủ tịch xã không tổ chức hòa giải?",
-            category: "Đất đai - Nhà ở",
-            date: "25/07/2025",
-        },
-        {
-            id: 12168,
-            title: "Giao dịch đất vô hiệu nhưng đã thế chấp ngân hàng thì sao?",
-            category: "Đất đai - Nhà ở",
-            date: "25/07/2025",
-        },
-    ];
-    return (
-        <React.Fragment>
-            <CpHeader />
-            <div className='py-20'>
-                <section
-                    className="bg-cover bg-center text-white py-12 px-6"
-                    style={{ backgroundImage: "url('/assets/imgs/banner.jpg')" }}
+  // Pagination
+  const [page, setPage] = useState(1);
+  const [count, setCount] = useState(0);
+
+  // Load categories
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        let res = await instance.get(endpoints.categories);
+        setCategories(res.data.results || res.data);
+      } catch (err) {
+        console.error("Lỗi load categories:", err);
+      }
+    };
+    fetchCategories();
+  }, []);
+
+  // Load consultations (tất cả hoặc theo category)
+  useEffect(() => {
+    const fetchConsultations = async () => {
+      if (activeTab !== "chuyengia") return;
+
+      try {
+        setLoading(true);
+        let url = `${endpoints.consultations}?page=${page}`;
+        if (selectedCategory) {
+          url += `&category=${selectedCategory.id}`;
+        }
+        let res = await instance.get(url);
+
+        setConsultations(res.data.results || res.data);
+        setCount(res.data.count || 0);
+        setError(null);
+      } catch (err) {
+        console.error("Lỗi load consultations:", err);
+        setError("Không thể tải dữ liệu từ server.");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchConsultations();
+  }, [page, selectedCategory, activeTab]);
+
+  // Load my consultations
+  useEffect(() => {
+    const fetchMyConsultations = async () => {
+      if (activeTab !== "myquestions") return;
+
+      try {
+        setLoading(true);
+        const token = localStorage.getItem("token");
+        let res = await instance.get(endpoints.my_consultations, {
+          headers: { Authorization: `Token ${token}` },
+        });
+        setConsultations(res.data.results || res.data);
+        setCount(res.data.count || res.data.length);
+        setError(null);
+      } catch (err) {
+        console.error("Lỗi load my consultations:", err);
+        setError("Không thể tải dữ liệu của bạn.");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchMyConsultations();
+  }, [activeTab]);
+
+  // Tính số trang
+  const pageSize = 10;
+  const totalPages = Math.ceil(count / pageSize);
+
+  return (
+    <React.Fragment>
+      <CpHeader />
+      <div className="py-20">
+        <section
+          className="bg-cover bg-center text-white py-12 px-6"
+          style={{ backgroundImage: "url('/assets/imgs/banner.jpg')" }}
+        >
+          <h1 className="text-3xl font-bold">LUẬT SƯ TƯ VẤN</h1>
+          <p className="text-lg">
+            Cùng hỏi đáp và nghe tư vấn từ các chuyên gia luật
+          </p>
+        </section>
+
+        {/* Tabs */}
+        <div className="flex border-b mt-4">
+          <button
+            onClick={() => setActiveTab("chuyengia")}
+            className={`px-4 py-2 ${
+              activeTab === "chuyengia"
+                ? "border-b-2 border-orange-500 font-semibold"
+                : ""
+            }`}
+          >
+            Hỏi đáp cùng chuyên gia
+          </button>
+          <button
+            onClick={() => setActiveTab("myquestions")}
+            className={`px-4 py-2 ${
+              activeTab === "myquestions"
+                ? "border-b-2 border-orange-500 font-semibold"
+                : ""
+            }`}
+          >
+            Câu hỏi của tôi
+          </button>
+        </div>
+
+        {/* Main Content */}
+        <div className="flex mt-6 px-4">
+          {/* Sidebar chỉ hiện khi ở tab chuyên gia */}
+          {activeTab === "chuyengia" && (
+            <aside className="w-1/4 border-r p-4 max-h-[500px] overflow-y-auto">
+              <h3 className="font-semibold mb-4">Chủ đề</h3>
+              <ul className="space-y-2">
+                {categories.map((cat) => (
+                  <li
+                    key={cat.id}
+                    onClick={() => {
+                      setSelectedCategory(cat);
+                      setPage(1);
+                    }}
+                    className={`cursor-pointer ${
+                      selectedCategory?.id === cat.id
+                        ? "text-red-600 font-semibold"
+                        : "text-[#1D3557] hover:text-red-600"
+                    }`}
+                  >
+                    {cat.name}
+                  </li>
+                ))}
+                <li
+                  onClick={() => {
+                    setSelectedCategory(null);
+                    setPage(1);
+                  }}
+                  className={`cursor-pointer mt-4 ${
+                    selectedCategory === null
+                      ? "text-red-600 font-semibold"
+                      : "text-gray-600 hover:text-red-600"
+                  }`}
                 >
-                    <h1 className="text-3xl font-bold">LUẬT SƯ TƯ VẤN</h1>
-                    <p className="text-lg">Cùng hỏi đáp và nghe tư vấn từ các chuyên gia luật</p>
-                </section>
+                  Tất cả
+                </li>
+              </ul>
+            </aside>
+          )}
 
-                {/* Tabs */}
-                <div className="flex border-b mt-4">
-                    <button
-                        onClick={() => setActiveTab("chuyengia")}
-                        className={`px-4 py-2 ${activeTab === "chuyengia" ? "border-b-2 border-orange-500 font-semibold" : ""
-                            }`}
-                    >
-                        Hỏi đáp cùng chuyên gia
-                    </button>
-                    <button
-                        onClick={() => setActiveTab("luatsu")}
-                        className={`px-4 py-2 ${activeTab === "luatsu" ? "border-b-2 border-orange-500 font-semibold" : ""
-                            }`}
-                    >
-                        Văn phòng luật
-                    </button>
+          {/* Question List */}
+          <div className={`${activeTab === "chuyengia" ? "w-3/4" : "w-full"} p-4 space-y-4`}>
+            <h2 className="text-xl font-bold mb-2">
+              {activeTab === "myquestions"
+                ? "CÂU HỎI CỦA TÔI"
+                : selectedCategory?.name || "TẤT CẢ CÂU HỎI"}
+            </h2>
+
+            {loading && <p className="text-gray-500">Đang tải dữ liệu...</p>}
+            {error && <p className="text-red-500">{error}</p>}
+
+            {!loading &&
+              !error &&
+              consultations.map((q) => (
+                <div
+                  key={q.id}
+                  className="border-b pb-2 cursor-pointer"
+                  onClick={() => {
+                    setSelectedConsultation(q);
+                    setOpenDetail(true);
+                  }}
+                >
+                  <p className="text-sm text-gray-500">
+                    #{q.question_id} - {q.category?.name} -{" "}
+                    {q.asked_date || "—"}
+                  </p>
+                  <p className="font-medium text-[#1D3557] hover:text-red-600">
+                    {q.question_title}
+                  </p>
                 </div>
+              ))}
 
-                {/* Main Content */}
-                <div className="flex mt-6 px-4">
-                    {/* Sidebar */}
-                    <aside className="w-1/4 border-r p-4 max-h-[500px] overflow-y-auto">
-                        <h3 className="font-semibold mb-4">Chủ đề</h3>
-                        <ul className="space-y-2">
-                            {topics.map((t, idx) => (
-                                <li key={idx} className="hover:text-red-600 text-[#1D3557] cursor-pointer">
-                                    <strong>{t.name}</strong> ({t.count})
-                                </li>
-                            ))}
-                        </ul>
-                    </aside>
+            {!loading && !error && consultations.length === 0 && (
+              <p className="text-gray-500">Không có câu hỏi nào.</p>
+            )}
 
-                    {/* Question List */}
-                    <div className="w-3/4 p-4 space-y-4">
-                        <h2 className="text-xl font-bold mb-2">TẤT CẢ CÂU HỎI</h2>
-                        {questions.map((q) => (
-                            <div key={q.id} className="border-b pb-2">
-                                <p className="text-sm text-gray-500">
-                                    #{q.id} - {q.category} - {q.date}
-                                </p>
-                                <p className="font-medium text-[#1D3557] cursor-pointer">{q.title}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+            {/* Pagination chỉ khi ở tab chuyên gia */}
+            {activeTab === "chuyengia" && totalPages > 1 && (
+              <div className="flex justify-center space-x-2 mt-4">
+                <button
+                  onClick={() => setPage((p) => Math.max(1, p - 1))}
+                  disabled={page === 1}
+                  className="px-3 py-1 border rounded disabled:opacity-50"
+                >
+                  Trước
+                </button>
+                {Array.from({ length: totalPages }, (_, i) => (
+                  <button
+                    key={i + 1}
+                    onClick={() => setPage(i + 1)}
+                    className={`px-3 py-1 border rounded ${
+                      page === i + 1
+                        ? "bg-orange-500 text-white"
+                        : "hover:bg-gray-100"
+                    }`}
+                  >
+                    {i + 1}
+                  </button>
+                ))}
+                <button
+                  onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+                  disabled={page === totalPages}
+                  className="px-3 py-1 border rounded disabled:opacity-50"
+                >
+                  Sau
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
 
-                {/* Floating Buttons */}
-                <div className="fixed bottom-6 right-6 space-y-3">
-                    <button className="bg-red-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-red-700 mr-2">
-                        + Tạo câu hỏi
-                    </button>
-                    <button className="bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-900">
-                        Hỏi với AI
-                    </button>
-                </div>
-            </div>
-            <CpFooter />
-        </React.Fragment>
-    )
+        {/* Floating Buttons */}
+        <div className="fixed bottom-6 right-6 space-y-3">
+          <button
+            onClick={() => setOpenCreate(true)}
+            className="bg-red-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-red-700 mr-2"
+          >
+            + Tạo câu hỏi
+          </button>
+
+          <button className="bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-900">
+            Hỏi với AI
+          </button>
+        </div>
+
+        <ConsultationDialog
+          open={openDetail}
+          onClose={() => setOpenDetail(false)}
+          consultation={selectedConsultation}
+        />
+
+        <CreateConsultationDialog
+          open={openCreate}
+          onClose={() => setOpenCreate(false)}
+          categories={categories}
+          onSuccess={() => {
+            if (activeTab === "chuyengia") setPage(1);
+            else setActiveTab("myquestions");
+          }}
+        />
+      </div>
+      <CpFooter />
+    </React.Fragment>
+  );
 }
+
 export default PAdvise;

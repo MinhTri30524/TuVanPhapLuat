@@ -178,9 +178,19 @@ class ChatbotView(View):
         try:
             data = json.loads(request.body)
             query = data.get("query", "")
+            conversation_id = data.get("conversation_id")
 
             if not query:
                 return JsonResponse({"error": "Chưa nhập câu hỏi"}, status=400)
+            
+            # Lấy conversation
+            try:
+                conversation = Conversation.objects.get(id=conversation_id)
+            except Conversation.DoesNotExist:
+                return JsonResponse({"error": "Conversation không tồn tại"}, status=404)
+
+            # Lưu user turn
+            ChatTurn.objects.create(convo=conversation, sender="user", text=query)
 
             # Phân loại intent
             intent_prompt_filled = intent_prompt.format(user_input=query)
@@ -201,6 +211,17 @@ class ChatbotView(View):
                 # fallback: hỏi LLM thuần
                 resp = llm.invoke(query)
                 answer = resp.content
+
+            ChatTurn.objects.create(
+                convo=conversation,
+                sender="bot",
+                text=answer,
+                meta={
+                    "intent": intent,
+                    "entities": parsed_intent.get("entities", ""),
+                    "explanation": parsed_intent.get("explanation", "")
+                }
+            )
 
             return JsonResponse({
                 "query": query,
@@ -240,16 +261,32 @@ class ConversationView(View):
     def post(self, request, convo_id=None):
         data = json.loads(request.body)
         user_text = data.get("query")
+        
+        # Lấy hoặc tạo conversation
         convo = Conversation.objects.get(pk=convo_id) if convo_id else Conversation.objects.create(user=request.user)
 
+        # Gọi logic AI
         step = next_step(convo.state, user_text, llm)
         convo.state = step["state"]
         convo.save()
 
+        # Lưu tin nhắn user & bot
         ChatTurn.objects.create(convo=convo, sender="user", text=user_text)
         ChatTurn.objects.create(convo=convo, sender="bot", text=step["reply"], meta=step["meta"])
 
-        return JsonResponse({"reply": step["reply"], "state": step["state"], "meta": step["meta"], "convo_id": convo.id})
+        # Lấy tất cả chatturn của convo để frontend hiển thị
+        chatturns = ChatTurn.objects.filter(convo=convo).order_by("created_at")
+        messages = [
+            {"sender": ct.sender, "text": ct.text, "meta": getattr(ct, "meta", None)}
+            for ct in chatturns
+        ]
+
+        return JsonResponse({
+            "convo_id": convo.id,
+            "state": convo.state,
+            "messages": messages
+        })
+
     
 class ConversationViewSet(viewsets.ModelViewSet):
     serializer_class = ConversationSerializer
@@ -259,6 +296,7 @@ class ConversationViewSet(viewsets.ModelViewSet):
         return Conversation.objects.filter(user=self.request.user).order_by('-created_at')
 
     def perform_create(self, serializer):
+        print("User in request:", self.request.user)
         serializer.save(user=self.request.user)
 
 

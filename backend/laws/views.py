@@ -1,10 +1,11 @@
 from django.shortcuts import get_object_or_404
 from django.utils import timezone
 
-from rest_framework import viewsets, status, filters
+from rest_framework import viewsets, status, filters, permissions
 from rest_framework.permissions import AllowAny
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
+from django_filters.rest_framework import DjangoFilterBackend
 
 from .crawler import crawl_document_detail
 from .pagination import CustomPagination
@@ -25,7 +26,7 @@ class LawCategoryViewSet(viewsets.ModelViewSet):
     queryset = LawCategory.objects.all()
     serializer_class = LawCategorySerializer
     permission_classes = [AllowAny]
-    pagination_class = CustomPagination
+    pagination_class = None
 
 
 # --------- Văn bản ----------
@@ -57,11 +58,27 @@ class LawArticleViewSet(viewsets.ModelViewSet):
 class LegalConsultationViewSet(viewsets.ModelViewSet):
     queryset = LegalConsultation.objects.all()
     serializer_class = LegalConsultationSerializer
-    filter_backends = [filters.SearchFilter, filters.OrderingFilter]
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    filterset_fields = ["category"]
     search_fields = ["question_title", "answer"]
     ordering_fields = ["asked_date", "created_at"]
     ordering = ["-asked_date"]
 
+    def get_permissions(self):
+        if self.action in ["list", "retrieve"]:
+            return [permissions.AllowAny()]
+        return [permissions.IsAuthenticated()]
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+
+
+class UserConsultationViewSet(viewsets.ReadOnlyModelViewSet):
+    serializer_class = LegalConsultationSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_queryset(self):
+        return LegalConsultation.objects.filter(user=self.request.user).order_by("-created_at")
 
 # --------- Tin tức ----------
 class LegalNewsViewSet(viewsets.ModelViewSet):

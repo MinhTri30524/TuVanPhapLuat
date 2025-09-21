@@ -12,65 +12,149 @@ export default function PChat() {
   const [conversations, setConversations] = useState([]);
   const [activeConvId, setActiveConvId] = useState(null);
 
+  const token = localStorage.getItem("token");
+  const headers = { Authorization: `Token ${token}`, "Content-Type": "application/json" };
+
+  // ====================== INIT CHAT ======================
   useEffect(() => {
-    instance.get(endpoints.conversations).then((res) => {
-      setConversations(res.data.results);
-      if (res.data.length > 0) {
-        setActiveConvId(res.data[0].id);
-        setMessages(res.data[0].messages);
+    const initChat = async () => {
+      const token = localStorage.getItem("token");
+      if (!token) return alert("Bạn chưa đăng nhập.");
+
+      const headers = { Authorization: `Token ${token}`, "Content-Type": "application/json" };
+
+      try {
+        // 1. Lấy danh sách conversation hiện có trước
+        const listRes = await instance.get(endpoints.conversations, { headers });
+        const allConvs = listRes.data.results;
+
+        // 2. Tạo conversation mới
+        const newConvRes = await instance.post(
+          endpoints.conversations,
+          { title: "Cuộc trò chuyện mới" },
+          { headers }
+        );
+        const newConv = newConvRes.data;
+
+        // 3. Loại bỏ conversation vừa tạo trong list để tránh duplicate
+        const filtered = allConvs.filter(c => c.id !== newConv.id);
+
+        // 4. Đặt conversation mới lên đầu
+        setConversations([newConv, ...filtered]);
+        setActiveConvId(newConv.id);
+        setMessages(newConv.messages || []);
+      } catch (err) {
+        console.error("Lỗi init chat:", err.response?.data || err);
       }
-    });
+    };
+
+    initChat();
   }, []);
 
+
+
+  // ====================== CREATE NEW CONVERSATION ======================
   const createNewConversation = async () => {
-    const res = await instance.post(endpoints.conversations, { title: `Cuộc trò chuyện ${conversations.length + 1}` });
-    setConversations([res.data, ...conversations]);
-    setActiveConvId(res.data.id);
-    setMessages([]);
-  };
-
-  const selectConversation = async (id) => {
-    const res = await instance.get(`api/chat/conversations/${id}/`);
-    setActiveConvId(id);
-    setMessages(res.data.messages);
-  };
-
-  const deleteConversation = async (id) => {
-    await instance.delete(`api/chat/conversations/${id}/`);
-    const filtered = conversations.filter((c) => c.id !== id);
-    setConversations(filtered);
-    if (activeConvId === id) {
-      if (filtered.length) {
-        setActiveConvId(filtered[0].id);
-        setMessages(filtered[0].messages);
-      } else {
-        setActiveConvId(null);
-        setMessages([]);
-      }
+    if (!token) return alert("Bạn chưa đăng nhập.");
+    try {
+      const res = await instance.post(endpoints.conversations, { title: `Cuộc trò chuyện ${conversations.length + 1}` }, { headers });
+      const newConv = res.data;
+      setConversations([newConv, ...conversations]);
+      setActiveConvId(newConv.id);
+      setMessages(newConv.turns || []);
+    } catch (err) {
+      console.error("Lỗi createNewConversation:", err.response?.data || err);
+      alert("Tạo conversation thất bại.");
     }
   };
 
+  // ====================== SELECT ======================
+  const selectConversation = async (id) => {
+    try {
+      const res = await instance.get(`/api/chat/conversations/${id}/`, { headers });
+      setActiveConvId(id);
+      setMessages(res.data.turns || []);
+    } catch (err) {
+      console.error(err);
+      alert("Không thể lấy conversation.");
+    }
+  };
+
+  // ====================== DELETE ======================
+  const deleteConversation = async (id) => {
+    try {
+      await instance.delete(`/api/chat/conversations/${id}/`, { headers });
+      const filtered = conversations.filter(c => c.id !== id);
+      setConversations(filtered);
+
+      if (activeConvId === id) {
+        if (filtered.length) {
+          setActiveConvId(filtered[0].id);
+          setMessages(filtered[0].turns || []);
+        } else {
+          setActiveConvId(null);
+          setMessages([]);
+        }
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Xóa conversation thất bại.");
+    }
+  };
+
+  // ====================== SEND MESSAGE ======================
   const sendMessage = async () => {
-    if (!input.trim()) return;
+    if (!input.trim() || !activeConvId)
+      return alert("Chưa chọn conversation hoặc chưa nhập câu hỏi.");
 
     const userMsg = { sender: "user", text: input.trim() };
-    setMessages((prev) => [...prev, userMsg]);
+    setMessages(prev => [...prev, userMsg]);
     setLoading(true);
 
     try {
-      const res = await instance.post(`/api/chat/chatbot/`, { query: input.trim() });
-      const botMsg = { sender: "bot", text: res.data.answer };
-      setMessages((prev) => [...prev, botMsg]);
+      const res = await instance.post(
+        `/api/chat/chatbot/`,
+        {
+          query: input.trim(),
+          conversation_id: activeConvId,
+        },
+        { headers }
+      );
+
+      console.log("Chatbot response:", res.data);
+
+      const botMsg = {
+        sender: "bot",
+        text: res.data.answer || "Hệ thống AI chưa trả lời được.",
+      };
+      setMessages(prev => [...prev, botMsg]);
+
+      // ==== Cập nhật title conversation thành entities ====
+      if (res.data.entities) {
+        await instance.patch(
+          `/api/chat/conversations/${activeConvId}/`,
+          { title: res.data.entities },
+          { headers }
+        );
+
+        // Đồng bộ lại danh sách conversations ở sidebar
+        setConversations(prev =>
+          prev.map(c =>
+            c.id === activeConvId ? { ...c, title: res.data.entities } : c
+          )
+        );
+      }
     } catch (err) {
-      console.error(err);
-      const errMsg = { sender: "bot", text: "Lỗi server, vui lòng thử lại." };
-      setMessages((prev) => [...prev, errMsg]);
+      console.error("Send error:", err.response?.data || err.message);
+      setMessages(prev => [
+        ...prev,
+        { sender: "bot", text: "Hệ thống AI gặp sự cố. Vui lòng thử lại." },
+      ]);
     } finally {
-      setLoading(false);
       setInput("");
+      setLoading(false);
     }
   };
-
 
   return (
     <div className="flex h-screen bg-gray-50">
@@ -162,20 +246,54 @@ export default function PChat() {
           )}
 
           {messages.map((m, idx) => (
-            <div key={idx} className={`my-2 flex ${m.sender === "user" ? "justify-end" : "justify-start"}`}>
+            <div
+              key={idx}
+              className={`my-2 flex px-2 ${m.sender === "user" ? "justify-end" : "justify-start"
+                }`}
+            >
               <div
-                className={`px-4 py-2 rounded-2xl text-sm max-w-[70%] whitespace-pre-line ${m.sender === "user" ? "bg-[#1D3557] text-white" : "bg-gray-100 text-gray-800"
+                className={`px-4 py-2 rounded-2xl text-sm max-w-[70%] ${m.sender === "user"
+                    ? "bg-[#1D3557] text-white"
+                    : "bg-gray-100 text-gray-800"
                   }`}
               >
                 {m.sender === "bot" ? (
-                  <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.text}</ReactMarkdown>
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm]}
+                    components={{
+                      p: ({ node, ...props }) => (
+                        <p className="my-1 leading-relaxed" {...props} />
+                      ),
+                      ul: ({ node, ...props }) => (
+                        <ul className="list-disc pl-5 space-y-1" {...props} />
+                      ),
+                      ol: ({ node, ...props }) => (
+                        <ol className="list-decimal pl-5 space-y-1" {...props} />
+                      ),
+                      li: ({ node, ...props }) => {
+                        const children = React.Children.toArray(props.children);
+                        return (
+                          <li className="leading-relaxed">
+                            {children.map((child, i) =>
+                              child.type === "p" ? (
+                                <span key={i}>{child.props.children}</span>
+                              ) : (
+                                child
+                              )
+                            )}
+                          </li>
+                        );
+                      },
+                    }}
+                  >
+                    {m.text}
+                  </ReactMarkdown>
                 ) : (
                   m.text
                 )}
               </div>
             </div>
           ))}
-
 
           {loading && (
             <div className="my-2 flex justify-start">

@@ -16,7 +16,8 @@ class LawArticleSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class LegalConsultationSerializer(serializers.ModelSerializer):
-    category = LawCategorySerializer(read_only=True)  
+    user = serializers.SerializerMethodField()
+    category = LawCategorySerializer(read_only=True)
     category_id = serializers.PrimaryKeyRelatedField(
         queryset=LawCategory.objects.all(),
         source="category",
@@ -29,13 +30,24 @@ class LegalConsultationSerializer(serializers.ModelSerializer):
             "id",
             "question_id",
             "question_title",
-            "category",
-            "category_id",
+            "category",       # chỉ để đọc
+            "category_id",    # để ghi
             "question_url",
             "asked_date",
             "answer",
             "created_at",
+            "user",
         ]
+
+    def get_user(self, obj):
+        if obj.user:
+            return {
+                "id": obj.user.id,
+                "username": obj.user.username,
+                "email": obj.user.email,
+            }
+        return None
+
 
 class LawDocumentListSerializer(serializers.ModelSerializer):
     category = LawCategorySerializer(read_only=True)

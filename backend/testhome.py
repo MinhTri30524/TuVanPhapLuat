@@ -1,102 +1,55 @@
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import json
-import time
 
-# Cấu hình Chrome
-options = Options()
-options.add_argument("--start-maximized")
+# Map JSON category string -> category_id trong DB
+CATEGORY_MAP = {
+    "Dân sự": 1,
+    "Hình sự": 2,
+    "Lao động-Việc làm": 3,
+    "Đất đai-Nhà ở": 4,
+    "Hôn nhân-Gia đình": 5,
+    "Giao thông-Vận tải": 6,
+    "Thương mại-Kinh doanh": 7,
+    "Thuế - Tài chính": 8,
+    "Môi trường": 9,
+    "Công nghệ thông tin": 10,
+    "Nông nghiệp": 11,
+    "Cơ cấu tổ chức": 12,
+    "Hành chính": 13,
+    "Thông tin": 14,
+    "Chính sách": 15,
+    "Đầu tư": 16,
+    "Vi phạm hành chính": 17,
+    "Xây dựng": 18,
+    "Giáo dục": 19,
+    "Khoa học": 20,
+    "Y tế": 21,
+    "Cán bộ-Công chức": 22,
+    "Bảo hiểm": 23,
+    "Biểu mẫu": 24,
+    "Doanh nghiệp": 25,
+}
 
-driver = webdriver.Chrome(options=options)
+with open("consultations.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
 
-# Mở trang login trực tiếp
-driver.get("https://luatvietnam.vn/account/login")
+with open("insert_questions.sql", "w", encoding="utf-8") as out:
+    for item in data:
+        cat_name = item["category"]
+        cat_id = CATEGORY_MAP.get(cat_name, "NULL")  # fallback NULL nếu chưa map
 
-# Nhập email
-WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "LoginCustomerName"))).send_keys("triminh3005")
-time.sleep(2)
+        sql = f"""
+        INSERT INTO laws.laws_legalconsultation
+        (question_id, question_title, category_id, question_url, asked_date, answer, created_at)
+        VALUES
+        (
+          '{item["question_id"]}',
+          '{item["question_title"].replace("'", "''")}',
+          {cat_id},
+          '{item["question_url"]}',
+          '{item["asked_date"]}',
+          '{(item["answer"] or "").replace("'", "''")}',
+          NOW()
+        );
+        """.strip() + "\n\n"
 
-# Nhập mật khẩu
-driver.find_element(By.ID, "LoginCustomerPass").send_keys("3005triminh")
-time.sleep(2)
-
-# Click nút đăng nhập
-driver.find_element(By.CSS_SELECTOR, "button.btn-user1").click()
-
-# # Chờ đăng nhập xong
-# WebDriverWait(driver, 10).until(EC.url_contains("luatvietnam.vn"))
-time.sleep(5)
-
-print("Đăng nhập thành công!")
-
-# Mở trang
-driver.get("https://luatvietnam.vn/")
-
-# Cuộn xuống để load nội dung
-driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-time.sleep(3)  # chờ load JS
-
-# Chờ phần tử xuất hiện (tối đa 10 giây)
-try:
-    WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.CSS_SELECTOR, "div.post-doc"))
-    )
-except:
-    print("Không tìm thấy div.post-doc sau khi cuộn trang")
-    driver.quit()
-    exit()
-
-# Tìm tất cả văn bản mới
-vb_elements = driver.find_elements(By.CSS_SELECTOR, "div.post-doc")
-
-print(f"Đã tìm thấy {len(vb_elements)} văn bản.")
-
-# Lưu ra file JSON
-data = []
-for el in vb_elements:
-    try:
-        title = el.find_element(By.CSS_SELECTOR, ".doc-title a").text.strip()
-        
-        link = el.find_element(By.CSS_SELECTOR, ".doc-title a").get_attribute("href")
-        #so_hieu = el.find_element(By.CSS_SELECTOR, ".doc-code").text.strip()
-
-        # Các thông tin phụ
-        info_map = {}
-        try:
-            info_container = el.find_element(By.CSS_SELECTOR, ".post-meta-doc")
-            rows = info_container.find_elements(By.CSS_SELECTOR, ".doc-dmy, .doc-dmy.m-hide")
-
-            for row in rows:
-                spans = row.find_elements(By.CSS_SELECTOR, "span")
-                if len(spans) >= 2:
-                    label = spans[0].text.strip().rstrip(":")
-                    value = driver.execute_script("return arguments[0].textContent;", spans[1]).strip()
-                    info_map[label] = value
-        except:
-            pass
-
-        data.append({
-            "title": title,
-            "ngay_ban_hanh": info_map.get("Ban hành", ""),
-            "ngay_ap_dung": info_map.get("Áp dụng", ""),
-            "ngay_het_hieu_luc": info_map.get("Hiệu lực", ""),
-            "ngay_cap_nhat": info_map.get("Cập nhật", ""),
-            "link": link
-        })
-
-
-
-    except Exception as e:
-        print("Lỗi:", e)
-        continue
-
-with open("home.json", "w", encoding="utf-8") as f:
-    json.dump(data, f, ensure_ascii=False, indent=2)
-
-print("Đã lưu xong vào home.json")
-
-driver.quit()
+        out.write(sql)

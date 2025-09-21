@@ -50,7 +50,6 @@ INSTALLED_APPS = [
     'account',
     "corsheaders",
     'django_filters',
-    
 ]
 AUTH_USER_MODEL = 'account.CustomUser'
 

@@ -24,6 +24,7 @@ class UserIntent(models.Model):
 #lấy nội dung cuộc thoại tin nhắn, sau đó gợi ý và rẻ nhánh sau
 class Conversation(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+    title = models.CharField(max_length=255, blank=True, null=True)
     state = models.CharField(max_length=50, default="init")
     created_at = models.DateTimeField(auto_now_add=True)
 

@@ -3,6 +3,7 @@ import uuid
 from django.conf import settings
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+from django.conf import settings
 
 class LawCategory(models.Model): #phân loại
     name = models.CharField(max_length=255, unique=True)
@@ -181,9 +182,54 @@ class QueryRecommendation(models.Model): #Gợi ý câu hỏi hoặc văn bản
 
     def __str__(self):
         return f"Recommendation for intent {self.intent.intent_label}"
+    
+class UserActivity(models.Model):
+    ACTIVITY_TYPES = [
+        ('news', 'Tin tức'),
+        ('document', 'Văn bản luật'),
+        ('question', 'Câu hỏi tư vấn'),
+    ]
+
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    activity_type = models.CharField(max_length=20, choices=ACTIVITY_TYPES)
+    reference_id = models.CharField(max_length=100)  # ID của tin tức / văn bản / câu hỏi
+    title = models.CharField(max_length=255)
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user.username} - {self.activity_type}: {self.title}"
 
 
 @receiver(post_save, sender=LawDocument)
 def create_document_detail(sender, instance, created, **kwargs):
     if created:
         LawDocumentDetail.objects.create(document=instance)
+
+
+class Notification(models.Model):
+    TYPE_CHOICES = [
+        ("CONTACT", "Liên hệ"),
+        ("ANSWER", "Trả lời câu hỏi"),
+        ("SYSTEM", "Hệ thống"),
+    ]
+
+    recipient = models.ForeignKey(
+        settings.AUTH_USER_MODEL, 
+        on_delete=models.CASCADE, 
+        related_name="notifications"
+    )
+    actor = models.ForeignKey(
+        settings.AUTH_USER_MODEL, 
+        on_delete=models.SET_NULL, 
+        null=True, 
+        blank=True, 
+        related_name="actor_notifications"
+    )
+    message = models.TextField()
+    notification_type = models.CharField(max_length=50, choices=TYPE_CHOICES, default="SYSTEM")
+    link = models.CharField(max_length=255, blank=True, null=True)
+    is_read = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.notification_type} - {self.message[:30]}"

@@ -4,6 +4,7 @@ import CpFooter from "../components/cpFooter";
 import instance, { endpoints } from "../configs/Apis";
 import ConsultationDialog from "../components/ConsultationDialog";
 import CreateConsultationDialog from "../components/CreateConsultationDialog";
+import CheckAuthen from "../components/CheckAuthen";
 
 function PAdvise() {
   const [activeTab, setActiveTab] = useState("chuyengia");
@@ -15,6 +16,8 @@ function PAdvise() {
   const [openDetail, setOpenDetail] = useState(false);
   const [selectedConsultation, setSelectedConsultation] = useState(null);
   const [openCreate, setOpenCreate] = useState(false);
+
+  const [openAuthDialog, setOpenAuthDialog] = useState(false);
 
   // Pagination
   const [page, setPage] = useState(1);
@@ -33,17 +36,14 @@ function PAdvise() {
     fetchCategories();
   }, []);
 
-  // Load consultations (tất cả hoặc theo category)
+  // Load consultations
   useEffect(() => {
     const fetchConsultations = async () => {
       if (activeTab !== "chuyengia") return;
-
       try {
         setLoading(true);
         let url = `${endpoints.consultations}?page=${page}`;
-        if (selectedCategory) {
-          url += `&category=${selectedCategory.id}`;
-        }
+        if (selectedCategory) url += `&category=${selectedCategory.id}`;
         let res = await instance.get(url);
 
         setConsultations(res.data.results || res.data);
@@ -56,7 +56,6 @@ function PAdvise() {
         setLoading(false);
       }
     };
-
     fetchConsultations();
   }, [page, selectedCategory, activeTab]);
 
@@ -64,7 +63,6 @@ function PAdvise() {
   useEffect(() => {
     const fetchMyConsultations = async () => {
       if (activeTab !== "myquestions") return;
-
       try {
         setLoading(true);
         const token = localStorage.getItem("token");
@@ -81,13 +79,22 @@ function PAdvise() {
         setLoading(false);
       }
     };
-
     fetchMyConsultations();
   }, [activeTab]);
 
-  // Tính số trang
+  // Pagination logic
   const pageSize = 10;
   const totalPages = Math.ceil(count / pageSize);
+
+  const checkLogin = (action) => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      setOpenAuthDialog(true);
+    } else {
+      if (action === "create") setOpenCreate(true);
+      if (action === "chatbot") window.location.href = "/chat";
+    }
+  };
 
   return (
     <React.Fragment>
@@ -129,7 +136,7 @@ function PAdvise() {
 
         {/* Main Content */}
         <div className="flex mt-6 px-4">
-          {/* Sidebar chỉ hiện khi ở tab chuyên gia */}
+          {/* Sidebar categories */}
           {activeTab === "chuyengia" && (
             <aside className="w-1/4 border-r p-4 max-h-[500px] overflow-y-auto">
               <h3 className="font-semibold mb-4">Chủ đề</h3>
@@ -167,8 +174,12 @@ function PAdvise() {
             </aside>
           )}
 
-          {/* Question List */}
-          <div className={`${activeTab === "chuyengia" ? "w-3/4" : "w-full"} p-4 space-y-4`}>
+          {/* Question list */}
+          <div
+            className={`${
+              activeTab === "chuyengia" ? "w-3/4" : "w-full"
+            } p-4 space-y-4`}
+          >
             <h2 className="text-xl font-bold mb-2">
               {activeTab === "myquestions"
                 ? "CÂU HỎI CỦA TÔI"
@@ -203,7 +214,7 @@ function PAdvise() {
               <p className="text-gray-500">Không có câu hỏi nào.</p>
             )}
 
-            {/* Pagination chỉ khi ở tab chuyên gia */}
+            {/* Pagination */}
             {activeTab === "chuyengia" && totalPages > 1 && (
               <div className="flex justify-center space-x-2 mt-4">
                 <button
@@ -241,17 +252,21 @@ function PAdvise() {
         {/* Floating Buttons */}
         <div className="fixed bottom-6 right-6 space-y-3">
           <button
-            onClick={() => setOpenCreate(true)}
+            onClick={() => checkLogin("create")}
             className="bg-red-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-red-700 mr-2"
           >
             + Tạo câu hỏi
           </button>
 
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-900">
+          <button
+            onClick={() => checkLogin("chatbot")}
+            className="bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-900"
+          >
             Hỏi với AI
           </button>
         </div>
 
+        {/* Dialogs */}
         <ConsultationDialog
           open={openDetail}
           onClose={() => setOpenDetail(false)}
@@ -266,6 +281,11 @@ function PAdvise() {
             if (activeTab === "chuyengia") setPage(1);
             else setActiveTab("myquestions");
           }}
+        />
+        <CheckAuthen
+          open={openAuthDialog}
+          onLogin={() => (window.location.href = "/login")}
+          onRegister={() => (window.location.href = "/register")}
         />
       </div>
       <CpFooter />

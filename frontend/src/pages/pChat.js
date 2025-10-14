@@ -3,7 +3,8 @@ import { FiAlertCircle, FiBookOpen, FiTrash2 } from "react-icons/fi";
 import instance, { endpoints } from "../configs/Apis";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-
+import { useNavigate } from "react-router-dom";
+import CheckAuthen from "../components/CheckAuthen";
 
 export default function PChat() {
   const [input, setInput] = useState("");
@@ -11,53 +12,65 @@ export default function PChat() {
   const [loading, setLoading] = useState(false);
   const [conversations, setConversations] = useState([]);
   const [activeConvId, setActiveConvId] = useState(null);
+  const [avatar, setAvatar] = useState(
+    "https://www.svgrepo.com/show/452030/avatar-default.svg"
+  );
+  const [openDialog, setOpenDialog] = useState(false);
 
+  const navigate = useNavigate();
   const token = localStorage.getItem("token");
-  const headers = { Authorization: `Token ${token}`, "Content-Type": "application/json" };
+  const headers = {
+    Authorization: `Token ${token}`,
+    "Content-Type": "application/json",
+  };
 
   // ====================== INIT CHAT ======================
   useEffect(() => {
+    if (!token) {
+      setOpenDialog(true); // chưa login thì show dialog
+      return;
+    }
+
     const initChat = async () => {
-      const token = localStorage.getItem("token");
-      if (!token) return alert("Bạn chưa đăng nhập.");
-
-      const headers = { Authorization: `Token ${token}`, "Content-Type": "application/json" };
-
       try {
-        // 1. Lấy danh sách conversation hiện có trước
         const listRes = await instance.get(endpoints.conversations, { headers });
-        const allConvs = listRes.data.results;
-
-        // 2. Tạo conversation mới
-        const newConvRes = await instance.post(
-          endpoints.conversations,
-          { title: "Cuộc trò chuyện mới" },
-          { headers }
+        const allConvs = listRes.data.results || [];
+        const sorted = [...allConvs].sort(
+          (a, b) => new Date(b.created_at) - new Date(a.created_at)
         );
-        const newConv = newConvRes.data;
+        setConversations(sorted);
 
-        // 3. Loại bỏ conversation vừa tạo trong list để tránh duplicate
-        const filtered = allConvs.filter(c => c.id !== newConv.id);
-
-        // 4. Đặt conversation mới lên đầu
-        setConversations([newConv, ...filtered]);
-        setActiveConvId(newConv.id);
-        setMessages(newConv.messages || []);
+        if (sorted.length > 0) {
+          setActiveConvId(sorted[0].id);
+          setMessages(sorted[0].turns || sorted[0].messages || []);
+        }
       } catch (err) {
         console.error("Lỗi init chat:", err.response?.data || err);
       }
     };
 
+    const fetchUser = async () => {
+      try {
+        const res = await instance.get(endpoints["current_user"], { headers });
+        setAvatar(res.data.avatar || avatar);
+      } catch (err) {
+        console.warn("Không lấy được avatar:", err);
+      }
+    };
+
     initChat();
-  }, []);
-
-
+    fetchUser();
+  }, [token]);
 
   // ====================== CREATE NEW CONVERSATION ======================
   const createNewConversation = async () => {
-    if (!token) return alert("Bạn chưa đăng nhập.");
+    if (!token) return setOpenDialog(true);
     try {
-      const res = await instance.post(endpoints.conversations, { title: `Cuộc trò chuyện ${conversations.length + 1}` }, { headers });
+      const res = await instance.post(
+        endpoints.conversations,
+        { title: `Cuộc trò chuyện ${conversations.length + 1}` },
+        { headers }
+      );
       const newConv = res.data;
       setConversations([newConv, ...conversations]);
       setActiveConvId(newConv.id);
@@ -68,10 +81,13 @@ export default function PChat() {
     }
   };
 
-  // ====================== SELECT ======================
+  // ====================== SELECT CONVERSATION ======================
   const selectConversation = async (id) => {
+    if (!token) return setOpenDialog(true);
     try {
-      const res = await instance.get(`/api/chat/conversations/${id}/`, { headers });
+      const res = await instance.get(`/api/chat/conversations/${id}/`, {
+        headers,
+      });
       setActiveConvId(id);
       setMessages(res.data.turns || []);
     } catch (err) {
@@ -80,11 +96,12 @@ export default function PChat() {
     }
   };
 
-  // ====================== DELETE ======================
+  // ====================== DELETE CONVERSATION ======================
   const deleteConversation = async (id) => {
+    if (!token) return setOpenDialog(true);
     try {
       await instance.delete(`/api/chat/conversations/${id}/`, { headers });
-      const filtered = conversations.filter(c => c.id !== id);
+      const filtered = conversations.filter((c) => c.id !== id);
       setConversations(filtered);
 
       if (activeConvId === id) {
@@ -103,58 +120,59 @@ export default function PChat() {
   };
 
   // ====================== SEND MESSAGE ======================
-  const sendMessage = async () => {
-    if (!input.trim() || !activeConvId)
+  const sendMessage = async (textOverride = null) => {
+    if (!token) return setOpenDialog(true);
+
+    if ((!input.trim() && !textOverride) || !activeConvId)
       return alert("Chưa chọn conversation hoặc chưa nhập câu hỏi.");
 
-    const userMsg = { sender: "user", text: input.trim() };
-    setMessages(prev => [...prev, userMsg]);
+    const text = textOverride ? textOverride.trim() : input.trim();
+    setInput("");
+
+    const userMsg = { sender: "user", text };
+    setMessages((prev) => [...prev, userMsg]);
     setLoading(true);
 
     try {
       const res = await instance.post(
         `/api/chat/chatbot/`,
-        {
-          query: input.trim(),
-          conversation_id: activeConvId,
-        },
+        { query: text, conversation_id: activeConvId },
         { headers }
       );
-
-      console.log("Chatbot response:", res.data);
 
       const botMsg = {
         sender: "bot",
         text: res.data.answer || "Hệ thống AI chưa trả lời được.",
+        meta: { suggestions: res.data.suggestions || [] },
       };
-      setMessages(prev => [...prev, botMsg]);
+      setMessages((prev) => [...prev, botMsg]);
 
-      // ==== Cập nhật title conversation thành entities ====
       if (res.data.entities) {
         await instance.patch(
           `/api/chat/conversations/${activeConvId}/`,
           { title: res.data.entities },
           { headers }
         );
-
-        // Đồng bộ lại danh sách conversations ở sidebar
-        setConversations(prev =>
-          prev.map(c =>
+        setConversations((prev) =>
+          prev.map((c) =>
             c.id === activeConvId ? { ...c, title: res.data.entities } : c
           )
         );
       }
     } catch (err) {
       console.error("Send error:", err.response?.data || err.message);
-      setMessages(prev => [
+      setMessages((prev) => [
         ...prev,
         { sender: "bot", text: "Hệ thống AI gặp sự cố. Vui lòng thử lại." },
       ]);
     } finally {
-      setInput("");
       setLoading(false);
     }
   };
+
+  // ====================== HANDLERS ======================
+  const handleLogin = () => navigate("/login");
+  const handleRegister = () => navigate("/register");
 
   return (
     <div className="flex h-screen bg-gray-50">
@@ -181,8 +199,11 @@ export default function PChat() {
               {conversations.map((conv) => (
                 <div
                   key={conv.id}
-                  className={`flex items-center justify-between p-2 rounded cursor-pointer ${conv.id === activeConvId ? "bg-gray-100 font-semibold" : "hover:bg-gray-50"
-                    }`}
+                  className={`flex items-center justify-between p-2 rounded cursor-pointer ${
+                    conv.id === activeConvId
+                      ? "bg-gray-100 font-semibold"
+                      : "hover:bg-gray-50"
+                  }`}
                 >
                   <div onClick={() => selectConversation(conv.id)} className="flex-1 truncate">
                     {conv.title}
@@ -198,17 +219,10 @@ export default function PChat() {
               ))}
             </div>
           </div>
-
-          <div className="px-4 mt-6 text-sm space-y-4 text-[#1D3557]">
-            <div className="flex items-center gap-2">Hỗ trợ và góp ý</div>
-            <div className="flex items-center gap-2">Cài đặt</div>
-            <div className="flex items-center gap-2">Thoát</div>
-          </div>
         </div>
 
         <div className="p-4 text-sm text-red-600 font-semibold">
-          Tổng đài hỗ trợ: <br />
-          0938 36 1919
+          Tổng đài hỗ trợ: <br /> 0938 36 1919
         </div>
       </div>
 
@@ -218,10 +232,17 @@ export default function PChat() {
         <div className="flex items-center justify-between px-6 py-4 border-b bg-white shadow-sm">
           <div className="text-sm text-gray-500">Hôm nay</div>
           <div className="flex items-center gap-3">
-            <button className="bg-[#1D3557] text-white px-4 py-1.5 rounded-md text-sm font-medium">
+            <button
+              onClick={() => navigate("/")}
+              className="bg-[#1D3557] text-white px-4 py-1.5 rounded-md text-sm font-medium"
+            >
               Về trang chủ
             </button>
-            <div className="w-8 h-8 rounded-full bg-gray-300" />
+            <img
+              src={avatar}
+              alt="avatar"
+              className="w-8 h-8 rounded-full border object-cover"
+            />
           </div>
         </div>
 
@@ -248,46 +269,64 @@ export default function PChat() {
           {messages.map((m, idx) => (
             <div
               key={idx}
-              className={`my-2 flex px-2 ${m.sender === "user" ? "justify-end" : "justify-start"
-                }`}
+              className={`my-2 flex px-2 ${
+                m.sender === "user" ? "justify-end" : "justify-start"
+              }`}
             >
               <div
-                className={`px-4 py-2 rounded-2xl text-sm max-w-[70%] ${m.sender === "user"
+                className={`px-4 py-2 rounded-2xl text-sm max-w-[70%] ${
+                  m.sender === "user"
                     ? "bg-[#1D3557] text-white"
                     : "bg-gray-100 text-gray-800"
-                  }`}
+                }`}
               >
                 {m.sender === "bot" ? (
-                  <ReactMarkdown
-                    remarkPlugins={[remarkGfm]}
-                    components={{
-                      p: ({ node, ...props }) => (
-                        <p className="my-1 leading-relaxed" {...props} />
-                      ),
-                      ul: ({ node, ...props }) => (
-                        <ul className="list-disc pl-5 space-y-1" {...props} />
-                      ),
-                      ol: ({ node, ...props }) => (
-                        <ol className="list-decimal pl-5 space-y-1" {...props} />
-                      ),
-                      li: ({ node, ...props }) => {
-                        const children = React.Children.toArray(props.children);
-                        return (
-                          <li className="leading-relaxed">
-                            {children.map((child, i) =>
-                              child.type === "p" ? (
-                                <span key={i}>{child.props.children}</span>
-                              ) : (
-                                child
-                              )
-                            )}
-                          </li>
-                        );
-                      },
-                    }}
-                  >
-                    {m.text}
-                  </ReactMarkdown>
+                  <>
+                    <ReactMarkdown
+                      remarkPlugins={[remarkGfm]}
+                      components={{
+                        p: ({ node, ...props }) => (
+                          <p className="my-1 leading-relaxed" {...props} />
+                        ),
+                        ul: ({ node, ...props }) => (
+                          <ul className="list-disc pl-5 space-y-1" {...props} />
+                        ),
+                        ol: ({ node, ...props }) => (
+                          <ol className="list-decimal pl-5 space-y-1" {...props} />
+                        ),
+                        li: ({ node, ...props }) => {
+                          const children = React.Children.toArray(props.children);
+                          return (
+                            <li className="leading-relaxed">
+                              {children.map((child, i) =>
+                                child.type === "p" ? (
+                                  <span key={i}>{child.props.children}</span>
+                                ) : (
+                                  child
+                                )
+                              )}
+                            </li>
+                          );
+                        },
+                      }}
+                    >
+                      {m.text}
+                    </ReactMarkdown>
+
+                    {m.meta?.suggestions?.length > 0 && (
+                      <div className="mt-3 flex flex-wrap gap-2">
+                        {m.meta.suggestions.map((s, i) => (
+                          <button
+                            key={i}
+                            onClick={() => sendMessage(s)}
+                            className="px-3 py-1 rounded-full border text-xs text-gray-700 bg-white hover:bg-gray-50 shadow-sm"
+                          >
+                            {s}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </>
                 ) : (
                   m.text
                 )}
@@ -297,7 +336,9 @@ export default function PChat() {
 
           {loading && (
             <div className="my-2 flex justify-start">
-              <div className="px-4 py-2 rounded-2xl text-sm bg-gray-100 text-gray-600">Đang trả lời...</div>
+              <div className="px-4 py-2 rounded-2xl text-sm bg-gray-100 text-gray-600">
+                Đang trả lời...
+              </div>
             </div>
           )}
         </div>
@@ -330,6 +371,13 @@ export default function PChat() {
           những thông tin quan trọng.
         </div>
       </div>
+
+      {/* CheckAuthen Dialog */}
+      <CheckAuthen
+        open={openDialog}
+        onLogin={handleLogin}
+        onRegister={handleRegister}
+      />
     </div>
   );
 }

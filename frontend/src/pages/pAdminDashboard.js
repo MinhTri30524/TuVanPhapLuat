@@ -103,7 +103,7 @@ function Dashboard() {
           chatbotQueries: 234, // TODO: thay bằng API thống kê chatbot
         });
       } catch (err) {
-        console.error("❌ Lỗi load summary:", err);
+        console.error("Lỗi load summary:", err);
       }
     }
     fetchSummary();
@@ -149,9 +149,9 @@ function DocumentsManager() {
         params: { page, search: query || undefined },
       });
       setDocs(res.data.results || []);
-      setTotalPages(Math.ceil(res.data.count / 10)); // giả sử page_size=10
+      setTotalPages(Math.ceil(res.data.count / 10));
     } catch (err) {
-      console.error("❌ Lỗi load documents:", err);
+      console.error("Lỗi load documents:", err);
     }
   }
 
@@ -165,7 +165,7 @@ function DocumentsManager() {
       fetchDocuments();
       setEditing(null);
     } catch (err) {
-      console.error("❌ Lỗi lưu document:", err);
+      console.error("Lỗi lưu document:", err);
     }
   }
 
@@ -175,7 +175,7 @@ function DocumentsManager() {
       await instance.delete(endpoints.documentDetail(id));
       fetchDocuments();
     } catch (err) {
-      console.error("❌ Lỗi xóa document:", err);
+      console.error("Lỗi xóa document:", err);
     }
   }
 
@@ -326,7 +326,7 @@ function NewsManager() {
       const res = await instance.get(endpoints.news);
       setNews(res.data || []);
     } catch (err) {
-      console.error("❌ Lỗi load news:", err);
+      console.error("Lỗi load news:", err);
     }
   }
 
@@ -336,7 +336,7 @@ function NewsManager() {
       await instance.delete(endpoints.newsDetail(id));
       fetchNews();
     } catch (err) {
-      console.error("❌ Lỗi xóa news:", err);
+      console.error("Lỗi xóa news:", err);
     }
   }
 
@@ -381,7 +381,7 @@ function CategoriesManager() {
       setCats(res.data.results || []);
       setTotalPages(Math.ceil(res.data.count / 10)); // giả sử page_size=10
     } catch (err) {
-      console.error("❌ Lỗi load categories:", err);
+      console.error("Lỗi load categories:", err);
     }
   }
 
@@ -392,7 +392,7 @@ function CategoriesManager() {
       setNewCat("");
       fetchCategories();
     } catch (err) {
-      console.error("❌ Lỗi thêm category:", err);
+      console.error("Lỗi thêm category:", err);
     }
   }
 
@@ -402,7 +402,7 @@ function CategoriesManager() {
       await instance.delete(endpoints.categoryDetail(id));
       fetchCategories();
     } catch (err) {
-      console.error("❌ Lỗi xóa category:", err);
+      console.error("Lỗi xóa category:", err);
     }
   }
 

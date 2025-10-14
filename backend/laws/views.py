@@ -1,23 +1,26 @@
 from django.shortcuts import get_object_or_404
 from django.utils import timezone
 
-from rest_framework import viewsets, status, filters, permissions
+from rest_framework import viewsets, status, filters, permissions, generics
 from rest_framework.permissions import AllowAny
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework.permissions import IsAuthenticated
 
 from .crawler import crawl_document_detail
 from .pagination import CustomPagination
 from .models import (
     LawCategory, LawDocument, LawArticle,
-    LegalNews, Tag, UserQuery, QueryIntent, QueryRecommendation, LawDocumentDetail, LegalConsultation
+    LegalNews, Tag, UserQuery, QueryIntent, QueryRecommendation, LawDocumentDetail, LegalConsultation,
+    UserActivity, Notification
 )
 from .serializers import (
     LawCategorySerializer, LawArticleSerializer,
     LegalNewsSerializer, TagSerializer,
     UserQuerySerializer, QueryIntentSerializer, QueryRecommendationSerializer,
-    LawDocumentListSerializer, LawDocumentDetailSerializer, LegalConsultationSerializer
+    LawDocumentListSerializer, LawDocumentDetailSerializer, LegalConsultationSerializer,
+    UserActivitySerializer, NotificationSerializer
 )
 
 
@@ -46,6 +49,23 @@ class LawDocumentViewSet(viewsets.ModelViewSet):
 
     def get_serializer_class(self):
         return LawDocumentListSerializer if self.action == "list" else LawDocumentDetailSerializer
+    
+    def retrieve(self, request, *args, **kwargs):
+        """
+        Ghi lại lịch sử khi người dùng xem chi tiết văn bản
+        """
+        instance = self.get_object()
+        response = super().retrieve(request, *args, **kwargs)
+
+        if request.user.is_authenticated:
+            UserActivity.objects.create(
+                user=request.user,
+                activity_type="document",
+                reference_id=str(instance.id),
+                title=instance.title,
+            )
+
+        return response
 
 
 # --------- Điều khoản ----------
@@ -70,7 +90,31 @@ class LegalConsultationViewSet(viewsets.ModelViewSet):
         return [permissions.IsAuthenticated()]
 
     def perform_create(self, serializer):
-        serializer.save(user=self.request.user)
+        consultation = serializer.save(user=self.request.user)
+        # Ghi lịch sử khi người dùng gửi câu hỏi tư vấn
+        UserActivity.objects.create(
+            user=self.request.user,
+            activity_type="question",
+            reference_id=str(consultation.id),
+            title=consultation.question_title,
+        )
+        Notification.objects.create(
+            user=self.request.user,
+            message=f"Bạn đã gửi câu hỏi '{consultation.question_title}' thành công. Hãy chờ phản hồi từ luật sư.",
+            type="info",
+            reference_id=str(consultation.id)
+        )
+
+        from django.contrib.auth import get_user_model
+        User = get_user_model()
+        staff_users = User.objects.filter(is_staff=True)
+        for admin in staff_users:
+            Notification.objects.create(
+                user=admin,
+                message=f"Người dùng {self.request.user.username} vừa gửi câu hỏi mới: '{consultation.question_title}'",
+                type="question",
+                reference_id=str(consultation.id)
+            )
 
 
 class UserConsultationViewSet(viewsets.ReadOnlyModelViewSet):
@@ -93,6 +137,23 @@ class LegalNewsViewSet(viewsets.ModelViewSet):
     filter_backends = [filters.SearchFilter, filters.OrderingFilter]
     search_fields = ["title", "content", "source"]
     ordering_fields = ["publish_date", "created_at"]
+
+    def retrieve(self, request, *args, **kwargs):
+        """
+        Ghi lại lịch sử khi người dùng xem chi tiết tin tức
+        """
+        instance = self.get_object()
+        response = super().retrieve(request, *args, **kwargs)
+
+        if request.user.is_authenticated:
+            UserActivity.objects.create(
+                user=request.user,
+                activity_type="news",
+                reference_id=str(instance.id),
+                title=instance.title,
+            )
+
+        return response
 
 
 # --------- Tag ----------
@@ -168,3 +229,43 @@ def document_detail(request, pk):
 
     except Exception as e:
         return Response({"error": f"Crawl failed: {str(e)}"}, status=status.HTTP_502_BAD_GATEWAY)
+    
+# --------- Lịch sử truy vấn ----------
+@api_view(["GET"])
+@permission_classes([IsAuthenticated])
+def user_history(request):
+    """
+    Trả về lịch sử hoạt động của user hiện tại (đã đăng nhập)
+    """
+    activities = UserActivity.objects.filter(user=request.user).order_by("-timestamp")
+    serializer = UserActivitySerializer(activities, many=True)
+    return Response(serializer.data)
+
+class NotificationListView(generics.ListAPIView):
+    serializer_class = NotificationSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_queryset(self):
+        return Notification.objects.filter(recipient=self.request.user).order_by("-created_at")
+
+
+class MarkNotificationAsReadView(generics.UpdateAPIView):
+    serializer_class = NotificationSerializer
+    permission_classes = [permissions.IsAuthenticated]
+    queryset = Notification.objects.all()
+
+    def patch(self, request, *args, **kwargs):
+        notification = self.get_object()
+        if notification.recipient != request.user:
+            return Response({"error": "Không có quyền"}, status=403)
+        notification.is_read = True
+        notification.save()
+        return Response({"status": "ok"})
+
+
+class MarkAllAsReadView(generics.GenericAPIView):
+    permission_classes = [permissions.IsAuthenticated]
+
+    def post(self, request):
+        Notification.objects.filter(recipient=request.user, is_read=False).update(is_read=True)
+        return Response({"status": "ok"})

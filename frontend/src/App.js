@@ -1,17 +1,32 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import PHome from './pages/pHome';
-import PSearch from './pages/pSearch';
-import PAdvise from './pages/pAdvise';
-import PNews from './pages/pNews';
-import PLogin from './pages/pLogin';
-import PRegister from './pages/pRegister';
-import PChat from './pages/pChat';
-import PDetail from './pages/pDetail';
-import PDocument from './pages/pDocument';
-import PDetailDocument from './pages/pDetailDocument';
-import AdminDashboard from './pages/pAdminDashboard';
+import PHome from "./pages/pHome";
+import PSearch from "./pages/pSearch";
+import PAdvise from "./pages/pAdvise";
+import PNews from "./pages/pNews";
+import PLogin from "./pages/pLogin";
+import PRegister from "./pages/pRegister";
+import PChat from "./pages/pChat";
+import PDetail from "./pages/pDetail";
+import PDocument from "./pages/pDocument";
+import PDetailDocument from "./pages/pDetailDocument";
+import AdminDashboard from "./pages/pAdminDashboard";
+import PHistory from "./pages/pHistory";
+
+const AdminRoute = ({ children }) => {
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  if (!user) {
+    return <Navigate to="/login" replace />;
+  }
+
+  if (!user.is_staff && !user.is_superuser) {
+    return <Navigate to="/" replace />;
+  }
+
+  return children;
+};
 
 function App() {
   return (
@@ -28,10 +43,18 @@ function App() {
         <Route path="/tintuc/:slug/:id" element={<PDetail />} />
         <Route path="/vanban" element={<PDocument />} />
         <Route path="/vanban/:slug/:id" element={<PDetailDocument />} />
-        <Route path="/admin" element={<AdminDashboard />} />
+        <Route
+          path="/admin"
+          element={
+            <AdminRoute>
+              <AdminDashboard />
+            </AdminRoute>
+          }
+        />
+        <Route path="/lichsu" element={<PHistory />} />
       </Routes>
     </>
-
   );
 }
-export default App
+
+export default App;

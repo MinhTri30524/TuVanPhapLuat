@@ -15,6 +15,7 @@ instance.interceptors.request.use((config) => {
 });
 
 export const endpoints = {
+    'current_user': "api/auth/me/",
     'documents': 'law/law-documents/',
     documentDetail: (id) => `law/law-documents/${id}/`, 
     'news': "law/legal-news/",
@@ -26,7 +27,9 @@ export const endpoints = {
     'chatbot': "/api/chat/chatbot/", 
     'conversations': "api/chat/conversations/",
     'consultations': "/law/consultations/",
-    'my_consultations': "/law/my-consultations/"
+    'my_consultations': "/law/my-consultations/",
+    'user_history': '/law/user-history/',
+    'notifications': '/law/notifications/',
 };
 
 export default instance;

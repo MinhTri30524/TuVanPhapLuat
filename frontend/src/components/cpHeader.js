@@ -4,9 +4,9 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 
 const CpHeader = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false); // mega menu
-    const [userMenuOpen, setUserMenuOpen] = useState(false); // avatar dropdown
-    const [profileOpen, setProfileOpen] = useState(false); // modal profile
+    const [isMenuOpen, setIsMenuOpen] = useState(false); 
+    const [userMenuOpen, setUserMenuOpen] = useState(false);
+    const [profileOpen, setProfileOpen] = useState(false);
     const [user, setUser] = useState(null);
     const [profileData, setProfileData] = useState({});
     const [avatarPreview, setAvatarPreview] = useState(""); // preview ảnh
@@ -106,12 +106,12 @@ const CpHeader = () => {
             <div className="hidden md:flex gap-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
                 <button onClick={() => navigate('/')} className="hover:text-[#1D3557]">Trang Chủ</button>
                 <button onClick={() => navigate('/vanban')} className="hover:text-[#1D3557]">Văn Bản</button>
-                <button onClick={() => navigate('/tuvan')} className="hover:text-[#1D3557]">Tư Vấn</button>
+                <button onClick={() => navigate('/tuvan')} className="hover:text-[#1D3557]">Đặt câu hỏi</button>
                 <button onClick={() => navigate('/tintuc')} className="hover:text-[#1D3557]">Tin Tức Pháp Luật</button>
                 <button onClick={() => navigate('/chat')} className="hover:text-[#1D3557]">Chat Bot Tư Vấn</button>
                 <button
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    className="hover:text-[#1D3557]"
+                    className="hover:text-[#1D3557]"    
                 >
                     <img src="/assets/imgs/menu.png" alt="menu" className="w-6 h-6" />
                 </button>

@@ -29,9 +29,13 @@ const PLogin = () => {
             toast.success("Đăng nhập thành công! Trở về trang chủ sau 3 giây");
 
             setTimeout(() => {
-                navigate("/");
-            }, 3000);
-            
+                if (res.data.user.is_superuser) {
+                    navigate("/admin");
+                } else {
+                    navigate("/");
+                }
+            }, 2000);
+
         } catch (err) {
             console.error("Lỗi login:", err);
             setError("Tên đăng nhập hoặc mật khẩu không đúng!");

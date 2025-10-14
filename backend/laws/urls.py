@@ -4,7 +4,7 @@ from .views import (
     LawCategoryViewSet, LawDocumentViewSet, LawArticleViewSet,
     LegalNewsViewSet, TagViewSet,
     UserQueryViewSet, QueryIntentViewSet, QueryRecommendationViewSet, LegalConsultationViewSet, UserConsultationViewSet,
-    list_documents, document_detail
+    list_documents, document_detail, user_history, NotificationListView, MarkNotificationAsReadView, MarkAllAsReadView
 )
 
 router = DefaultRouter()
@@ -24,4 +24,8 @@ urlpatterns = [
 
     path('law-documents/', list_documents, name='documents-list'),
     path('law-documents/<int:pk>/detail/', document_detail, name='documents-detail'),
+    path('user-history/', user_history, name='user-history'),
+    path("notifications/", NotificationListView.as_view(), name="notifications"),
+    path("notifications/<int:pk>/read/", MarkNotificationAsReadView.as_view(), name="notification-read"),
+    path("notifications/mark-all/", MarkAllAsReadView.as_view(), name="notifications-mark-all"),
 ]

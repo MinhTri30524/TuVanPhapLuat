@@ -1,7 +1,8 @@
 from rest_framework import serializers
 from .models import (
     LawCategory, LawDocument, LawArticle,
-    LegalNews, Tag, UserQuery, QueryIntent, QueryRecommendation, LegalNewsDetail, LegalConsultation
+    LegalNews, Tag, UserQuery, QueryIntent, QueryRecommendation, LegalNewsDetail, LegalConsultation,
+    UserActivity, Notification
 )
 
 class LawCategorySerializer(serializers.ModelSerializer):
@@ -121,3 +122,23 @@ class QueryRecommendationSerializer(serializers.ModelSerializer):
     class Meta:
         model = QueryRecommendation
         fields = '__all__'
+
+class UserActivitySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserActivity
+        fields = '__all__'
+
+class NotificationSerializer(serializers.ModelSerializer):
+    actor_first_name = serializers.CharField(source="actor.first_name", read_only=True)
+    actor_last_name = serializers.CharField(source="actor.last_name", read_only=True)
+    actor_avatar = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Notification
+        fields = [
+            "id", "notification_type", "message", "is_read", "link", "created_at",
+            "actor_first_name", "actor_last_name", "actor_avatar"
+        ]
+
+    def get_actor_avatar(self, obj):
+        return f"/media/avatars/{obj.actor.id}.jpg" if obj.actor else "/default-avatar.png"
